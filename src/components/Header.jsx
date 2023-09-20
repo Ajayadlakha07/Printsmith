@@ -4,9 +4,12 @@ import Navbar from 'react-bootstrap/Navbar';
 import logo from '../assets/printsmith.png'
 import { AiFillFacebook, AiFillYoutube, AiOutlineTwitter, AiFillLinkedin } from "react-icons/ai";
 import '../styles/main.css'
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 function Header() {
+
+  const location = useLocation();
+
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container fluid>
@@ -51,10 +54,10 @@ function Header() {
           >
             
               <div className='d-flex flex-column flex-md-row align-items-center'>
-                <Link to='/' className='mx-2 text-white px-2 py-1' style={{backgroundColor:"#FC01AC",borderRadius:"2px",textDecoration: "none"}} >Home</Link>
-                <Link to='/covid' className='mx-2 px-2 py-1 but1' >Covid-19 Essentials</Link>
+                <Link to='/' className={`${location.pathname==='/'?"btnloc":"dropbtn"}`} style={{margin:"1rem"}}>Home</Link>
+                <Link to='/covid'  className={`${location.pathname==='/covid'?"btnloc":"dropbtn"}`} >Covid-19 Essentials</Link>
                 <div className="dropdown">
-                  <Link to='/about' className="dropbtn">About Us</Link>
+                  <Link to='/about' className={`${location.pathname==='/about'?"btnloc":"dropbtn"}`}>About Us</Link>
                   <div className="dropdown-content">
                     <Link to='/' style={{fontSize:"12px"}} className='text-start' >Vision & Mission</Link>
                     <a href='#team' style={{fontSize:"12px"}} className='text-start' >The Team</a>
@@ -64,30 +67,30 @@ function Header() {
                   </div>
                 </div> 
                 <div className="dropdown">
-                  <Link to='/Our-services' className="dropbtn">Our Services</Link>
+                  <Link to='/Our-services' className={`${location.pathname==='/Our-services'?"btnloc":"dropbtn"}`}>Our Services</Link>
                   <div className="dropdown-content">
-                    <Link to='/commercial-printing' style={{fontSize:"12px"}} className='text-start' >Cpmmercial printing</Link>
+                    <Link to='/commercial-printing' style={{fontSize:"12px"}} className='text-start' >Commercial printing</Link>
                     <Link to='/packaging-printing' style={{fontSize:"12px"}} className='text-start' >Packaging Printing</Link>
                     <Link to='/pos' style={{fontSize:"12px"}} className='text-start' >POS Display and Fixtures</Link>
                   </div>
                 </div> 
                 <div className="dropdown">
-                  <Link to='/' className="dropbtn">Showcase</Link>
+                  <div className={`${location.pathname==='/showcase'?"btnloc":"dropbtn"}`}>Showcase</div>
                   <div className="dropdown-content">
-                    <Link to='/' style={{fontSize:"12px"}} className='text-start' >Cpmmercial Expertise</Link>
-                    <Link to='/' style={{fontSize:"12px"}} className='text-start' >Packaging Expertise</Link>
-                    <Link to='/' style={{fontSize:"12px"}} className='text-start' >POS Display and Fixtures Expertise</Link>
+                    <Link to='/commercial-printing-exp' style={{fontSize:"12px"}} className='text-start' >Commercial Expertise</Link>
+                    <Link to='/packaging-printing-exp' style={{fontSize:"12px"}} className='text-start' >Packaging Expertise</Link>
+                    <Link to='/pos-exp' style={{fontSize:"12px"}} className='text-start' >POS Display and Fixtures Expertise</Link>
                   </div>
                 </div> 
                 <div className="dropdown">
-                  <Link to='/' className="dropbtn">Work With US</Link>
+                  <div className={`${location.pathname==='/work-with-us'?"btnloc":"dropbtn"}`}>Work With US</div>
                   <div className="dropdown-content">
-                    <Link to='/' style={{fontSize:"12px"}} className='text-start' >Openings</Link>
-                    <Link to='/' style={{fontSize:"12px"}} className='text-start' >Online vender registration</Link>
+                    <Link to='/openings' style={{fontSize:"12px"}} className='text-start' >Openings</Link>
+                    <Link to='/registration' style={{fontSize:"12px"}} className='text-start' >Online vender registration</Link>
                   </div>
                 </div> 
                 {/* <Link to='/' className='mx-2 px-2 py-1 but1' style={{textDecoration: "none"}} ></Link> */}
-                <Link to='/Contact-us' className='mx-2 px-2 py-1 but1' style={{textDecoration: "none"}} >Contact Us</Link>
+                <Link to='/Contact-us' className={`mx-2 ${location.pathname==='/Contact-us'?"btnloc":"dropbtn"}`} style={{textDecoration: "none"}} >Contact Us</Link>
               </div>
            
           </Nav>

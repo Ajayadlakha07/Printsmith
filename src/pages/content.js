@@ -137,7 +137,47 @@ const table3 = ["Roll Up Standees","Sun Board Vending","One Way Vision","Flanges
 const table3_head = ["POS Display and","Printsmith is one of the most innovative display firms in the country. We conceptualize, design, engineer, manufacture and install point of sale (POS) display stands, showroom fixtures and racks all over India."]
 const table3_li = []
 
-export {contents,table1,table1_li,table1_head,table2, table2_li,table2_head, table3, table3_li, table3_head}
+const table_report = {
+    table1:["Books / Coffee Table / Hard Case / Soft Case / Center Pin / Children Books ","CTB","coffee table","CB4","CB5","annual report1","anula report", "CTB 1", "cat5", "cat3" ,"cat", "cat 1", "book 2","spirla_book_mockup_2", "CB","C book","book 2","C book 2" ,"book 1a","MS" ,"annual report1","annual report","siral_book_Mockup_1","CBT 2"],
+    table2:["Calendars / Carry Bags/ Diaries / Magazines ","Tirupati wall Calander",    "Tirupati Diary",    "LIC Diary",    "Syndicatedbank wall Calender",    "Lic desk calander",    "Kazo carry bag",    "JCB wall calander",    "HMD Desk calander",    "Greem carry bag",    "Continental desk calander",    "coke wall calander",    "SKG world carry bag",    "CA Diary",    "M3",    "M2",    "SyndicatedBank Diary",    "M5",    "M4",    "LIC wall calander",    "APL carry bag",    "M1",],
+    table3:["Danglers / Catalogues / Posters / Leaflets / Annual Report","leafletN5",    "PN9",    "leafletN3",    "leafletN4",    "PN8",    "PN7",    "PN5",    "PN4",    "leafletN2",    "PN3",    "dangler 4",    "PN1",    "PN2",    "dangler 3",    "dangler 2",    "PN6",    "dangler 1",    "leafletN1",    "PN10",]
+}
+
+const packaging = ["Packaging Expertise ","21","23","22","24","18","19","14","13","12","10","20","11","9","8","6","7","5","3","2","4","1","16","17","15",]
+
+const pos = ["POS DISPLAY AND FIXTURES EXPERTISE ","15","15","10","9","14","8","7","6","5","4","3","2","1","11","13","12"]
+
+
+export {pos,contents,table1,table1_li,table1_head,table2, table2_li,table2_head, table3, table3_li, table3_head, table_report,packaging}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

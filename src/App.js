@@ -13,6 +13,11 @@ import img1 from './assets/CP1-3.png'
 import img2 from './assets/packaging-printing.png'
 import img3 from './assets/Retail.png'
 import {table1,table1_li,table1_head,table2, table2_li,table2_head, table3, table3_li, table3_head} from './pages/content'
+import Commercialexp from './pages/Commercialexp';
+import Packaging from './pages/Packaging';
+import Pos from './pages/Pos';
+import Openings from './pages/Openings';
+import Registration from './pages/Registration';
 
 
 function App() {
@@ -20,13 +25,16 @@ function App() {
     <div className="App">
         <Header/>
         <Routes>
-            {/* <Route path='/' element={<Home/>} /> */}
-            <Route path='/' element={</>} />
+            <Route path='/' element={<Home/>} />
+            <Route path='/commercial-printing-exp' element={<Commercialexp/>} />
+            <Route path='/packaging-printing-exp' element={<Packaging/>} />
             <Route path='/case-studies' element={<Casestudy/>} />
+            <Route path='/pos-exp' element={<Pos/>} />
+            <Route path='/registration' element={<Registration/>} />
+            <Route path='/openings' element={<Openings/>} />
             <Route path='/commercial-printing' element={<Commercial img1={img1} table1={table1} table1_head={table1_head} table1_li={table1_li}  />} />
             <Route path='/packaging-printing' element={<Commercial img1={img2} table1={table2} table1_head={table2_head} table1_li={table2_li} />} />
             <Route path='/pos' element={<Commercial table1={table3} img1={img3} table1_head={table3_head} table1_li={table3_li} />} />
-
             <Route path='/covid' element={<Covid/>} />
             <Route path='/about' element={<About/>} />
             <Route path='/Our-services' element={<Ourservices/>} />

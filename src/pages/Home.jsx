@@ -16,6 +16,7 @@ import produts2 from '../assets/Printsmith-Credentials-1-page-015.jpg'
 import Page1 from '../assets/client-test-1.png'
 import Page2 from '../assets/client-test-2.png'
 import Page3 from '../assets/client-test.png'
+import { Link } from 'react-router-dom';
 
 
 export default function Home() {
@@ -69,22 +70,22 @@ export default function Home() {
       {/* AWARDS */}
       <div className='row mx-auto mt-4' style={{width:"95%"}}>
         <div className="col-12 col-md-6" >
-        <p className='text-start' >AWARDS</p>
+        <p className='text-start' style={{fontSize:"30px",fontWeight:"600",color:"#181818"}} >AWARDS</p>
         <div className='row'>
-          <div className='col-4'>
-            <img alt='' className='mx-6 w-100' src={DAC} />
+          <div className='col-10 my-4'>
+            <img alt='' className='mx-6 w-25' src={DAC} />
           </div>
-          <div className="col-8">
-            <p className='text-start text-muted h6'>The most valuable award for us is the trust and appreciation of our esteemed clients. Besides this, we have won several awards acknowledging our quality work, innovative designs & for harnessing cutting-edge technology.</p>
+          <div className="col-10">
+            <p className='text-start text-muted h6'  >The most valuable award for us is the trust and appreciation of our esteemed clients. Besides this, we have won several awards acknowledging our quality work, innovative designs & for harnessing cutting-edge technology.</p>
             <p className='text-start text-muted h6'>Being the trailblazer, we have always set trends & this uniqueness of ours has made us stand apart from others.</p>
           </div>
 
         </div>
         </div>
           <div className='col-12 col-md-6'>
-          <p className='text-start' style={{marginBottom:"70px"}}>Certifications</p>
+          <p className='text-start'  style={{marginBottom:"70px",fontSize:"30px",fontWeight:"600",color:"#181818"}} >Certifications</p>
           <div className='row' style={{marginTop:"20px"}}>
-          <div className='COl-2'></div>
+          <div className='col-1'></div>
           <div className='col-5'>
             <div style={{backgroundColor:"white"}} className='p-2'>
             <img alt='' className='mx-6 w-100' style={{width:"150px"}} src={india} />
@@ -95,6 +96,7 @@ export default function Home() {
 
             </div>
           </div>
+          <div className='col-1'></div>
           <div className="col-5">
            
           <div style={{backgroundColor:"white"}} className='p-2'>
@@ -112,7 +114,8 @@ export default function Home() {
       {/* STAY IN TOUCH WITH US! */}
       <div className='w-100 mt-4'>
         <p className='text-start mx-4'><b>STAY IN TOUCH WITH US!</b></p>
-        <div className='row mt-4' >
+        <div className='row mt-4 pt-4' >
+          <div className='col-md-3' ></div>
           <div className='col-12 col-md-6'>
             <div className='row'>
             <div className='col-3'>
@@ -147,23 +150,22 @@ export default function Home() {
             <div className='p-4 d-flex flex-column justify-content-start'>
             <BsFillBookmarksFill color='#FC01AC' size={50} />
             <p className='text-start h5 my-4'><b>Commercial Printing</b></p>
-            <p className='text-start text-muted h6'>Our endeavour to provide the best of commercial printing solutions is visible through our printing infrastructure. We have the following machines ... More</p>
+            <p className='text-start text-muted h6'>Our endeavour to provide the best of commercial printing solutions is visible through our printing infrastructure. We have the following machines <Link to='/commercial-printing' >... More</Link></p>
             </div>
           </div>
           <div className="m-4" style={{backgroundColor:"#F5F5F5"}}>
             <div className='p-4 d-flex flex-column justify-content-start'>
             <DiBitbucket color='#FC01AC' size={50}  />
-            <p className='text-start h5 my-4'><b>Commercial Printing</b></p>
-            <p className='text-start text-muted h6'>Our endeavour to provide the best of commercial printing solutions is visible through our printing infrastructure. We have the following machines ... More</p>
+            <p className='text-start h5 my-4'><b>Packaging Printing</b></p>
+            <p className='text-start text-muted h6'>We have state-of-the-art Packaging Infrastructure with world-class printing capabilities some of the aces of our packaging infrastructure always <Link to='/packaging-printing' >... More</Link></p>
           
             </div>
           </div>
           <div className="m-4" style={{backgroundColor:"#F5F5F5"}}>
             <div className='p-4 d-flex flex-column justify-content-start'>
             <BsFillDisplayFill color='#FC01AC' size={50} />
-            <p className='text-start h5 my-4'><b>Commercial Printing</b></p>
-            <p className='text-start text-muted h6'>Our endeavour to provide the best of commercial printing solutions is visible through our printing infrastructure. We have the following machines ... More</p>
-            
+            <p className='text-start h5 my-4'><b>POS Display and Fixtures</b></p>
+            <p className='text-start text-muted h6'>Printsmith is one of the most innovative display firms in the country. We conceptualize, design, engineer, manufacture <Link to='/pos' >... More</Link></p>
             </div>
           </div>
       </div>
