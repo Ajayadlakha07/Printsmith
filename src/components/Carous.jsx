@@ -17,10 +17,10 @@ function Carous() {
           src={banner3}
           alt="Third slide"
         />
-        <div>
+        {/* <div>
           <h5 className='h5 text-start p-2' style={{ fontSize:"40px", color:"white", backgroundColor:"rgba(35, 35, 35, 0.3)"}}>Coffee table book launch function</h5>
           <p className='h5 text-start p-2' style={{ fontSize:"40px", color:"white", backgroundColor:"black"}}>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </div>
+        </div> */}
       </Carousel.Item>
       <Carousel.Item>
         <img
@@ -28,10 +28,10 @@ function Carous() {
           src={banner1}
           alt="First slide"
         />
-        <div>
+        {/* <div>
           <h5 className='h5 text-start p-2' style={{ fontSize:"40px", color:"white", backgroundColor:"rgba(35, 35, 35, 0.3)"}}>Coffee table book launch function</h5>
           <p className='h5 text-start p-2' style={{ fontSize:"40px", color:"white", backgroundColor:"black"}}>Jaya Bachchan addressing the audience</p>
-        </div>
+        </div> */}
       </Carousel.Item>
       <Carousel.Item>
         <img
@@ -39,10 +39,10 @@ function Carous() {
           src={banner2}
           alt="Second slide"
         />
-        <div>
+        {/* <div>
           <h5 className='h5 text-start p-2' style={{ fontSize:"40px", color:"white", backgroundColor:"rgba(35, 35, 35, 0.3)"}}>First slide label</h5>
           <p className='h5 text-start p-2' style={{ fontSize:"40px", color:"white", backgroundColor:"black"}}>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </div>
+        </div> */}
       </Carousel.Item>
       
       <Carousel.Item>
@@ -51,10 +51,10 @@ function Carous() {
           src={banner4}
           alt="Third slide"
         />
-       <div>
+       {/* <div>
           <h5 className='h5 text-start p-2' style={{ fontSize:"40px", color:"white", backgroundColor:"rgba(35, 35, 35, 0.3)"}}>First slide label</h5>
           <p className='h5 text-start p-2' style={{ fontSize:"40px", color:"white", backgroundColor:"black"}}>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </div>
+        </div> */}
       </Carousel.Item>
       <Carousel.Item>
         <img
@@ -62,10 +62,10 @@ function Carous() {
           src={banner5}
           alt="Third slide"
         />
-       <div>
+       {/* <div>
           <h5 className='h5 text-start p-2' style={{ fontSize:"40px", color:"white", backgroundColor:"rgba(35, 35, 35, 0.3)"}}>First slide label</h5>
           <p className='h5 text-start p-2' style={{ fontSize:"40px", color:"white", backgroundColor:"black"}}>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </div>
+        </div> */}
       </Carousel.Item>
       <Carousel.Item>
         <img
@@ -73,10 +73,10 @@ function Carous() {
           src={banner6}
           alt="Third slide"
         />
-        <div>
+        {/* <div>
           <h5 className='h5 text-start p-2' style={{ fontSize:"40px", color:"white", backgroundColor:"rgba(35, 35, 35, 0.3)"}}>First slide label</h5>
           <p className='h5 text-start p-2' style={{ fontSize:"40px", color:"white", backgroundColor:"black"}}>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </div>
+        </div> */}
       </Carousel.Item>
       <Carousel.Item>
         <img
@@ -84,10 +84,10 @@ function Carous() {
           src={banner7}
           alt="Third slide"
         />
-        <div>
+        {/* <div>
           <h5 className='h5 text-start p-2' style={{ fontSize:"40px", color:"white", backgroundColor:"rgba(35, 35, 35, 0.3)"}}>First slide label</h5>
           <p className='h5 text-start p-2' style={{ fontSize:"40px", color:"white", backgroundColor:"black"}}>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </div>
+        </div> */}
       </Carousel.Item>
     </Carousel>
   );

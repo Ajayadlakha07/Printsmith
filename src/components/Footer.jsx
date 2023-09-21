@@ -1,37 +1,34 @@
 import React from 'react'
 import logo from '../assets/logo-300x139.png'
+import '../styles/main.css'
+import { Link } from 'react-router-dom'
 
 export default function Footer() {
   return (
     <div style={{backgroundColor:"#181818"}}>
         <div className='row py-4' >
         <div className="col-md-4 col-12">
-            <div className="row">
-                    <p className='text-white h2 text-start mx-4 my-3'>Useful Links</p>
-                <div className="col-6">
-                    <ul>
-                        <li className="h6 text-white list-group-item text-start"  >About Us</li>
-                        <li className="h6 text-white list-group-item text-start"  >POS Display and Fixtures</li>
-                        <li className="h6 text-white list-group-item text-start"  >Case studies & Testimonial</li>
-                        <li className="h6 text-white list-group-item text-start"  >Online Vendor Registration</li>
-                        <li className="h6 text-white list-group-item text-start"  >Employee Engagement & Training</li>
-                        <li className="h6 text-white list-group-item text-start"  >Opening</li>
-                        <li className="h6 text-white list-group-item text-start"  >Privacy Policy & Terms and conditions</li>
-                    </ul>
+            <div className="row mx-4">
+                    <p className='h2 text-start my-3' style={{color:"#EFB838"}}>Useful Links</p>
+                <div className="col-6" >
+                        <Link to='/about' className="footerlink text-start" ><p >About Us</p></Link>
+                        <Link to='/pos' className="footerlink text-start" ><p >POS Display and Fixtures</p></Link>
+                        <Link to='/case-studies' className="footerlink text-start" ><p >Case studies & Testimonial</p></Link>
+                        <Link to='/commercial-printing' className="footerlink text-start" ><p >Online Vendor Registration</p></Link>
+                        <Link className="footerlink text-start" ><p >Employee Engagement & Training</p></Link>
+                        <Link to='/openings' className="footerlink text-start" ><p >Opening</p></Link>
+                        <Link className="footerlink text-start" ><p >Privacy Policy & Terms and conditions</p></Link>
                 </div>
                 <div className="col-6">
-                    <ul>
-                        <li className="h6 text-white list-group-item text-start"  >Commercial Printing</li>
-                        <li className="h6 text-white list-group-item text-start"  >Packaging Printing</li>
-                        <li className="h6 text-white list-group-item text-start"  >Contact Us</li>
-                        <li className="h6 text-white list-group-item text-start"  >CSR</li>
-                        <li className="h6 text-white list-group-item text-start"  >News</li>
-                        <li className="h6 text-white list-group-item text-start"  >Fqa</li>
-                    </ul>
+                        <Link to='/commercial-printing' className="footerlink text-start" ><p >Commercial Printing</p></Link>
+                        <Link to='/packaging-printing' className="footerlink text-start" ><p >Packaging Printing</p></Link>
+                        <Link to='/Contact-us'  className="footerlink text-start" ><p >Contact Us</p></Link>
+                        <Link className="footerlink text-start" ><p >CSR</p></Link>
+                        <Link className="footerlink text-start" ><p >News</p></Link>
+                        <Link className="footerlink text-start" ><p >FAQ</p></Link>
                 </div>
             </div>
         </div>
-        
         <div className="col-md-4 col-12 my-4">
                 <div>
                     <img src={logo} alt='' />

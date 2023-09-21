@@ -124,6 +124,93 @@
     text-decoration: none;
     display: block;
   }
+  .more{
+    text-decoration: none;
+    color: black;
+  }
+  .more:hover{
+    color: #FA01AC;
+  }
+  .footerlink{
+    text-decoration: none;
+    color: #bbbbbb;
+    font-family: Open Sans;
+    font-size: 13px;
+    line-height: 15px;
+    font-weight: 10;
+    cursor: pointer;
+  }
+  .footerlink:hover{
+    color: #FA01AC;
+  }
+
+  .wid90{
+    width: 90%;
+  }
+.hov:nth-child(1){
+  /* display: none; */
+  /* display: none; */
+    
+}
+
+/* .hov.hover>.hov2{
+  display: flex;
+} */
+/* .hov:nth-child(3){
+  display: inline-block;
+} */
+  .shadow{
+    height: 10px;
+    opacity: .6;
+    background: radial-gradient(ellipse at 50% 0, rgba(0, 0, 0, .3) 0, transparent 70%);
+  }
+
+  .glyphicon{
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+  .down{
+    bottom: 5px;
+    /* display: block; */
+    width: 30px;
+    text-align: center;
+    font-size: 22px;
+    opacity: .2;
+    height: 15px;
+    top: auto;
+    position: absolute;
+    left: 50%;
+    /* -webkit-transform: translateX(-50%); */
+    transform: translateX(-50%);
+    margin-left: 1px;
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+
+.svgimg{
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  bottom: 0;
+  margin-bottom: -15px;
+}   
+.svgdiv{
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  pointer-events: none;
+  box-sizing: border-box;
+} 
   
   /* Change color of dropdown links on hover */
   .dropdown-content a:hover {background-color: #ddd;}
@@ -134,7 +221,6 @@
   /* Change the background color of the dropdown button when the dropdown content is shown */
   .dropdown:hover .dropbtn {background-color: #FC01AC;color: white;}
 
-  
-
-
-
+  .mt70{
+    margin-top: 70px;
+  }

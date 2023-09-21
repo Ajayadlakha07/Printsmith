@@ -61,7 +61,7 @@ export default function Contactus() {
           from_name: form.name,
           to_name: "Rahul chauhan",
           from_email: form.email,
-          to_email: "rahulchauhah50@gmail.com",
+          to_email: "web.developer@infinityadvt.com",
           message: `Contact:${form.mobile}
           City:${form.city}
           Organisation:${form.currentOrgnisation},
@@ -72,7 +72,7 @@ export default function Contactus() {
       )
       .then(
         () => {
-          alert("Thank you. I will get back to you as soon as possible.");
+          alert("Thank you. We will get back to you as soon as possible.");
 
           setForm({
             name: "",

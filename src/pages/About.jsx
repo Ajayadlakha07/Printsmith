@@ -6,7 +6,7 @@ import img2 from '../assets/Printsmith-P3-279x300.png'
 import img3 from '../assets/Untitled-Extract-Pages.jpg'
 import img4 from '../assets/Printsmith-Credentials-1-1024x558.jpg'
 import img5 from '../assets/Printsmith-Credentials-1024x558.jpg'
-
+import line3 from '../assets/line3.svg'
 import Abouttabs from '../components/Abouttabs';
 import Team from '../components/Team';
 
@@ -15,9 +15,13 @@ export default function About() {
 
   return (
     <div style={{backgroundColor:"#F5F5F5"}}>
-        <div style={{height:"200px"}} className='gradi' ></div>
-        <div className='justify-content-center d-flex mt-4'>
-          <div className='px-4 py-4 mx-4 bg-light mdWidth75' style={{borderLeft:"5px solid #F304AD"}} >
+         <div style={{height:"160px"}} className='gradi' ></div>
+        <div class="svgdiv" >
+          <img alt='' className='svgimg' src={line3} />
+          <i class="glyphicon glyphicon-chevron-down"></i>
+          </div>
+        <div className='justify-content-center d-flex mt70'>
+          <div className='px-4 py-4 mx-4 bg-light mdWidth75 ' style={{borderLeft:"5px solid #F304AD"}} >
             <div className='d-flex flex-row align-item-center my-3'>
               <AiOutlineInfoCircle  size={35} color='#FC01AC' />
               <p className='mx-2 h3 justify-content-start d-flex w-100' style={{fontWeight:"700",color:"#535353",overflowY:"hidden"}} >Who&nbsp;<span style={{color:"#2ABDE9"}} >We Are</span> </p>
@@ -40,7 +44,7 @@ export default function About() {
         <div className='justify-content-center d-flex mt-1 mb-4'>
           <div className='px-4 mx-4 bg-light mdWidth75' style={{borderLeft:"5px solid #F304AD"}} >
             
-           <div className='d-flex flex-column flex-md-row'>
+           <div className='d-flex flex-column flex-md-row mt70 p-4'>
            <div className='text-start d-flex flex-column'>
             <div className='d-flex flex-row align-item-center '>
               <p className='mx-2 h3 justify-content-start d-flex w-100' style={{fontWeight:"700",color:"#535353",overflowY:"hidden"}} >Our &nbsp;<span style={{color:"#2ABDE9"}} >Genesis</span> </p>

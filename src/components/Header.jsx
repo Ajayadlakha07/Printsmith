@@ -40,9 +40,9 @@ function Header() {
             <AiFillYoutube color='#FF0000' size={35}/>
               </Nav.Link>
               <div className='d-flex d-none d-md-flex align-items-center flex-row'>
-                <p className="h6 mx-2">Call Us: +91 9899246402</p>
-                <p className="h6 mx-2"> print@printsmith.co.in</p>
-                <p className="h6 mx-2">Online Vendor Registration</p>
+                <p className="h6 mx-2" style={{fontSize:"13px"}} >Call Us: <span style={{fontWeight:"800"}}>+91 9899246402</span></p>
+                <p className="h6 mx-2" style={{fontSize:"13px"}} > print@printsmith.co.in</p>
+                <Link to='/registration' className="h6 mx-2" style={{fontSize:"13px",color:"#FC01AC",fontWeight:"700",textDecoration:"none"}} >Online Vendor Registration</Link>
               </div>
            
           </Nav>

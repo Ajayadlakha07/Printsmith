@@ -16,6 +16,7 @@ import mask11 from '../assets/Images-for-Website_Aerosol-Box.jpg'
 import {contents} from './content'
 import Products from '../components/Products';
 import emailjs from "@emailjs/browser";
+import line3 from '../assets/line3.svg'
 
 
 
@@ -83,19 +84,24 @@ export default function Covid() {
   const images = [mask1,mask2,mask3,mask4,mask5,mask6,mask7,mask8,mask9,mask10,mask11]
   return (
     <div style={{backgroundColor:"#F5F5F5"}}>
-        <div style={{height:"200px"}} className='gradi' ></div>
+        <div style={{height:"160px"}} className='gradi' ></div>
+        <div class="svgdiv">
+          <img alt='' className='svgimg' src={line3} />
+          <i class="glyphicon glyphicon-chevron-down"></i>
+          </div>
 
 
-        <div className='d-flex flex-md-row flex-column mx-auto my-4' style={{width:"80vw"}} >
+        <div className='d-flex flex-md-row flex-column mx-auto mdWidth75' style={{marginTop:"70px"}} >
           <div>
-          <div className='px-4 mx-4 bg-light' style={{borderLeft:"5px solid #F304AD"}} >
-            <div className='d-flex flex-row align-item-center'>
-              <AiOutlineInfoCircle  size={35} color='#FC01AC' />
+          <div className='p-4 mx-4 bg-light' style={{borderLeft:"5px solid #F304AD"}} >
+            <div className='d-flex text-start flex-row align-item-center'>
+              <AiOutlineInfoCircle  size={40} color='#FC01AC' />
               <p className='mx-2 h3 w-100' style={{fontWeight:"700",color:"#535353",overflowY:"hidden"}} >COVID-19 <span style={{color:"#2ABDE9"}} >BUSINESS ESSENTIALS</span> </p>
             </div>
+              <hr/>
             <div className='text-start'>
               <div className='h3 text-muted my-4'  style={{fontWeight:"1", height:"78px",overflowY: "hidden"}} >Within just a few weeks, business operations have changed immensely.</div>
-              <p className='h6 text-muted' style={{fontWeight:"1",overflowY: "hidden"}} >Due to coronavirus, it is very important to Stay Safe & Keep others Safe. Coveralls Face Shields For safety and continuity, it is important to use Protective Gear especially in places like factories, shops, public transport, hospitals, all public places, parks etc.</p>
+              <p className='h6 text-muted' style={{fontWeight:"1",overflowY: "hidden",lineHeight:"28px"}} >Due to coronavirus, it is very important to Stay Safe & Keep others Safe. Coveralls Face Shields For safety and continuity, it is important to use Protective Gear especially in places like factories, shops, public transport, hospitals, all public places, parks etc.</p>
               <p className='h6 text-muted my-4' style={{fontWeight:"700",overflowY: "hidden"}}>To Help you Stay Safe anywhere we are introducing our new lines of products-</p>
             </div>
             <div className='d-flex flex-row justify-content-around'>
@@ -106,6 +112,7 @@ export default function Covid() {
           </div>
           </div>
           <div className='w-100 p-4 text-start'>
+            <div style={{fontSize:"30px",borderBottom:""}}><span style={{borderBottom:"2px solid #FA01AC"}}><span style={{color:"#535353"}}>Get</span> <span style={{color:"#2ABDE9"}} >Quots!</span></span></div>
           <form  ref={formRef} onSubmit={handleSubmit}>
             <div className="form-group my-4">
               <input  name='name'  value={form.name}  onChange={handleChange} style={{backgroundColor:"transparent",borderWidth:"0px 0px 1px 0px",borderColor:"black"}} type="text" className="form-control" id="exampleFormControlInput1" placeholder="FULL NAME"/>
@@ -119,12 +126,20 @@ export default function Covid() {
             <div className="form-group my-4 text-start">
             <label className='my-2'>Select Product</label>
               <select name='product' value={form.product}  onChange={handleChange} className="form-control" style={{backgroundColor:"transparent",borderWidth:"0px 0px 1px 0px",borderColor:"black",outline:"none"}}>
-                <option>MASK | 3M N95</option>
-                <option>VENUS MASK</option>
-                <option>INDUSTRIAL GRADE THERMOMETER</option>
-                <option>FACE SHEILD | PRO SHEILD</option>
-                <option>GOOGLE</option>
+              <option value="" disabled="" selected="">Select Product Name</option>
+                <option value="MASKS | 3M N95">MASKS | 3M N95</option>
+                <option value="VENUS Mask">VENUS Mask</option>
+                <option value="INDUSTRIAL GRADE THERMOMETER">INDUSTRIAL GRADE THERMOMETER</option>
+                <option value="FACE SHIELDS | PRO SHIELD">FACE SHIELDS | PRO SHIELD</option>
+                <option value="MEDICAL GRADE-UK MADE THERMOMETER">MEDICAL GRADE-UK MADE THERMOMETER</option>
+                <option value="FACE SHIELDS STANDARD SHIELD">FACE SHIELDS STANDARD SHIELD</option>
+                <option value="FACE SHIELDS RESUABLE SHIELD">FACE SHIELDS RESUABLE SHIELD</option>
+                <option value="GOGGLE">GOGGLE</option>
+                <option value="DISINFECTION TUNNEL">DISINFECTION TUNNEL</option>
+                <option value="AUTOMATIC MIST BASED SANITIZER DISPENSING UNIT">AUTOMATIC MIST BASED SANITIZER DISPENSING UNIT</option>
+                <option value="INTUBATION AEROSOL BOX">INTUBATION AEROSOL BOX</option>
               </select>
+              
             </div>
             <div className="form-group my-4">
               <input name='Quantity' value={form.Quantity}  onChange={handleChange} style={{backgroundColor:"transparent",borderWidth:"0px 0px 1px 0px",borderColor:"black"}} type="number" className="form-control" id="exampleFormControlInput1" placeholder="QYT"/>
@@ -137,13 +152,14 @@ export default function Covid() {
           </div>
 
         </div>
+        <div className='mdWidth75 mx-auto p-4'>
 
       {
         contents?.map((e,i)=>{
           return  <Products key={i} data={e} index={i} logo={images[i]} />
         })
       }
-
+</div>
      
     </div>
   )
