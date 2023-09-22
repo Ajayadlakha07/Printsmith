@@ -15,13 +15,13 @@ export default function About() {
 
   return (
     <div style={{backgroundColor:"#F5F5F5"}}>
-         <div style={{height:"160px"}} className='gradi' ></div>
+         <div style={{height:"200px"}} className='gradi' ></div>
         <div class="svgdiv" >
           <img alt='' className='svgimg' src={line3} />
           <i class="glyphicon glyphicon-chevron-down"></i>
           </div>
         <div className='justify-content-center d-flex mt70'>
-          <div className='px-4 py-4 mx-4 bg-light mdWidth75 ' style={{borderLeft:"5px solid #F304AD"}} >
+          <div className='px-4 py-4 mx-4 bg-light mdWidth75' style={{borderLeft:"5px solid #F304AD"}} >
             <div className='d-flex flex-row align-item-center my-3'>
               <AiOutlineInfoCircle  size={35} color='#FC01AC' />
               <p className='mx-2 h3 justify-content-start d-flex w-100' style={{fontWeight:"700",color:"#535353",overflowY:"hidden"}} >Who&nbsp;<span style={{color:"#2ABDE9"}} >We Are</span> </p>
@@ -39,9 +39,8 @@ export default function About() {
             </div>
            </div>
           </div>
-          
           </div>
-        <div className='justify-content-center d-flex mt-1 mb-4'>
+          <div className='justify-content-center d-flex mt-1 mb-4'>
           <div className='px-4 mx-4 bg-light mdWidth75' style={{borderLeft:"5px solid #F304AD"}} >
             
            <div className='d-flex flex-column flex-md-row mt70 p-4'>
@@ -67,7 +66,6 @@ export default function About() {
           </div>
           
           </div>
-
           <div className='justify-content-center d-flex' style={{paddingTop:"150px"}} >
           <div className='px-4 mx-4 bg-light mdWidth75' style={{borderLeft:"5px solid #F304AD"}} >
             <div className='d-flex flex-row align-item-center my-4'>
@@ -97,7 +95,7 @@ export default function About() {
           
           </div>
 
-<Team/>
+        <Team/>
          
 
          

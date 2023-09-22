@@ -84,7 +84,7 @@ export default function Covid() {
   const images = [mask1,mask2,mask3,mask4,mask5,mask6,mask7,mask8,mask9,mask10,mask11]
   return (
     <div style={{backgroundColor:"#F5F5F5"}}>
-        <div style={{height:"160px"}} className='gradi' ></div>
+        <div style={{height:"200px"}} className='gradi' ></div>
         <div class="svgdiv">
           <img alt='' className='svgimg' src={line3} />
           <i class="glyphicon glyphicon-chevron-down"></i>

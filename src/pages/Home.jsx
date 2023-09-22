@@ -28,6 +28,8 @@ export default function Home() {
     <div style={{backgroundColor:"#F5F5F5"}} >
       {/* <Carous/> */}
       <Carous/>
+
+
       <div className='mdWidth75 bg-pink my-4 flex-md-row flex-column d-flex justify-content-between align-items-center mx-auto mt-4 p-4' style={{backgroundColor:"#FC01AC",justifyContent:"center"}}>
         <div>
         <p className='h3 text-light text-start'>Liked what we are doing?</p>
@@ -35,8 +37,8 @@ export default function Home() {
         <p className='text-light'>Call us or click to get a quote & we’ll respond at the earliest possible.</p>
         </div>
         <div>
-        <button type="button" className="but1 btn text-white btn-outline-light">Call us at +91-9899246402</button>
-        <button type="button" className="btn btn-light mx-4">Click here</button>
+        <button type="button" className="my-2 but1 btn text-white btn-outline-light">Call us at +91-9899246402</button>
+        <button type="button" className="my-2 btn btn-light mx-4">Click here</button>
         </div>
       </div>
 
@@ -76,6 +78,7 @@ export default function Home() {
         </div>
         
       </div>
+
       <div >
       <img className='glyphicon' src={line} alt='' />
             <AiOutlineDown className='down'/>
@@ -101,13 +104,13 @@ export default function Home() {
           <p className='text-start'  style={{fontSize:"20px",fontWeight:"700",color:"#535353"}} >Certifications</p>
           <div className='row' style={{marginTop:"20px"}}>
           {/* <div className='col-1'></div> */}
-          <div className='col-5'>
+          <div className='col-md-5 col-12 my-3 hov'>
             <div style={{backgroundColor:"white"}} className='p-2'>
             <img alt='' className='mx-6 w-100' style={{width:"150px"}} src={india} />
-            <div className='hov'>
+            <div className=''>
               <p className='text-start pt-4 px-3' style={{fontSize:"19px"}} >Support Appreciation </p>
               <p className='text-start px-3' style={{fontSize:"12px"}}>India Safe</p>
-              <div className=''>
+              <div className='hov2'>
                 <p className='text-start px-3' style={{fontSize:"12px"}}>India Safe had appreciated PrintSmith for their print quality, timeliness of work, flexibility and overall support given to them for printing of India SAFE</p>
                 <div className='text-start'>
                 <AiOutlineTwitter  className='mx-3' color='#2ABDE9' size={30} />
@@ -119,13 +122,13 @@ export default function Home() {
             </div>
           </div>
           <div className='col-1'></div>
-          <div className="col-5">
+          <div className="col-md-5 col-12 my-3 hov">
            
           <div style={{backgroundColor:"white"}} className='p-2'>
             <img alt='' className='mx-6 w-100' style={{width:"150px"}} src={coke} />
             <p className='text-start pt-4 px-3' style={{fontSize:"19px"}}>Certificate of Recognition</p>
             <p className='text-start px-3' style={{fontSize:"12px"}}>Hindustan Coca-Cola Beverages Pvt. Ltd.</p>
-            <div>
+            <div className='hov2' >
                 <p className='text-start px-3' style={{fontSize:"12px"}}>Hindustan Coca-Cola Beverages Pvt. Ltd. had recognized our valuable contribution towards “Strengthening Safety Systems” in their organization.</p>
                 <div className='text-start'>
                 <AiOutlineTwitter  className='mx-3' color='#2ABDE9' size={30} />
@@ -223,7 +226,7 @@ export default function Home() {
                 className="d-block w-100"
                 src={banner1}
                 alt="First slide"
-                style={{height:"500px"}}
+                // style={{height:"500px"}}
               />
               
             </Carousel.Item>
@@ -232,7 +235,7 @@ export default function Home() {
                 className="d-block w-100"
                 src={banner2}
                 alt="Second slide"
-                style={{height:"500px"}}
+                // style={{height:"500px"}}
               />
               
             </Carousel.Item>
@@ -270,22 +273,18 @@ export default function Home() {
         </div>
        
       <div className='w-100' style={{backgroundColor:"#FC01AC",marginTop:"70px",paddingTop:"20px",paddingBottom:"20px"}} >
-        
-     
-
-
         <p className='h3 mt-4 text-white' ><strong>Client Testimonials</strong></p>
         <div className='row'>
-          <div className="col-12 col-md-3">
+          <div className="col-6 col-md-3">
             <img alt='' src={Page1} className='wid90 my-4' />
           </div>
-          <div className="col-12 col-md-3">
+          <div className="col-6 col-md-3">
             <img alt='' src={Page1} className='wid90 my-4' />
           </div>
-          <div className="col-12 col-md-3">
+          <div className="col-6 col-md-3">
             <img alt='' src={Page2} className='wid90 my-4' />
           </div>
-          <div className="col-12 col-md-3">
+          <div className="col-6 col-md-3">
             <img alt='' src={Page3} className='wid90 my-4' />
           </div>
 

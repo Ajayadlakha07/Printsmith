@@ -4,22 +4,28 @@ import Page1 from '../assets/client-test-1.png'
 import Page2 from '../assets/client-test-2.png'
 import Page3 from '../assets/client-test.png'
 import { AiOutlineLine } from "react-icons/ai";
+import line3 from '../assets/line3.svg'
+import { Link } from 'react-router-dom'
 
 
 export default function Casestudy() {
   return (
-    <div>
+    <div style={{backgroundColor:"#F5F5F5"}} >
        <div style={{height:"200px"}} className='gradi' ></div>
-       <div className='mdWidth75 mx-auto text-start' >
-        <p className='text-start h2' style={{marginBottom:"50px",fontWeight:"600"}} >Case Studies</p>
-        <AiOutlineLine className='mb-4 ' color='#96979A' style={{height:"3px", width:"60px",backgroundColor:"#96979A"}} />
-          <p className='h5 my-2' style={{color:"#FA01AC"}}>Lastest Case study</p>
+        <div class="svgdiv">
+          <img alt='' className='svgimg' src={line3} />
+          <i class="glyphicon glyphicon-chevron-down"></i>
+          </div>
+       <div className='mdWidth75 my-4 p-4 mx-auto text-start'  >
+        <p className='text-start h1 m-3' style={{fontWeight:"600"}} >Case Studies</p>
+        <AiOutlineLine className='mb-4 mx-4' color='#313133' style={{height:"3px", width:"60px",backgroundColor:"#96979A"}} />
+          <p className='h5 mb-3' style={{marginTop:"80px",color:"#FA01AC"}} >Lastest Case study</p>
         <div className='text-start mx-3'>
           <div className='d-flex' style={{backgroundImage:`url(${imgs}`,width:"420px",height:"240px",alignItems:"end"}} >
             <button className='btn3' >Read more+</button>
           </div>
         </div>
-        <p className='text-start mt-4 mx-3' style={{fontSize:"12px",color:"#111111"}}>September 16, by admin in <span>case study</span></p>
+        <em class="case my-2 mx-3">September 26, 2017 By admin in <Link style={{textDecoration:"none"}} className='more' to='' >Case Study</Link></em>
         <p className='mx-3 h5'>Colorbar Cosmetics Ptv. Ltd.</p>
         <div className='w-100' style={{marginTop:"70px",paddingTop:"20px",paddingBottom:"20px"}} >
         <div className='row'>

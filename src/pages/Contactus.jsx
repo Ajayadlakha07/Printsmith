@@ -2,6 +2,7 @@ import React,{useRef, useState} from 'react'
 import emailjs from "@emailjs/browser";
 import map1 from '../assets/Screenshot.png'
 import map2 from '../assets/Screenshot1.png'
+import line3 from '../assets/line3.svg'
 // import { GoogleMap, LoadScript } from '@react-google-maps/api';
 
 
@@ -95,6 +96,10 @@ export default function Contactus() {
   return (
     <div style={{backgroundColor:"#F5F5F5"}}>
         <div style={{height:"200px"}} className='gradi' ></div>
+        <div class="svgdiv">
+          <img alt='' className='svgimg' src={line3} />
+          <i class="glyphicon glyphicon-chevron-down"></i>
+          </div>
         <div className='row mdWidth75 mx-auto p-4 text-start' >
             <div className='col-md-2 col-12 h1' style={{paddingLeft:"0px",borderRight:"5px solid pink"}} >
             <p style={{color:"#C2C2C2"}}>Business Enquiry </p><p className='my-4' style={{color:"#F007AF"}} >HR</p> 
@@ -169,9 +174,9 @@ export default function Contactus() {
 
             <div className='my-4'>
               <p className='h3 ' style={{color:"#00BCD4"}}>Production Unit</p>
-              <img alt='' className='my-4' src={map1} />
+              <img alt='' className='my-4 w-100' src={map1} />
               <p className='h3 ' style={{color:"#00BCD4"}}>Marketing Office</p>
-              <img alt='' src={map2}  />
+              <img alt='' className='w-100' src={map2}  />
             </div>
 
         </div>

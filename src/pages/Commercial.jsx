@@ -1,25 +1,31 @@
 import React from 'react'
 import { AiOutlineCheck } from "react-icons/ai";
 import imge from '../assets/CP1-3.png';
+import line3 from '../assets/line3.svg'
 
 
 export default function Commercial({table1,table1_li,table1_head,img1}) {
   return (
     <div style={{backgroundColor:"#F5F5F5"}}>
-         <div style={{height:"200px"}} className='gradi' ></div>
+         <div style={{height:"300px"}} className='gradi' ></div>
+        <div class="svgdiv">
+          <img alt='' className='svgimg' src={line3} />
+          <i class="glyphicon glyphicon-chevron-down"></i>
+          </div>
          <div className='mdWidth75 mx-auto'>
-         <div className='h2 my-4' style={{color:"#5B5B5B",paddingTop:"50px"}} >{table1_head[0]}<span style={{color:"#2ABDE9"}} >Printing</span></div>
-         <div className='text-start mx-3 my-2 h6'>{table1_head[1]}</div>
+         <div className='h1 my-3' style={{color:"#5B5B5B",paddingTop:"50px"}} >{table1_head[0]}<span style={{color:"#2ABDE9"}} >Printing</span></div>
+         <div className='mx-auto' style={{width:"50px" ,height:"3px", backgroundColor:"#FA01AC"}} ></div>
+         <div className='text-start mx-4 my-3' style={{fontFamily:"Open Sans",fontSize:"16px",color:"rgb(83,83,83)"}} >{table1_head[1]}</div>
          <ul className='text-start '>
           {
               table1_li.map((e,i)=>{
-                return <li key={i}>{e}</li>
+                return <li className='my-1' style={{fontFamily:"Open Sans",fontSize:"13px",color:"rgb(83,83,83)"}} key={i}>{e}</li>
               })
           }
          </ul>
-         <div  className='row px-2'>
+         <div style={{marginTop:"60px",marginBottom:"60px"}} className='row px-2'>
          {table1.map((e,i)=>{
-            return<> <div key={i} className='col-md-3 col-6 my-1 h5 text-start'> <AiOutlineCheck size={25} color='#F901AC' />{e}</div>
+            return<> <div style={{color:"rgb(83,83,83)",fontSize:"18px"}} key={i} className='col-md-3 col-6 text-start'> <AiOutlineCheck size={25} className='mx-2' color='#F901AC' />{e}</div>
             </>
           })}
         

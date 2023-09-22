@@ -9,7 +9,7 @@ export default function Table({table}) {
         <div className='row'>
           {
             table.slice(1).map((e,i)=>{
-              return <div key={i} className='col-md-3 col-6 my-3 text-start px-4'>{e}</div>
+              return <div key={i} style={{fontSize:"13px"}} className='col-md-3 col-6 my-3 more text-start px-4'>{e}</div>
             })
           }
         </div>

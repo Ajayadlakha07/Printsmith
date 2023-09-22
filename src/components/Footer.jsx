@@ -35,10 +35,10 @@ export default function Footer() {
                 </div>
         </div>
         <div className="col-md-4 col-12">
-        <div className="col-sm-3">
+        <div className="col-sm-3 " >
             <div id="text_contact-1" className="widget widget_text_contact">
 		<div className="textwidget contact-details">
-            <iframe title='video' id="video" width="420" height="215" src="//www.youtube.com/embed/BVlSGuVeSYw?rel=0" frameBorder={0} allowFullScreen ></iframe>
+            <iframe className='' title='video' id="video" width="360" height="215" src="//www.youtube.com/embed/BVlSGuVeSYw?rel=0" frameBorder={0} allowFullScreen ></iframe>
         </div>
 		</div>
         </div>

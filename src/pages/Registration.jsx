@@ -1,5 +1,6 @@
 import React,{useRef, useState} from 'react'
 import emailjs from "@emailjs/browser";
+import line3 from '../assets/line3.svg'
 
 export default function Registration() {
 
@@ -104,11 +105,15 @@ export default function Registration() {
 
   return (
     <div style={{backgroundColor:"#F5F5F5"}}>
-         <div style={{height:"200px"}} className='gradi' ></div>
+          <div style={{height:"200px"}} className='gradi' ></div>
+        <div class="svgdiv">
+          <img alt='' className='svgimg' src={line3} />
+          <i class="glyphicon glyphicon-chevron-down"></i>
+          </div>
          <div className='mdWidth75 mx-auto'  >
         <div className="row d-flex justify-content-center my-4">
             <div className="col-xl-7 col-lg-8 col-md-9 col-11 text-center w-100">
-                <h3 className='blue-text text-start' >Online Vendor Registeration</h3>
+                <h3 className='blue-text text-start mx-4 mx-md-1' >Online Vendor Registeration</h3>
                 <div className="">
                     
                     <form onSubmit={handleSubmit} ref={formRef} className="form-card"  >
@@ -119,7 +124,7 @@ export default function Registration() {
                         </div>
                             <div className="form-group col-sm-6 flex-column d-flex"> 
                                 <label className="form-control-label mx-auto mx-md-1 py-2 text-start">Material Deals In <span className="text-danger"> *</span></label> 
-                                <select value={form.Material_Deals_In} onChange={handleChange} name='Material_Deals_In' className="form-control" >
+                                <select value={form.Material_Deals_In} onChange={handleChange} name='Material_Deals_In' className="form-control mx-auto mx-md-1 w-75" >
                                     <option value="">---</option>
                                     <option value="Paper &amp; board">Paper &amp; board</option>
                                     <option value="Ink &amp; chemical">Ink &amp; chemical</option>
@@ -140,7 +145,7 @@ export default function Registration() {
                             </div>
                             <div className="form-group col-sm-6 flex-column d-flex"> 
                                 <label className="form-control-label mx-auto mx-md-1 py-2 text-start">Services Deals In <span className="text-danger"> *</span></label>
-                                <select value={form.Services_Deals_In} name='Services_Deals_In' onChange={handleChange} className="form-control" >
+                                <select value={form.Services_Deals_In} name='Services_Deals_In' onChange={handleChange} className="form-control mx-md-1 mx-auto w-75" >
                                 <option value="">---</option>
                                 <option value="Digital Marketing">Digital Marketing</option>
                                 <option value="Manpower Agency">Manpower Agency</option>
@@ -161,7 +166,8 @@ export default function Registration() {
                             </div>
                             <div className="form-group col-sm-6 flex-column d-flex"> 
                                 <label className="form-control-label mx-auto mx-md-1 py-2 text-start">Deals In Digital Marketing <span className="text-danger"> *</span></label>
-                                <select value={form.Deals_In_Digital_Marketing} name='Deals_In_Digital_Marketing' onChange={handleChange} className="form-control" ><option value="">---</option>
+                                <select value={form.Deals_In_Digital_Marketing} name='Deals_In_Digital_Marketing' onChange={handleChange} className="w-75 mx-md-1 form-control mx-auto" >
+                                <option value="">---</option>
                                 <option value="Email">Email</option>
                                 <option value="Cashback">Cashback</option>
                                 <option value="Coupon">Coupon</option>
@@ -207,7 +213,7 @@ export default function Registration() {
                         <div className="row justify-content-between text-left">
                             <div className="form-group col-sm-6 flex-column d-flex">
                                 <label className="form-control-label mx-auto mx-md-1 py-2 text-start">Type<span className="text-danger"> *</span></label>
-                                <select onChange={handleChange} value={form.Type} name='Type' className='form-control w-25'><option value="">---</option>
+                                <select onChange={handleChange} value={form.Type} name='Type' className='form-control mx-auto mx-md-1 w-25'><option value="">---</option>
                                 <option value="Domestic">Domestic</option>
                                 <option value="Imported">Imported</option>
                                 <option value="Both">Both</option>
@@ -218,7 +224,7 @@ export default function Registration() {
                         <div className="row justify-content-between text-left">
                             <div className="form-group col-sm-6 flex-column d-flex">
                                 <label className="form-control-label mx-auto mx-md-1 py-2 text-start">Deals In<span className="text-danger"> *</span></label>
-                                <select value={form.Deals_In} name='Deals_In' className='form-control w-25' >
+                                <select value={form.Deals_In} name='Deals_In' className='form-control mx-auto mx-md-1 w-25' >
                                 <option value="">---</option>
                                 <option value="Material">Material</option>
                                 <option value="Services">Services</option>

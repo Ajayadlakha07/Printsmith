@@ -9,13 +9,15 @@ import { AiOutlineLine } from "react-icons/ai";
 
 export default function Team() {
   return (
-    <>
-     <div id='team' style={{paddingTop:"200px"}}>
-            <div className='h1' style={{color:"#535353"}} >Meet <span style={{fontWeight:500,color:"#2ABDE9"}} >the Leadership Team</span> </div>
+    <div className='mdWidth75 mx-auto'  >
+     <div id='team'  style={{paddingTop:"200px"}}>
+            <div className='h1' style={{color:"#535353"}} >Meet <span style={{fontWeight:500,color:"#2ABDE9"}} >the Leadership Team</span> 
+            
+        </div>
             <AiOutlineLine className='mb-4' color='#F902AC' style={{height:"3px", width:"60px",backgroundColor:"#F902AC"}} />
             <p>Team Printsmith is a bunch of like-minded, skilled & dedicated people who strive to provide world-class printing solutions to the clients. </p>
           </div>
-          <div className='d-flex flex-md-row w-100 flex-column justify-content-center my-4' style={{}} >
+          <div className='d-flex flex-md-row w-100 flex-column justify-content-between my-4' style={{}} >
             <div className='bg-light text-start mx-4 mdWidth25' >
                 <img className='picWidth' alt='' src={teampic1} />
                 <div className='m-4'>
@@ -53,7 +55,7 @@ export default function Team() {
                 </div>
             </div>
           </div>
-          <div className='d-flex flex-md-row w-100 flex-column justify-content-center my-4' style={{}} >
+          <div className='d-flex flex-md-row w-100 flex-column justify-content-between my-4' style={{}} >
             <div className='bg-light text-start mx-4 mdWidth25' >
                 <img className='picWidth' alt='' src={teampic4} />
                 <div className='m-4'>
@@ -79,6 +81,6 @@ export default function Team() {
                 </div>
             </div>
           </div>
-    </>
+    </div>
   )
 }

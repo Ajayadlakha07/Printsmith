@@ -54,39 +54,39 @@ function Header() {
           >
             
               <div className='d-flex flex-column flex-md-row align-items-center'>
-                <Link to='/' className={`${location.pathname==='/'?"btnloc":"dropbtn"}`} style={{margin:"1rem"}}>Home</Link>
+                <Link to='/' className={`${location.pathname==='/'?"btnloc":"dropbtn"}`} >Home</Link>
                 <Link to='/covid'  className={`${location.pathname==='/covid'?"btnloc":"dropbtn"}`} >Covid-19 Essentials</Link>
                 <div className="dropdown">
                   <Link to='/about' className={`${location.pathname==='/about'?"btnloc":"dropbtn"}`}>About Us</Link>
                   <div className="dropdown-content">
-                    <Link to='/' style={{fontSize:"12px"}} className='text-start' >Vision & Mission</Link>
-                    <a href='#team' style={{fontSize:"12px"}} className='text-start' >The Team</a>
-                    <Link to='/' style={{fontSize:"12px"}} className='text-start' >Infrastructure</Link>
-                    <Link to='/case-studies' style={{fontSize:"12px"}} className='text-start' >Case study</Link>
-                    <Link to='/' style={{fontSize:"12px"}} className='text-start' >Client Testimonials</Link>
+                    <Link to='/'  className='linkStyle text-start' >Vision & Mission</Link>
+                    <Link href='#team'  className='linkStyle text-start' >The Team</Link>
+                    <Link to='/'  className='linkStyle text-start' >Infrastructure</Link>
+                    <Link to='/case-studies'  className='linkStyle text-start' >Case study</Link>
+                    <Link to='/'  className='linkStyle text-start' >Client Testimonials</Link>
                   </div>
                 </div> 
                 <div className="dropdown">
                   <Link to='/Our-services' className={`${location.pathname==='/Our-services'?"btnloc":"dropbtn"}`}>Our Services</Link>
                   <div className="dropdown-content">
-                    <Link to='/commercial-printing' style={{fontSize:"12px"}} className='text-start' >Commercial printing</Link>
-                    <Link to='/packaging-printing' style={{fontSize:"12px"}} className='text-start' >Packaging Printing</Link>
-                    <Link to='/pos' style={{fontSize:"12px"}} className='text-start' >POS Display and Fixtures</Link>
+                    <Link to='/commercial-printing'  className='linkStyle text-start' >Commercial printing</Link>
+                    <Link to='/packaging-printing'  className='linkStyle text-start' >Packaging Printing</Link>
+                    <Link to='/pos'  className='linkStyle text-start' >POS Display and Fixtures</Link>
                   </div>
                 </div> 
                 <div className="dropdown">
                   <div className={`${location.pathname==='/showcase'?"btnloc":"dropbtn"}`}>Showcase</div>
                   <div className="dropdown-content">
-                    <Link to='/commercial-printing-exp' style={{fontSize:"12px"}} className='text-start' >Commercial Expertise</Link>
-                    <Link to='/packaging-printing-exp' style={{fontSize:"12px"}} className='text-start' >Packaging Expertise</Link>
-                    <Link to='/pos-exp' style={{fontSize:"12px"}} className='text-start' >POS Display and Fixtures Expertise</Link>
+                    <Link to='/commercial-printing-exp'  className='linkStyle text-start' >Commercial Expertise</Link>
+                    <Link to='/packaging-printing-exp'  className='linkStyle text-start' >Packaging Expertise</Link>
+                    <Link to='/pos-exp'  className='linkStyle text-start' >POS Display and Fixtures Expertise</Link>
                   </div>
                 </div> 
                 <div className="dropdown">
                   <div className={`${location.pathname==='/work-with-us'?"btnloc":"dropbtn"}`}>Work With US</div>
                   <div className="dropdown-content">
-                    <Link to='/openings' style={{fontSize:"12px"}} className='text-start' >Openings</Link>
-                    <Link to='/registration' style={{fontSize:"12px"}} className='text-start' >Online vender registration</Link>
+                    <Link to='/openings'  className='linkStyle text-start' >Openings</Link>
+                    <Link to='/registration'  className='linkStyle text-start' >Online vender registration</Link>
                   </div>
                 </div> 
                 {/* <Link to='/' className='mx-2 px-2 py-1 but1' style={{textDecoration: "none"}} ></Link> */}
