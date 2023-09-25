@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import '../styles/main.css'
 import { AiOutlineInfoCircle } from "react-icons/ai";
 import img1 from '../assets/Printsmith-P2-300x238.png'
@@ -12,6 +12,9 @@ import Team from '../components/Team';
 
 
 export default function About() {
+  useEffect(() => {
+    window.scrollTo(0, 0);  // Scroll to the top of the page
+  }, []);
 
   return (
     <div style={{backgroundColor:"#F5F5F5"}}>
@@ -94,12 +97,12 @@ export default function About() {
           </div>
           
           </div>
-
-        <Team/>
+        <Team id='team' />
          
 
-         
-        <Abouttabs/>
+        <div id='infrastructure'></div> 
+        <Abouttabs />
+        
         </div>
   )
 }

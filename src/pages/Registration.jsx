@@ -1,8 +1,12 @@
-import React,{useRef, useState} from 'react'
+import React,{useRef, useState,useEffect} from 'react'
 import emailjs from "@emailjs/browser";
 import line3 from '../assets/line3.svg'
 
 export default function Registration() {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);  // Scroll to the top of the page
+      }, []);
 
     const formRef = useRef();
     const [form, setForm] = useState({

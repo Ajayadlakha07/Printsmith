@@ -1,4 +1,4 @@
-import React,{useRef, useState} from 'react'
+import React,{useRef, useState, useEffect } from 'react'
 import '../styles/main.css'
 import { AiOutlineInfoCircle } from "react-icons/ai";
 import imag from '../assets/covid-banner.png'
@@ -21,6 +21,11 @@ import line3 from '../assets/line3.svg'
 
 
 export default function Covid() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);  // Scroll to the top of the page
+  }, []);
+
 
   const formRef = useRef();
   const [form, setForm] = useState({

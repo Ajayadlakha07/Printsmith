@@ -1,8 +1,13 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import { BsFillBagDashFill } from "react-icons/bs";
 import line3 from '../assets/line3.svg'
 
 export default function Openings() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);  // Scroll to the top of the page
+  }, []);
+  
   return (
     <div style={{backgroundColor:"#F5F5F5"}}>
          <div style={{height:"300px"}} className='gradi' ></div>

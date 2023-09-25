@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import Carousel from 'react-bootstrap/Carousel';
 import Carous from '../components/Carous';
 import '../styles/main.css';
@@ -18,12 +18,15 @@ import Page2 from '../assets/client-test-2.png'
 import Page3 from '../assets/client-test.png'
 import { Link } from 'react-router-dom';
 import line from '../assets/line.svg'
-import line2 from '../assets/line2.svg'
 
 import { AiOutlineDown } from "react-icons/ai";
 
 
 export default function Home() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);  // Scroll to the top of the page
+  }, []);
   return (
     <div style={{backgroundColor:"#F5F5F5"}} >
       {/* <Carous/> */}

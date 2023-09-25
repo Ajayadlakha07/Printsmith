@@ -141,6 +141,7 @@
   .more{
     text-decoration: none;
     color: black;
+    cursor: pointer;
   }
   .more:hover{
     color: #FA01AC;
@@ -263,5 +264,21 @@
      box-shadow: 0px 8px 16px 0px rgba(255, 206, 206);
     background-color: white;
   }
+.para{
+  font-family:"Open Sans";  
+font-size: 13px;
+line-height: 24px;
+color: #535353;
 
+}
+
+.heading{
+  font-weight: 800;
+}
+.accordion-button:not(.collapsed){
+  background-color:"white"!important
+}
+.accordion-button{
+  background-color:"white"!important
+}
   

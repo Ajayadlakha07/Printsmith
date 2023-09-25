@@ -18,14 +18,24 @@ import Packaging from './pages/Packaging';
 import Pos from './pages/Pos';
 import Openings from './pages/Openings';
 import Registration from './pages/Registration';
+import Employess from './pages/Employess';
+import Csr from './pages/Csr';
+import Privacy from './pages/Privacy';
+import News from './pages/News';
+import Faq from './pages/Faq';
 
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" style={{backgroundColor:"#F5F5F5"}}>
         <Header/>
         <Routes>
             <Route path='/' element={<Home/>} />
+            <Route path='/faq' element={<Faq/>} />
+            <Route path='/news' element={<News/>} />
+            <Route path='/privacy-policy' element={<Privacy/>} />
+            <Route path='/csr' element={<Csr/>} />
+            <Route path='/employees-engagement' element={<Employess/>} />
             <Route path='/commercial-printing-exp' element={<Commercialexp/>} />
             <Route path='/packaging-printing-exp' element={<Packaging/>} />
             <Route path='/case-studies' element={<Casestudy/>} />

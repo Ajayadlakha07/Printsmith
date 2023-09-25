@@ -1,9 +1,13 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import {table_report} from './content'
 import line3 from '../assets/line3.svg'
 import Table from '../components/Table'
 
 export default function Commercialexp() {
+  useEffect(() => {
+    window.scrollTo(0, 0);  // Scroll to the top of the page
+  }, []);
+  
   return (
     <div>
        <div style={{height:"200px"}} className='gradi' ></div>

@@ -1,12 +1,17 @@
-import React from 'react'
+import React,{useEffect, useRef} from 'react'
 import { AiOutlineCheck } from "react-icons/ai";
-import imge from '../assets/CP1-3.png';
 import line3 from '../assets/line3.svg'
 
 
 export default function Commercial({table1,table1_li,table1_head,img1}) {
+  const divRef = useRef(null);
+  useEffect(() => {
+    divRef?.current?.scrollIntoView({ behavior: 'smooth' });
+  },[]);
+
   return (
     <div style={{backgroundColor:"#F5F5F5"}}>
+      <div ref={divRef} ></div>
          <div style={{height:"300px"}} className='gradi' ></div>
         <div class="svgdiv">
           <img alt='' className='svgimg' src={line3} />

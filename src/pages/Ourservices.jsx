@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import { DiBitbucket } from "react-icons/di";
 import services from '../assets/Printsmith-P7-1024x491.png'
 import { AiOutlineLine } from "react-icons/ai";
@@ -7,6 +7,9 @@ import line3 from '../assets/line3.svg'
 import { Link } from 'react-router-dom';
 
 export default function Ourservices() {
+    useEffect(() => {
+        window.scrollTo(0, 0);  // Scroll to the top of the page
+      }, []);
   return (
     <div style={{backgroundColor:"#F5F5F5"}} >
         <div style={{height:"200px"}} className='gradi' ></div>

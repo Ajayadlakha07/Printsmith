@@ -1,4 +1,4 @@
-import React,{useRef, useState} from 'react'
+import React,{useRef, useState,useEffect} from 'react'
 import emailjs from "@emailjs/browser";
 import map1 from '../assets/Screenshot.png'
 import map2 from '../assets/Screenshot1.png'
@@ -9,14 +9,10 @@ import line3 from '../assets/line3.svg'
 
 export default function Contactus() {
 
-    // const containerStyle = {
-    //     width: '400px',
-    //     height: '400px'
-    //   };
-    //   const center = {
-    //     lat: -34.397,
-    //     lng: 150.644
-    //   };
+  const divRef = useRef(null);
+  useEffect(() => {
+    divRef?.current?.scrollIntoView({ behavior: 'smooth' });
+  },[]);
 
     const formRef = useRef();
   const [form, setForm] = useState({
@@ -95,6 +91,7 @@ export default function Contactus() {
 
   return (
     <div style={{backgroundColor:"#F5F5F5"}}>
+      <div ref={divRef} ></div>
         <div style={{height:"200px"}} className='gradi' ></div>
         <div class="svgdiv">
           <img alt='' className='svgimg' src={line3} />
