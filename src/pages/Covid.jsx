@@ -21,10 +21,14 @@ import line3 from '../assets/line3.svg'
 
 
 export default function Covid() {
-
+  const divRef = useRef(null);
   useEffect(() => {
     window.scrollTo(0, 0);  // Scroll to the top of the page
   }, []);
+
+  const GetQoute = () => {
+    divRef?.current?.scrollIntoView({ behavior: 'smooth' });
+  }
 
 
   const formRef = useRef();
@@ -89,7 +93,7 @@ export default function Covid() {
   const images = [mask1,mask2,mask3,mask4,mask5,mask6,mask7,mask8,mask9,mask10,mask11]
   return (
     <div style={{backgroundColor:"#F5F5F5"}}>
-        <div style={{height:"200px"}} className='gradi' ></div>
+        <div ref={divRef}  style={{height:"200px"}} className='gradi' ></div>
         <div class="svgdiv">
           <img alt='' className='svgimg' src={line3} />
           <i class="glyphicon glyphicon-chevron-down"></i>
@@ -117,7 +121,7 @@ export default function Covid() {
           </div>
           </div>
           <div className='w-100 p-4 text-start'>
-            <div style={{fontSize:"30px",borderBottom:""}}><span style={{borderBottom:"2px solid #FA01AC"}}><span style={{color:"#535353"}}>Get</span> <span style={{color:"#2ABDE9"}} >Quots!</span></span></div>
+            <div  style={{fontSize:"30px",borderBottom:""}}><span style={{borderBottom:"2px solid #FA01AC"}}><span style={{color:"#535353"}}>Get</span> <span style={{color:"#2ABDE9"}} >Quotes!</span></span></div>
           <form  ref={formRef} onSubmit={handleSubmit}>
             <div className="form-group my-4">
               <input  name='name'  value={form.name}  onChange={handleChange} style={{backgroundColor:"transparent",borderWidth:"0px 0px 1px 0px",borderColor:"black"}} type="text" className="form-control" id="exampleFormControlInput1" placeholder="FULL NAME"/>
@@ -161,7 +165,7 @@ export default function Covid() {
 
       {
         contents?.map((e,i)=>{
-          return  <Products key={i} data={e} index={i} logo={images[i]} />
+          return  <Products GetQoute={GetQoute} key={i} data={e} index={i} logo={images[i]} />
         })
       }
 </div>

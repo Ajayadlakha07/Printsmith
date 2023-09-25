@@ -36,9 +36,8 @@ export default function Team() {
                     <p className='h4'style={{color:"#535353"}}>Vijay Adlakha</p>
                     <p className='h6'style={{color:"#535353"}}>Director</p>
                     <div>
-                        <p style={{color:"#535353",fontSize:"12px", marginTop:"40px"}}>An M.B.A & B. Tech, Ajay Adlakha is the Managing Director as well as the chief strategist of Printsmith. </p>
-                        <p style={{color:"#535353",fontSize:"12px"}}>He started his career with Johnson & Johnson & worked with several prestigious companies like Thermax Ltd. & Alembic Pharmaceutical. Soon he realised that he has a different goal to achieve and this led to the foundation of Infinity Advertising Services in 1994. Printsmith came into existence in 2003 to shoulder the print requirements of Infinity Advertising Services. </p>
-                        <p style={{color:"#535353",fontSize:"12px"}}>Ajay is also the Vice President of DAC & Haryana Kick Boxing Association and the President of Rotary club of Faridabad-Sanskar, Haryana. He is also associated with an NGO, ‘Eksang’ as a Trustee, which provides free vocational training to underprivileged youth. His quest for excellence & entrepreneurial acumen has been taking the company on a path of constant growth and expansion.</p>
+                        <p style={{color:"#535353",fontSize:"12px", marginTop:"40px"}}>Mr. Vijay Adlakha is one of the directors of Printsmith & comes with an experience of around 20 years. He has in-depth knowledge of desktop studio works as well as marketing and management of print production. </p>
+                        <p style={{color:"#535353",fontSize:"12px"}}>Being a commerce graduate, Vijay has acumen in managing finance & human resources. His training in Graphic Arts from Apple Computers has helped him in developing a deep understanding of printing & production services. He is committed towards expanding the company and taking it to greater heights.</p>
                     </div>
                 </div>
             </div>
@@ -48,9 +47,8 @@ export default function Team() {
                     <p className='h4'style={{color:"#535353"}}>Tarun Adlakha</p>
                     <p className='h6'style={{color:"#535353"}}>Director</p>
                     <div>
-                        <p style={{color:"#535353",fontSize:"12px",marginTop:"40px"}}>An M.B.A & B. Tech, Ajay Adlakha is the Managing Director as well as the chief strategist of Printsmith. </p>
-                        <p style={{color:"#535353",fontSize:"12px"}}>He started his career with Johnson & Johnson & worked with several prestigious companies like Thermax Ltd. & Alembic Pharmaceutical. Soon he realised that he has a different goal to achieve and this led to the foundation of Infinity Advertising Services in 1994. Printsmith came into existence in 2003 to shoulder the print requirements of Infinity Advertising Services. </p>
-                        <p style={{color:"#535353",fontSize:"12px"}}>Ajay is also the Vice President of DAC & Haryana Kick Boxing Association and the President of Rotary club of Faridabad-Sanskar, Haryana. He is also associated with an NGO, ‘Eksang’ as a Trustee, which provides free vocational training to underprivileged youth. His quest for excellence & entrepreneurial acumen has been taking the company on a path of constant growth and expansion.</p>
+                        <p style={{color:"#535353",fontSize:"12px",marginTop:"40px"}}>A hardcore marketing professional, Tarun comes with an experience of more than 20 years in the world of advertising & marketing. He is involved in ATL, BTL as well as Print & Production activities at various levels as a strategist & business planner. </p>
+                        <p style={{color:"#535353",fontSize:"12px"}}>A commerce graduate & a trained professional from NIS, Tarun has handled a broad range of clients including MNCs, corporate houses and clients from public & private sectors. The best part of Tarun is that he is always ready to experiment, brings fresh ideas, unique thoughts & a bucket full of passion.</p>
                     </div>
                 </div>
             </div>

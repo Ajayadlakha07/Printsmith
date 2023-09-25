@@ -28,16 +28,24 @@ function Header() {
             navbarScroll
           >
             <Nav.Link href="#action1">
-            <AiFillFacebook color='#1A6ED8' size={35} />
+              <a href='https://www.facebook.com/PrintsmithIndia/' target='blank'>
+              <AiFillFacebook color='#1A6ED8' size={35} />
+              </a>
               </Nav.Link>
             <Nav.Link href="#action1">
-            <AiOutlineTwitter color='#2ABDE9' size={35} />
+              <a href='https://www.facebook.com/PrintsmithIndia/' target='blank'>
+                <AiOutlineTwitter color='#2ABDE9' size={35} />
+              </a>
               </Nav.Link>
             <Nav.Link href="#action2">
-            <AiFillLinkedin color='#004182' size={35}/>
+              <a href='https://www.linkedin.com/company/print-smith/'  target='blank'>
+                <AiFillLinkedin color='#004182' size={35}/>
+              </a>
               </Nav.Link>
             <Nav.Link href="#action2">
-            <AiFillYoutube color='#FF0000' size={35}/>
+              <a href='https://www.youtube.com/channel/UCThrndHV8sn5EA25on8Wu_Q' target='blank'>
+                <AiFillYoutube color='#FF0000' size={35}/>
+              </a>
               </Nav.Link>
               <div className='d-flex d-none d-md-flex align-items-center flex-row'>
                 <p className="h6 mx-2" style={{fontSize:"13px"}} >Call Us: <span style={{fontWeight:"800"}}>+91 9899246402</span></p>

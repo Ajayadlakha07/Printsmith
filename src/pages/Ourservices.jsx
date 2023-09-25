@@ -5,6 +5,7 @@ import { AiOutlineLine } from "react-icons/ai";
 import { BsFillBookmarksFill, BsFillDisplayFill } from "react-icons/bs";
 import line3 from '../assets/line3.svg'
 import { Link } from 'react-router-dom';
+import '../styles/main.css'
 
 export default function Ourservices() {
     useEffect(() => {
@@ -32,23 +33,23 @@ export default function Ourservices() {
             <div className='text-start mx-4 d-flex flex-row my-4'>
                 <div className='w-75'>
                 <p className='text-start h3 my-4 d-flex' style={{color:"#2ABDE9"}}  >Commercial Printing</p>
-                <p className='text-start my-4' style={{color:"#464646",fontSize:"15px",lineHeight:"25px",fontFamily:"Open Sans"}} >Our endeavour to provide the best of commercial printing solutions is visible through our printing infrastructure. We have the following machines </p>
+                <p className='text-start my-4 para'>Our endeavour to provide the best of commercial printing solutions is visible through our printing infrastructure. We have the following machines </p>
                 <Link to='/commercial-printing' className="p-2 btn" style={{fontWeight:"600",borderRadius:"0px",backgroundColor:"#FB02AC",color:"white"}}>Read More</Link>
                 </div>
                 <BsFillBookmarksFill className='my-4' style={{width:"100px"}} color='#464646' size={50} />
             </div>
             <div className='text-start mx-4 d-flex flex-row my-4'>
                 <div className='w-75' >
-                <p className='text-start h3 my-4 d-flex' style={{color:"#2ABDE9"}}  >Commercial Printing</p>
-                <p className='text-start my-4' style={{color:"#464646",fontSize:"15px",lineHeight:"25px",fontFamily:"Open Sans"}} >Our endeavour to provide the best of commercial printing solutions is visible through our printing infrastructure. We have the following machines </p>
+                <p className='text-start h3 my-4 d-flex' style={{color:"#2ABDE9"}}  >Packaging Printing</p>
+                <p className='text-start my-4 para' >We have state-of-the-art Packaging Infrastructure with world-class printing capabilities some of the aces of our packaging infrastructure always..obst Die Cutter SP-102</p>
                 <Link to='/packaging-printing' className="p-2 btn" style={{fontWeight:"600",borderRadius:"0px",backgroundColor:"#FB02AC",color:"white"}}>Read More</Link>
                 </div>
                 <DiBitbucket className='my-4' style={{width:"100px"}} color='#464646' size={50} />
             </div>
             <div className='text-start mx-4 d-flex flex-row my-4'>
                 <div className='w-75'>
-                <p className='text-start my-4 h3 d-flex' style={{color:"#2ABDE9"}}  >Commercial Printing</p>
-                <p className='text-start my-4' style={{color:"#464646",fontSize:"15px",lineHeight:"25px",fontFamily:"Open Sans"}} >Our endeavour to provide the best of commercial printing solutions is visible through our printing infrastructure. We have the following machines </p>
+                <p className='text-start h3 d-flex' style={{color:"#2ABDE9"}}  >POS Display and Fixtures</p>
+                <p className='text-start mb-4 para'  >Printsmith is one of the most innovative display firms in the country. We conceptualize, design, engineer, manufacture ..</p>
                 <Link to='/pos' className="p-2 btn" style={{fontWeight:"600",borderRadius:"0px",backgroundColor:"#FB02AC",color:"white"}}>Read More</Link>
                 </div>
                 <BsFillDisplayFill className='my-4' style={{width:"100px"}} color='#464646' size={50} />

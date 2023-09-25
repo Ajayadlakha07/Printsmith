@@ -35,7 +35,7 @@ export default function Abouttabs() {
     <p style={{color:"#535353", fontSize:"14px"}} >Located at Faridabad, the state-of-the-art plant of Printsmith has a complete set-up including designing to pre-press to final packaging of the materials.</p>
   </div>
     <div className='mdWidth75 mx-auto bg-light' style={{marginTop:"80px",marginBottom:"80px"}} >
-      <Tab.Container id="left-tabs-example" defaultActiveKey="first">
+      <Tab.Container id="left-tabs-example" defaultActiveKey="fourth">
       <Row>
         <Col sm={3} style={{margin:"0px",padding:"0px",backgroundColor:"#F5F5F5"}}>
           <Nav variant="pills" className="flex-column">

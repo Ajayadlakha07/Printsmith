@@ -14,7 +14,7 @@ export default function Footer() {
                         <Link to='/about' className="footerlink text-start" ><p >About Us</p></Link>
                         <Link to='/pos' className="footerlink text-start" ><p >POS Display and Fixtures</p></Link>
                         <Link to='/case-studies' className="footerlink text-start" ><p >Case studies & Testimonial</p></Link>
-                        <Link to='/commercial-printing' className="footerlink text-start" ><p >Online Vendor Registration</p></Link>
+                        <Link to='/registration' className="footerlink text-start" ><p >Online Vendor Registration</p></Link>
                         <Link to='/employees-engagement' className="footerlink text-start" ><p >Employee Engagement & Training</p></Link>
                         <Link to='/openings' className="footerlink text-start" ><p >Opening</p></Link>
                         <Link to='/privacy-policy' className="footerlink text-start" ><p >Privacy Policy & Terms and conditions</p></Link>
