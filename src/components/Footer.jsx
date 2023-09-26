@@ -34,14 +34,14 @@ export default function Footer() {
                     <img src={logo} alt='' />
                 </div>
         </div>
-        <div className="col-md-4 col-12">
-        <div className="col-sm-3 " >
+        <div className="col-md-4 col-12 p-2">
+            <iframe className='' title='video' id="video" width={`${window.innerWidth>1200?"360":"300"}`} height={`${window.innerWidth>1200?"215":"175"}`} src="//www.youtube.com/embed/BVlSGuVeSYw?rel=0" frameBorder={0} allowFullScreen ></iframe>
+        {/* <div className="col-sm-3 " >
             <div id="text_contact-1" className="widget widget_text_contact">
 		<div className="textwidget contact-details">
-            <iframe className='' title='video' id="video" width="360" height="215" src="//www.youtube.com/embed/BVlSGuVeSYw?rel=0" frameBorder={0} allowFullScreen ></iframe>
         </div>
 		</div>
-        </div>
+        </div> */}
         </div>
     </div>
         <p className='text-white p-4' style={{borderTop:"2px solid gray"}} >©Copyright 2023, Printsmith (P) LTD. All rights reserved.</p>

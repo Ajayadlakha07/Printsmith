@@ -11,12 +11,44 @@ function Header() {
   const location = useLocation();
 
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar expand="lg" className="bg-body-tertiary sticky-top py-4">
       <Container fluid>
         <Navbar.Brand href="#">
-          <div>
+          <Link to='/'>
+            <div className='dropdown '>
             <img src={logo} alt=''/>
-          </div>
+            <div className="dropdown-content2 py-4">
+                    <div className='row'>
+                      <div className="col-6">
+                      <img src={logo} className='w-75' alt=''/>
+                      <p style={{}} className='para my-3'>India’s first company to <br/>invest on LED UV</p>
+                      </div>
+                      <div className="col-6">
+                        <div className='para heading text-start'>T +91 9899246402</div>
+                        <div className='para text-start'>Email: print@printsmith.co.in</div>
+                        <div className='para text-start mt-3'>Printsmith</div>
+                        <address className='para text-start'>Plot No- 171-172, Sector-58 Faridabad,<br/> Haryana - 121004</address>
+                        <div className='text-start'>
+                        <a href='https://www.facebook.com/PrintsmithIndia/' target='blank'>
+                        <AiFillFacebook  className='mx-3' color='#777776' size={25} />
+                        </a>
+                        <a href='https://www.facebook.com/PrintsmithIndia/' target='blank'>
+                          <AiOutlineTwitter className='mx-3'  color='#777776' size={25} />
+                        </a>
+                        <a href='https://www.linkedin.com/company/print-smith/'  target='blank'>
+                          <AiFillLinkedin  className='mx-3' color='#777776' size={25}/>
+                        </a>
+                        <a href='https://www.youtube.com/channel/UCThrndHV8sn5EA25on8Wu_Q' target='blank'>
+                          <AiFillYoutube className='mx-3'  color='#777776' size={25}/>
+                        </a>
+                        </div>
+                      </div>
+
+                    </div>
+              </div>
+
+            </div>
+          </Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
@@ -97,7 +129,6 @@ function Header() {
                     <Link to='/registration'  className='linkStyle text-start' >Online vender registration</Link>
                   </div>
                 </div> 
-                {/* <Link to='/' className='mx-2 px-2 py-1 but1' style={{textDecoration: "none"}} ></Link> */}
                 <Link to='/Contact-us' className={`mx-2 ${location.pathname==='/Contact-us'?"btnloc":"dropbtn"}`} style={{textDecoration: "none"}} >Contact Us</Link>
               </div>
            

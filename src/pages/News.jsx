@@ -3,6 +3,7 @@ import line3 from '../assets/line3.svg'
 import Accordion from 'react-bootstrap/Accordion';
 import '../styles/main.css'
 import { AiFillPlusSquare , AiFillMinusSquare} from "react-icons/ai";
+import { AiOutlineCaretRight } from "react-icons/ai";
 
 export default function News() {
     const [expand0,setExpand0] = useState(false)
@@ -10,15 +11,29 @@ export default function News() {
     const [expand2,setExpand2] = useState(true)
     const [expand3,setExpand3] = useState(true)
     const divRef = useRef(null);
+    const [formattedDate,setformattedDate]= useState(null)
+    useEffect(()=>{
+        const currentDate = new Date();
+        const format = new Date(currentDate).toLocaleDateString('en-US', { day: 'numeric', month: 'long', year: 'numeric' });
+        setformattedDate(format)
+    }, [])
     useEffect(() => {
-      divRef?.current?.scrollIntoView({ behavior: 'smooth' });
+        window.scrollTo(0, 0);
     },[]);
 
 
   return (
     <div>
          <div ref={divRef} ></div>
-        <div style={{height:"300px"}} className='gradi' ></div>
+         <div  style={{height:"200px",alignItems:"end",paddingTop:"100px"}} className='gradi text-start px-4' >
+        <div className='text-start text-white px-2 py-1' style={{backgroundColor:"rgba(0, 0, 0, .8)",width:"150px"}}>
+          <span  >Home</span>
+          <AiOutlineCaretRight size={13} className='mx-2' color='#FC01AC'/>
+          <span>NEWS</span>
+        </div>
+        <div className='px-2 py-1 my-2'  style={{backgroundColor:"hsla(0, 0%, 100%, .5)",width:"150px",fontSize:"11px"}}>{formattedDate}</div>
+
+       </div>
             <div class="svgdiv">
                 <img alt='' className='svgimg' src={line3} />
                 <i class="glyphicon glyphicon-chevron-down"></i>

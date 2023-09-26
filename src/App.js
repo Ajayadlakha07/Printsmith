@@ -1,4 +1,5 @@
 import './App.css';
+import { useState } from 'react';
 import { Route, Routes } from 'react-router';
 import Header from './components/Header';
 import Home from './pages/Home';
@@ -23,14 +24,22 @@ import Csr from './pages/Csr';
 import Privacy from './pages/Privacy';
 import News from './pages/News';
 import Faq from './pages/Faq';
+import Popcontact from './components/Popcontact';
+
 
 
 function App() {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   return (
     <div className="App" style={{backgroundColor:"#F5F5F5"}}>
         <Header/>
+      <Popcontact show={show} handleClose={handleClose} />
         <Routes>
-            <Route path='/' element={<Home/>} />
+            <Route path='/' element={<Home handleShow={handleShow} />} />
             <Route path='/faq' element={<Faq/>} />
             <Route path='/news' element={<News/>} />
             <Route path='/privacy-policy' element={<Privacy/>} />

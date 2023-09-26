@@ -1,4 +1,4 @@
-import React,{useEffect} from 'react'
+import React,{useEffect, useState} from 'react'
 import { DiBitbucket } from "react-icons/di";
 import services from '../assets/Printsmith-P7-1024x491.png'
 import { AiOutlineLine } from "react-icons/ai";
@@ -6,14 +6,31 @@ import { BsFillBookmarksFill, BsFillDisplayFill } from "react-icons/bs";
 import line3 from '../assets/line3.svg'
 import { Link } from 'react-router-dom';
 import '../styles/main.css'
+import { AiOutlineCaretRight } from "react-icons/ai";
 
 export default function Ourservices() {
+    const [formattedDate,setformattedDate]= useState(null)
+    useEffect(()=>{
+        const currentDate = new Date();
+        const format = new Date(currentDate).toLocaleDateString('en-US', { day: 'numeric', month: 'long', year: 'numeric' });
+        setformattedDate(format)
+    }, [])
     useEffect(() => {
         window.scrollTo(0, 0);  // Scroll to the top of the page
       }, []);
+
+    
   return (
     <div style={{backgroundColor:"#F5F5F5"}} >
-        <div style={{height:"200px"}} className='gradi' ></div>
+         <div  style={{height:"200px",alignItems:"end",paddingTop:"100px"}} className='gradi text-start px-4' >
+        <div className='text-start text-white p-2' style={{backgroundColor:"rgba(0, 0, 0, .8)",width:"300px"}}>
+          <span >Home</span>
+          <AiOutlineCaretRight size={13} className='mx-2' color='#FC01AC'/>
+          <span>OUR SERVICES</span>
+        </div>
+        <div className='px-2 py-1 my-2'  style={{backgroundColor:"hsla(0, 0%, 100%, .5)",width:"150px",fontSize:"11px"}}>{formattedDate}</div>
+
+       </div>
         <div class="svgdiv">
           <img alt='' className='svgimg' src={line3} />
           <i class="glyphicon glyphicon-chevron-down"></i>
@@ -49,7 +66,7 @@ export default function Ourservices() {
             <div className='text-start mx-4 d-flex flex-row my-4'>
                 <div className='w-75'>
                 <p className='text-start h3 d-flex' style={{color:"#2ABDE9"}}  >POS Display and Fixtures</p>
-                <p className='text-start mb-4 para'  >Printsmith is one of the most innovative display firms in the country. We conceptualize, design, engineer, manufacture ..</p>
+                <p className='text-start my-4 para'  >Printsmith is one of the most innovative display firms in the country. We conceptualize, design, engineer, manufacture ..</p>
                 <Link to='/pos' className="p-2 btn" style={{fontWeight:"600",borderRadius:"0px",backgroundColor:"#FB02AC",color:"white"}}>Read More</Link>
                 </div>
                 <BsFillDisplayFill className='my-4' style={{width:"100px"}} color='#464646' size={50} />

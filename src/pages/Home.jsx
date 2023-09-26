@@ -22,7 +22,7 @@ import line from '../assets/line.svg'
 import { AiOutlineDown } from "react-icons/ai";
 
 
-export default function Home() {
+export default function Home({handleShow}) {
 
   useEffect(() => {
     window.scrollTo(0, 0);  // Scroll to the top of the page
@@ -35,13 +35,13 @@ export default function Home() {
 
       <div className='mdWidth75 bg-pink my-4 flex-md-row flex-column d-flex justify-content-between align-items-center mx-auto mt-4 p-4' style={{backgroundColor:"#FC01AC",justifyContent:"center"}}>
         <div>
-        <p className='h3 text-light text-start'>Liked what we are doing?</p>
-        <p className='h3 text-light text-start'>To know more and place your orders</p>
-        <p className='text-light'>Call us or click to get a quote & we’ll respond at the earliest possible.</p>
+        <p style={{fontSize:"25px"}} className='text-light my-0 text-start'>Liked what we are doing?</p>
+        <p style={{fontSize:"25px"}} className='text-light my-0 text-start'>To know more and place your orders</p>
+        <p className='text-light my-3'>Call us or click to get a quote & we’ll respond at the earliest possible.</p>
         </div>
         <div>
         <button type="button" className="my-2 but1 btn text-white btn-outline-light">Call us at +91-9899246402</button>
-        <button type="button" className="my-2 btn btn-light mx-4">Click here</button>
+        <button onClick={handleShow} type="button" className="my-2 btn btn-light mx-4">Click here</button>
         </div>
       </div>
 
@@ -83,7 +83,7 @@ export default function Home() {
       </div>
 
       <div >
-      <img className='glyphicon' src={line} alt='' />
+      <img className='glyphicon '  src={line} alt='' />
             <AiOutlineDown className='down'/>
             {/* <i class="down"></i> */}
       </div>

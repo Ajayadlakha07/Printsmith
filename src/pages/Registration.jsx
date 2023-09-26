@@ -1,8 +1,15 @@
 import React,{useRef, useState,useEffect} from 'react'
 import emailjs from "@emailjs/browser";
 import line3 from '../assets/line3.svg'
+import { AiOutlineCaretRight } from "react-icons/ai";
 
 export default function Registration() {
+    const [formattedDate,setformattedDate]= useState(null)
+  useEffect(()=>{
+      const currentDate = new Date();
+      const format = new Date(currentDate).toLocaleDateString('en-US', { day: 'numeric', month: 'long', year: 'numeric' });
+      setformattedDate(format)
+  }, [])
 
     useEffect(() => {
         window.scrollTo(0, 0);  // Scroll to the top of the page
@@ -109,7 +116,15 @@ export default function Registration() {
 
   return (
     <div style={{backgroundColor:"#F5F5F5"}}>
-          <div style={{height:"200px"}} className='gradi' ></div>
+            <div  style={{height:"200px",alignItems:"end",paddingTop:"100px"}} className='gradi text-start px-4' >
+        <div className='text-start text-white px-2 py-1' style={{backgroundColor:"rgba(0, 0, 0, .8)",width:"400px"}}>
+          <span  >Home</span>
+          <AiOutlineCaretRight size={13} className='mx-2' color='#FC01AC'/>
+          <span>ONLINE VENDOR REGISTRATION</span>
+        </div>
+        <div className='px-2 py-1 my-2'  style={{backgroundColor:"hsla(0, 0%, 100%, .5)",width:"150px",fontSize:"11px"}}>{formattedDate}</div>
+
+       </div>
         <div class="svgdiv">
           <img alt='' className='svgimg' src={line3} />
           <i class="glyphicon glyphicon-chevron-down"></i>
@@ -128,7 +143,7 @@ export default function Registration() {
                         </div>
                             <div className="form-group col-sm-6 flex-column d-flex"> 
                                 <label className="form-control-label mx-auto mx-md-1 py-2 text-start">Material Deals In <span className="text-danger"> *</span></label> 
-                                <select value={form.Material_Deals_In} onChange={handleChange} name='Material_Deals_In' className="form-control mx-auto mx-md-1 w-75" >
+                                <select value={form.Material_Deals_In} onChange={handleChange} name='Material_Deals_In'  >
                                     <option value="">---</option>
                                     <option value="Paper &amp; board">Paper &amp; board</option>
                                     <option value="Ink &amp; chemical">Ink &amp; chemical</option>
@@ -228,7 +243,7 @@ export default function Registration() {
                         <div className="row justify-content-between text-left">
                             <div className="form-group col-sm-6 flex-column d-flex">
                                 <label className="form-control-label mx-auto mx-md-1 py-2 text-start">Deals In<span className="text-danger"> *</span></label>
-                                <select value={form.Deals_In} name='Deals_In' className='form-control mx-auto mx-md-1 w-25' >
+                                <select value={form.Deals_In} onChange={handleChange} name='Deals_In' className='form-control mx-auto mx-md-1 w-25' >
                                 <option value="">---</option>
                                 <option value="Material">Material</option>
                                 <option value="Services">Services</option>
