@@ -94,10 +94,9 @@ export default function Covid() {
   return (
     <div style={{backgroundColor:"#F5F5F5"}}>
         <div ref={divRef}  style={{height:"200px"}} className='gradi' ></div>
-        {/* <div class="svgdiv">
+        <div class="svgdiv">
           <img alt='' className='svgimg' src={line3} />
-          <i class="glyphicon glyphicon-chevron-down"></i>
-          </div> */}
+          </div>
 
 
         <div className='d-flex flex-md-row flex-column mx-auto mdWidth75' style={{marginTop:"70px"}} >

@@ -4,7 +4,7 @@ import line3 from '../assets/line3.svg'
 import { AiOutlineCaretRight } from "react-icons/ai";
 
 
-export default function Commercial({table1,table1_li,table1_head,img1}) {
+export default function Commercial({handleShow,table1,table1_li,table1_head,img1}) {
 
   const [formattedDate,setformattedDate]= useState(null)
     useEffect(()=>{
@@ -21,8 +21,8 @@ export default function Commercial({table1,table1_li,table1_head,img1}) {
   return (
     <div style={{backgroundColor:"#F5F5F5"}}>
       <div ref={divRef} ></div>
-      <div  style={{height:"200px",alignItems:"end",paddingTop:"100px"}} className='gradi text-start px-4' >
-        <div className='text-start text-white px-2 py-1' style={{backgroundColor:"rgba(0, 0, 0, .8)",width:"400px"}}>
+      <div  style={{height:"200px",alignItems:"end",paddingTop:"100px"}} className='gradi text-start px-2' >
+        <div className='text-start text-white px-2 py-1' style={{backgroundColor:"rgba(0, 0, 0, .8)",width:"400px",maxWidth:"90%"}}>
           <span  >Home</span>
           <AiOutlineCaretRight size={13} className='mx-2' color='#FC01AC'/>
           <span>OUR SERVICES</span>
@@ -58,7 +58,7 @@ export default function Commercial({table1,table1_li,table1_head,img1}) {
          <div className='my-4 bg-pink d-flex flex-row my-4 mx-auto mt-4 p-4' style={{backgroundColor:"#FC01AC",justifyContent:"space-around"}}>
         <p style={{fontWeight:"100"}} className='h3 text-light'>Click on the box to get a quote & we’ll get back to you shortly.</p>
        
-        <button type="button" className="btn mx-4 h6" style={{backgroundColor:"#31B0D5",color:"white",borderRadius:"0px"}}>Get a quote now</button>
+        <button onClick={handleShow} type="button" className="btn mx-4 h6" style={{backgroundColor:"#31B0D5",color:"white",borderRadius:"0px"}}>Get a quote now</button>
       </div>
       <div className='py-4' >
         <img className='w-75 my-4' alt='' src={img1} />

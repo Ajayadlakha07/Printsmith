@@ -16,8 +16,8 @@ export default function Privacy() {
   
   return (
     <div style={{backgroundColor:"#F5F5F5"}}>
-         <div  style={{height:"200px",alignItems:"end",paddingTop:"100px"}} className='gradi text-start px-4' >
-        <div className='text-start text-white px-2 py-1' style={{backgroundColor:"rgba(0, 0, 0, .8)",width:"450px"}}>
+         <div  style={{height:"200px",alignItems:"end",paddingTop:"100px"}} className='gradi text-start px-2' >
+        <div className='text-start text-white px-2 py-1' style={{backgroundColor:"rgba(0, 0, 0, .8)",width:"450px",maxWidth:"90%"}}>
           <span  >Home</span>
           <AiOutlineCaretRight size={13} className='mx-2' color='#FC01AC'/>
           <span>PRIVACY POLICY & TERMS AND CONDITIONS</span>
@@ -31,7 +31,7 @@ export default function Privacy() {
           </div>
           <div className='mdWidth75 my-4 text-start mx-auto'>
             <div className='row' >
-                <div className='col-5'>
+                <div className='col-md-5 col-12'>
                     <p className='h2' style={{fontWeight:"700",color: "#2D2D2D"}} >Privacy Policy</p>
                     <div  className='my-3' style={{ width:"49px",backgroundColor:"#CCCCCC",height:"4px"}} ></div>
                     <div className='para my-4'>This privacy policy has been compiled to better serve those who are concerned with how their 'Personally Identifiable Information' (PII) is being used online. PII is information that can be used on its own or with other information to identify, contact, or locate a single person, or to identify an individual in context. Please read our privacy policy carefully to get a clear understanding of how we collect, use, protect or otherwise handle your Personally Identifiable Information in accordance with our website.</div>
@@ -101,7 +101,7 @@ export default function Privacy() {
                     <div className='para'>• Follow the instructions at the bottom of each email. and we will promptly remove you from ALL correspondence.</div>
                 </div>
                 <div className='col-1' ></div>
-                <div className='col-5' >
+                <div className='col-md-5 col-12' >
                     <p className='h2' style={{fontWeight:"700",color: "#2D2D2D"}} >TERMS AND CONDITIONS</p>
                     <div  className='my-3' style={{ width:"49px",backgroundColor:"#CCCCCC",height:"4px"}} ></div>
                     <p className='para heading mt-4'>Introduction</p>

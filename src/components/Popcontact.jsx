@@ -77,7 +77,7 @@ function Popcontact({handleClose,show}) {
 
   return (
     <>
-      <Modal show={show} onHide={handleClose} size="xl" >
+      <Modal show={show} onHide={handleClose} size="sm" >
         <Modal.Header style={{backgroundColor:"#F5F5F5"}} closeButton>
           <Modal.Title><div className=''>Get In Touch</div></Modal.Title>
         </Modal.Header>

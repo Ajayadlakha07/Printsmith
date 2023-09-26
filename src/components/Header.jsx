@@ -15,7 +15,7 @@ function Header() {
       <Container fluid>
         <Navbar.Brand href="#">
           <Link to='/'>
-            <div className='dropdown '>
+            <div className='dropdown'>
             <img src={logo} alt=''/>
             <div className="dropdown-content2 py-4">
                     <div className='row'>
@@ -60,22 +60,22 @@ function Header() {
             navbarScroll
           >
             <Nav.Link href="#action1">
-              <a href='https://www.facebook.com/PrintsmithIndia/' target='blank'>
+              <a className='mx-2 mx-md-0' href='https://www.facebook.com/PrintsmithIndia/' target='blank'>
               <AiFillFacebook color='#1A6ED8' size={35} />
               </a>
               </Nav.Link>
             <Nav.Link href="#action1">
-              <a href='https://www.facebook.com/PrintsmithIndia/' target='blank'>
+              <a className='mx-2 mx-md-0' href='https://www.facebook.com/PrintsmithIndia/' target='blank'>
                 <AiOutlineTwitter color='#2ABDE9' size={35} />
               </a>
               </Nav.Link>
             <Nav.Link href="#action2">
-              <a href='https://www.linkedin.com/company/print-smith/'  target='blank'>
+              <a className='mx-2 mx-md-0' href='https://www.linkedin.com/company/print-smith/'  target='blank'>
                 <AiFillLinkedin color='#004182' size={35}/>
               </a>
               </Nav.Link>
             <Nav.Link href="#action2">
-              <a href='https://www.youtube.com/channel/UCThrndHV8sn5EA25on8Wu_Q' target='blank'>
+              <a className='mx-2 mx-md-0' href='https://www.youtube.com/channel/UCThrndHV8sn5EA25on8Wu_Q' target='blank'>
                 <AiFillYoutube color='#FF0000' size={35}/>
               </a>
               </Nav.Link>

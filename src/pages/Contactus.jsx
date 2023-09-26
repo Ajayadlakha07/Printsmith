@@ -3,6 +3,7 @@ import emailjs from "@emailjs/browser";
 import map1 from '../assets/Screenshot.png'
 import map2 from '../assets/Screenshot1.png'
 import line3 from '../assets/line3.svg'
+import '../styles/main.css'
 import { AiOutlineCaretRight } from "react-icons/ai";
 
 export default function Contactus() {
@@ -96,7 +97,7 @@ export default function Contactus() {
     <div style={{backgroundColor:"#F5F5F5"}}>
       <div ref={divRef} ></div>
       <div  style={{height:"200px",alignItems:"end",paddingTop:"100px"}} className='gradi text-start px-4' >
-        <div className='text-start text-white px-2 py-1' style={{backgroundColor:"rgba(0, 0, 0, .8)",width:"400px"}}>
+        <div className='text-start text-white px-2 py-1' style={{backgroundColor:"rgba(0, 0, 0, .8)",width:"200px"}}>
           <span  >Home</span>
           <AiOutlineCaretRight size={13} className='mx-2' color='#FC01AC'/>
           <span>CONTACT US</span>

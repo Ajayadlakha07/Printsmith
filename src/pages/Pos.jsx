@@ -20,8 +20,8 @@ export default function Pos() {
   
   return (
     <div>
-       <div  style={{height:"200px",alignItems:"end",paddingTop:"100px"}} className='gradi text-start px-4' >
-        <div className='text-start text-white px-2 py-1' style={{backgroundColor:"rgba(0, 0, 0, .8)",width:"400px"}}>
+       <div  style={{height:"200px",alignItems:"end",paddingTop:"100px"}} className='gradi text-start px-2' >
+        <div className='text-start text-white px-2 py-1' style={{backgroundColor:"rgba(0, 0, 0, .8)",width:"400px",maxWidth:"90%"}}>
           <span  >Home</span>
           <AiOutlineCaretRight size={13} className='mx-2' color='#FC01AC'/>
           <span>POS DISPLAY AND FIXTURES EXPERTISE</span>

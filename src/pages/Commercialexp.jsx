@@ -17,12 +17,11 @@ export default function Commercialexp() {
   
   return (
     <div>
-       <div  style={{height:"200px",alignItems:"end",paddingTop:"100px"}} className='gradi text-start px-4' >
-        <div className='text-start text-white px-2 py-1' style={{backgroundColor:"rgba(0, 0, 0, .8)",width:"400px"}}>
+       <div  style={{height:"200px",alignItems:"end",paddingTop:"100px"}} className='gradi text-start px-2' >
+        <div className='text-start text-white px-2 py-1' style={{backgroundColor:"rgba(0, 0, 0, .8)",width:"300px",maxWidth:"90%"}}>
           <span  >Home</span>
           <AiOutlineCaretRight size={13} className='mx-2' color='#FC01AC'/>
-          <span>OUR SERVICES</span>
-          <AiOutlineCaretRight size={13} className='mx-2' color='#FC01AC'/>
+
           <span>COMMERCIAL EXPERTISE</span>
         </div>
         <div className='px-2 py-1 my-2'  style={{backgroundColor:"hsla(0, 0%, 100%, .5)",width:"150px",fontSize:"11px"}}>{formattedDate}</div>

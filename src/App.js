@@ -51,9 +51,9 @@ function App() {
             <Route path='/pos-exp' element={<Pos/>} />
             <Route path='/registration' element={<Registration/>} />
             <Route path='/openings' element={<Openings/>} />
-            <Route path='/commercial-printing' element={<Commercial img1={img1} table1={table1} table1_head={table1_head} table1_li={table1_li}  />} />
-            <Route path='/packaging-printing' element={<Commercial img1={img2} table1={table2} table1_head={table2_head} table1_li={table2_li} />} />
-            <Route path='/pos' element={<Commercial table1={table3} img1={img3} table1_head={table3_head} table1_li={table3_li} />} />
+            <Route path='/commercial-printing' element={<Commercial  handleShow={handleShow}  img1={img1} table1={table1} table1_head={table1_head} table1_li={table1_li}  />} />
+            <Route path='/packaging-printing' element={<Commercial handleShow={handleShow} img1={img2} table1={table2} table1_head={table2_head} table1_li={table2_li} />} />
+            <Route path='/pos' element={<Commercial table1={table3}  handleShow={handleShow}img1={img3} table1_head={table3_head} table1_li={table3_li} />} />
             <Route path='/covid' element={<Covid/>} />
             <Route path='/about' element={<About/>} />
             <Route path='/Our-services' element={<Ourservices/>} />
