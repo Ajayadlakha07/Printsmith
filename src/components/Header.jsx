@@ -11,7 +11,7 @@ function Header() {
   const location = useLocation();
 
   return (
-    <Navbar expand="lg" className="bg-body-tertiary sticky-top py-4">
+    <Navbar expand="lg" className="bg-body-tertiary sticky-top">
       <Container fluid>
         <Navbar.Brand href="#">
           <Link to='/'>
