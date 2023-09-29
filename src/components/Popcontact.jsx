@@ -77,9 +77,13 @@ function Popcontact({handleClose,show}) {
 
   return (
     <>
-      <Modal show={show} onHide={handleClose} size="sm" >
+      <Modal show={show} onHide={handleClose} size="xl" >
         <Modal.Header style={{backgroundColor:"#F5F5F5"}} closeButton>
-          <Modal.Title><div className=''>Get In Touch</div></Modal.Title>
+          <Modal.Title>
+            <div>
+            <div className='mx-auto' style={{fontSize:"30px",fontWeight:"400",color:"#666666"}}>Get In Touch</div>
+            </div>
+          </Modal.Title>
         </Modal.Header>
         <Modal.Body style={{backgroundColor:"#F5F5F5"}}>
           <div className='d-flex justify-content-center para'>Please fill this form and we'll get back to you as soon as possible!</div>
@@ -107,7 +111,7 @@ function Popcontact({handleClose,show}) {
                         </div>
                             <div className="form-group text-start col-sm-4 flex-column d-flex"> 
                                 <label className="form-control-label py-2 text-start">City<span className="text-danger"> *</span></label>
-                                <select value={form.service} onChange={handleChange}  name='service' style={{height:"45px"}} className="form-control mx-auto mx-md-1 w-75" >
+                                <select value={form.service} onChange={handleChange}  name='service' style={{height:"45px"}} className="form-control w-100 mx-auto mx-md-1 w-75" >
                                 <option value="">Please Select</option>
                                 <option value="Marketing Collateral">Marketing Collateral</option>
                                 <option value="Danglers">Danglers</option>
@@ -180,12 +184,12 @@ function Popcontact({handleClose,show}) {
                             <div className="form-group col-12 flex-column d-flex"> 
                             <label className="form-control-label py-2 text-start">Upload resume<span className="text-danger"> *</span></label> 
                             {/* <input  name='resume'  type="" id="ans" />  */}
-                            <textarea  name='message' value={form.message} onChange={handleChange} placeholder="message" rows={8}/>
+                            <textarea  name='message' value={form.message} onChange={handleChange} placeholder="message" rows={`${window.innerWidth>768?10:5}`}/>
                         </div>
                         </div>
-                        <div className="row justify-content-end">
+                        <div className="row justify-content-end my-2">
                             <div className="justify-content-end d-flex form-group col-sm-6"> 
-                            <button type="submit" className="btn-block btn-primary">Send</button> 
+                            <button type="submit" className="btn text-white" style={{backgroundColor:"#E90AAF"}} >GET THE QUOTE NOW!</button> 
                         </div>
                         </div>
                     </form>

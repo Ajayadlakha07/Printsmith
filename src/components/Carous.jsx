@@ -17,21 +17,19 @@ function Carous() {
           src={banner3}
           alt="Third slide"
         />
-        {/* <div>
-          <h5 className='h5 text-start p-2' style={{ fontSize:"40px", color:"white", backgroundColor:"rgba(35, 35, 35, 0.3)"}}>Coffee table book launch function</h5>
-          <p className='h5 text-start p-2' style={{ fontSize:"40px", color:"white", backgroundColor:"black"}}>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </div> */}
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100 md600"
-          src={banner1}
-          alt="First slide"
-        />
-        {/* <div>
-          <h5 className='h5 text-start p-2' style={{ fontSize:"40px", color:"white", backgroundColor:"rgba(35, 35, 35, 0.3)"}}>Coffee table book launch function</h5>
-          <p className='h5 text-start p-2' style={{ fontSize:"40px", color:"white", backgroundColor:"black"}}>Jaya Bachchan addressing the audience</p>
-        </div> */}
+         <Carousel.Caption style={{left:"0px"}} >
+        <div>
+          <div className="text-start my-md-3 my-2">
+          <div className='text-start my-1 p-2 courserone' >Coffee table book launch function</div>
+          </div>
+          <div className="text-start my-md-3 my-2">
+          <div className='text-start my-1 p-2 coursertwo' >Nulla vitae elit libero, a pharetra augue mollis interdum.</div>
+          </div>
+          <div className="text-start my-md-3 my-2">
+          <div className='text-start p-2 courserthree' >New Delhi</div>
+          </div>
+        </div>
+        </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img
@@ -39,44 +37,33 @@ function Carous() {
           src={banner2}
           alt="Second slide"
         />
-        {/* <div>
-          <h5 className='h5 text-start p-2' style={{ fontSize:"40px", color:"white", backgroundColor:"rgba(35, 35, 35, 0.3)"}}>First slide label</h5>
-          <p className='h5 text-start p-2' style={{ fontSize:"40px", color:"white", backgroundColor:"black"}}>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </div> */}
-      </Carousel.Item>
-      
-      <Carousel.Item>
-        <img
-          className="d-block w-100 md600"
-          src={banner4}
-          alt="Third slide"
-        />
-       {/* <div>
-          <h5 className='h5 text-start p-2' style={{ fontSize:"40px", color:"white", backgroundColor:"rgba(35, 35, 35, 0.3)"}}>First slide label</h5>
-          <p className='h5 text-start p-2' style={{ fontSize:"40px", color:"white", backgroundColor:"black"}}>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </div> */}
+        <Carousel.Caption style={{left:"0px"}} >
+        <div>
+        <div className="text-start my-md-3 my-2">
+          <div className='text-start my-1 p-2 courserone'>Tempting! isn’t it?</div>
+        </div>
+        <div className="text-start my-md-3 my-2">
+          <div className='text-start my-1 p-2 coursertwo' >CMYK along with Abrasive & Emboss UV, and Matt Lamination on 220 Matt Art Card</div>
+        </div>
+        </div>
+        </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img
           className="d-block w-100 md600"
-          src={banner5}
-          alt="Third slide"
+          src={banner1}
+          alt="First slide"
         />
-       {/* <div>
-          <h5 className='h5 text-start p-2' style={{ fontSize:"40px", color:"white", backgroundColor:"rgba(35, 35, 35, 0.3)"}}>First slide label</h5>
-          <p className='h5 text-start p-2' style={{ fontSize:"40px", color:"white", backgroundColor:"black"}}>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </div> */}
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100 md600"
-          src={banner6}
-          alt="Third slide"
-        />
-        {/* <div>
-          <h5 className='h5 text-start p-2' style={{ fontSize:"40px", color:"white", backgroundColor:"rgba(35, 35, 35, 0.3)"}}>First slide label</h5>
-          <p className='h5 text-start p-2' style={{ fontSize:"40px", color:"white", backgroundColor:"black"}}>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </div> */}
+        <Carousel.Caption style={{left:"0px"}} >
+        <div>
+        <div className="text-start my-md-3 my-2">
+          <div className='text-start my-1 p-2 courserone' >Glossy finishing at its best</div>
+        </div>
+        <div className="text-start my-md-3 my-2">
+          <div className='text-start my-1 p-2 coursertwo' >Glossy colours appealing to your senses</div>
+        </div>
+        </div>
+        </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img
@@ -84,10 +71,77 @@ function Carous() {
           src={banner7}
           alt="Third slide"
         />
-        {/* <div>
-          <h5 className='h5 text-start p-2' style={{ fontSize:"40px", color:"white", backgroundColor:"rgba(35, 35, 35, 0.3)"}}>First slide label</h5>
-          <p className='h5 text-start p-2' style={{ fontSize:"40px", color:"white", backgroundColor:"black"}}>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </div> */}
+       <Carousel.Caption style={{left:"0px"}} >
+        <div>
+        <div className="text-start my-md-3 my-2">
+          <div className='text-start my-1 p-2 courserone'>Designs packed with innovation</div>
+        </div>
+        <div className="text-start my-md-3 my-2">
+          <div className='text-start my-1 p-2 coursertwo'>Delivering quality, harnessing latest technology.</div>
+        </div>
+        <div className="text-start my-md-3 my-2">
+          <div className='text-start p-2 courserthree' >Offering printing solutions, not just printed materials.</div>
+        </div>
+        </div>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100 md600"
+          src={banner6}
+          alt="Third slide"
+        />
+       <Carousel.Caption style={{left:"0px"}} >
+        <div>
+        <div className="text-start my-md-3 my-2">
+          <div className='text-start my-1 p-2 courserone'>Exhibiting our latest work</div>
+        </div>
+        <div className="text-start my-md-3 my-2">
+          <div className='text-start my-1 p-2 coursertwo'>Pragati Maidan, New Delhi</div>
+        </div>
+        <div className="text-start my-md-3 my-2">
+          <div className='text-start p-2 courserthree' >3rd- 6th August, 2017</div>
+        </div>
+        </div>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100 md600"
+          src={banner5}
+          alt="Third slide"
+        />
+       <Carousel.Caption style={{left:"0px"}} >
+        <div>
+          <div className="text-start my-md-3 my-2" >
+          <div className='text-start my-1 p-2 courserone'>CMYK</div>
+          </div>
+          <div className="text-start my-md-3 my-2" >
+          <div className='text-start my-1 p-2 coursertwo' >Innovation is our passion</div>
+          </div>
+          <div className="text-start my-md-3 my-2" >
+          <div className='text-start p-2 courserthree' >White on Matt Silver MetPET, CMYK</div>
+          </div>
+        </div>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100 md600"
+          src={banner4}
+          alt="Third slide"
+        />
+       <Carousel.Caption style={{left:"0px"}} >
+        <div>
+          <div className='text-start my-md-3 my-2'>
+          <div className='text-start my-1 p-2 courserone' >Enhancing experience with alluring designs</div>
+          </div>
+          <div className='text-start my-md-3 my-2'>
+          <div className='text-start my-1 p-2 coursertwo' >125 Micron NTR Media,CMYK</div>
+
+          </div>
+        </div>
+        </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
   );

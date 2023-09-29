@@ -52,56 +52,13 @@
   margin: 2px 5px 10px -10px;
 }
 
-
-
 .mdWidth25{
-    width: 30%;
+  width: 30%;
 }
-
-@media (max-width: 768px) and (max-width: 991.98px) {
-    .mdWidth25 {
-      width: 90%;
-    }
-    .md600{
-      height: 200px;
-    }
-  }
-
 .mdWidth75{
     width: 75%;
 }
 
-@media (max-width: 1200px) {
-    .mdWidth75 {
-      width: 95%;
-    }
-  }
-  @media (min-width: 1200px){
-    .dropbtn{
-      margin: 1rem;
-    }
-    .btnloc{
-      margin: 1rem;
-    }
-  }
-@media (max-width: 768px) and (max-width: 991.98px) {
-    .picWidth {
-      width: 100%;
-    }
-    .glyphicon{
-      width: 100%;
-    }
-    .svgimg{
-      width: 100vw;
-    }
-  }
-@media (min-width: 768px) {
-  .dropdown:hover .dropdown-content {display: block;}
-  .dropdown:hover .dropdown-content2 {display: block;}
-  .sm90wm{
-    width: 90vw;
-  }
-  }
 
   .dropbtn:hover{
     background-color: #FC01AC !important;
@@ -290,11 +247,12 @@
   }
   .hov:hover .hov2 {
     display: block;
+    visibility: visible;
    
   }
 
-  .hov2{
-    display: none;
+  .hov{
+    padding: 0px !important
   }
 
   .hov:hover{
@@ -321,4 +279,126 @@ color: #535353;
 a{
   text-decoration: none;
 }
+
+.m-100px{
+  margin-top: -150px;
+}
+
+.courserone{
+  background-color:rgba(35, 35, 35, 0.3);
+  display: inline;
+  border-left:0.2rem solid white;
+  font-family:Montserrat;
+  font-size:28px;
+  color:white
+}
+.coursertwo{
+  background-color:black;
+  font-family:Open Sans;
+  display: inline;
+  font-size:2rem;
+  color:white
+}
+.courserthree{
+  background-color: rgba(0, 0, 0, .7);
+  color: white  ;
+  font-size: 16px;
+  display: inline;
+}
+.testimonials{
+
+    background: #fff;
+    margin: 0 1px 10px 0;
+    padding: 25px;
+    color: #898989;
+    font-size: 14px;
+    border-left: none;
+    line-height: 2;
+    font-style: italic;
+    position: relative;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.16);
+}
   
+@media (max-width: 768px) and (max-width: 991.98px) {
+  .mdWidth25 {
+    width: 90%;
+  }
+  .md600{
+    height: 200px;
+  }
+  .m-100px{
+    margin-top: 10px;
+  }
+}
+@media (max-width: 1200px) {
+  .mdWidth75 {
+    width: 95%;
+  }
+}
+@media (min-width: 1200px){
+  .dropbtn{
+    margin: 1rem;
+  }
+  .btnloc{
+    margin: 1rem;
+  }
+  .hov2{
+    visibility: hidden;
+    background: transparent;
+  }
+}
+@media (max-width: 768px) {
+  .picWidth {
+    width: 100%;
+  }
+  .glyphicon{
+    width: 100%;
+  }
+  .svgimg{
+    width: 100vw;
+  }
+  .hov2{
+    visibility: visible;
+  }
+  .hov{
+    box-shadow: 0px 8px 16px 0px rgba(255, 206, 206);
+   background-color: white;
+   padding-bottom: 10px;
+ }
+ .m-100px{
+  margin-top: 10px;
+}
+.courserone{
+  background-color:rgba(35, 35, 35, 0.3);
+  border-left:0.2rem solid white;
+  font-family:Montserrat;
+  font-size:10px;
+  color:white;
+  max-width: 99%;
+  display: inline;
+}
+.coursertwo{
+  background-color:black;
+  font-family:Open Sans;
+  font-size:0.7rem;
+  color:white;
+  max-width: 99%;
+  display: inline;
+}
+.courserthree{
+  background-color: rgba(0, 0, 0, .7);
+  color: white  ;
+  font-size: 8px;
+  max-width: 99%;
+  display: inline;
+}
+  
+  
+}
+@media (min-width: 768px) {
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content2 {display: block;}
+.sm90wm{
+  width: 90vw;
+}
+}

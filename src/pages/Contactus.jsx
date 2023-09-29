@@ -1,12 +1,38 @@
 import React,{useRef, useState,useEffect} from 'react'
 import emailjs from "@emailjs/browser";
-import map1 from '../assets/Screenshot.png'
-import map2 from '../assets/Screenshot1.png'
 import line3 from '../assets/line3.svg'
 import '../styles/main.css'
 import { AiOutlineCaretRight } from "react-icons/ai";
+import { Loader } from '@googlemaps/js-api-loader';
 
 export default function Contactus() {
+  const [map, setMap] = useState(null);
+
+  useEffect(() => {
+    const loader = new Loader({
+      apiKey: 'AIzaSyBX68ChLjl4HKQLw30P7qk7QfYT_Hmfvwk', // Replace with your API key
+      version: 'weekly', // or a specific version like '3.43'
+    });
+
+    loader.load().then(() => {
+      const map = new window.google.maps.Map(document.getElementById('map'), {
+        center: { lat: 28.319944, lng: 77.303416 },
+        zoom: 20,
+      });
+      setMap(map);
+    });
+
+    // Cleanup when the component unmounts
+    return () => {
+      if (map) {
+        map.setMap(null);
+      }
+    };
+  }, []);
+
+   
+
+  
   const [formattedDate,setformattedDate]= useState(null)
   useEffect(()=>{
       const currentDate = new Date();
@@ -53,28 +79,41 @@ export default function Contactus() {
   
   const handleSubmit = (e) => {
     e.preventDefault();
+    
+
+    const formData = new FormData();
+    formData.append("resume", form.resume);
+    formData.append("from_name", form.name);
+    formData.append("to_name", "Rahul chauhan");
+    formData.append("from_email", form.email);
+    formData.append("to_email", "interns.infinity@gmail.com");
+    formData.append("message", `Contact:${form.mobile}
+            City:${form.city}
+            Organisation:${form.currentOrgnisation},
+            Experience:${form.exprerience}`);
+            console.log(formData)
 
     emailjs
-      .send(
-        "service_cc2612m",
-        "template_7s2vfgt",
-        {
-          from_name: form.name,
-          to_name: "Rahul chauhan",
-          from_email: form.email,
-          to_email: "web.developer@infinityadvt.com",
-          message: `Contact:${form.mobile}
-          City:${form.city}
-          Organisation:${form.currentOrgnisation},
-          Exprerience:${form.exprerience},
-          Resume:${form.resume}`,
-        },
-        "ELoyUYRSJDVO9FEkd"
-      )
+    .send(
+      "service_cc2612m",
+      "template_7s2vfgt",
+      {
+        from_name: form.name,
+        to_name: "Rahul chauhan",
+        from_email: form.email,
+        to_email: "web.developer@infinityadvt.com",
+        message: `Contact:${form.mobile}
+        City:${form.city}
+        Organisation:${form.currentOrgnisation},
+        Exprerience:${form.exprerience},
+        Resume:${formData.entries.resume}`,
+      },
+      "ELoyUYRSJDVO9FEkd"
+    )
       .then(
         () => {
           alert("Thank you. We will get back to you as soon as possible.");
-
+         
           setForm({
             name: "",
             email: "",
@@ -84,6 +123,7 @@ export default function Contactus() {
             exprerience:"",
             resume:""
           });
+          console.log(formData)
         },
         (error) => {
           console.error(error);
@@ -168,25 +208,19 @@ export default function Contactus() {
                 </div>
             </div>
         </div>
-        {/* <LoadScript googleMapsApiKey="YOUR_API_KEY">
-            <GoogleMap
-                mapContainerStyle={containerStyle}
-                center={center}
-                zoom={10}
-            >
-        
-            </GoogleMap>
-        </LoadScript> */}
+       
 
     </div>
             </div>
 
-            <div className='my-4'>
+            <div id="map" style={{ height: '800px' }}></div>
+
+            {/* <div className='my-4'>
               <p className='h3 ' style={{color:"#00BCD4"}}>Production Unit</p>
               <img alt='' className='my-4 w-100' src={map1} />
               <p className='h3 ' style={{color:"#00BCD4"}}>Marketing Office</p>
               <img alt='' className='w-100' src={map2}  />
-            </div>
+            </div> */}
 
         </div>
     </div>

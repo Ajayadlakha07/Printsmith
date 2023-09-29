@@ -20,6 +20,7 @@ import { Link } from 'react-router-dom';
 import line from '../assets/line.svg'
 
 import { AiOutlineDown } from "react-icons/ai";
+import Testmonial from '../components/Testmonial';
 
 
 export default function Home({handleShow}) {
@@ -60,14 +61,17 @@ export default function Home({handleShow}) {
       </div>
           <div className='col-12 col-md-6'>
           <div>
-            <span className='cir mx-4 my-4'>LED UV</span>
-            <span className='mx-4 h5' style={{color:"#FC01AC",marginBottom:"40px"}}>Installed India’s First “LED UV PRINTER” </span>
+            <div className='d-flex flex-md-row flex-column justify-content-center align-items-center'>
+            <span className='cir mx-4 mx-auto my-4'>LED UV</span>
+            <span className='h5' style={{color:"#FC01AC",marginBottom:"40px"}}>Installed India’s First “LED UV PRINTER” </span>
+
+            </div>
            
             <div className='row' >
-              <div className='col-4'>
+              <div className='col-md-4 col-12'>
               <img src={first} alt='' />
               </div>
-              <div className='col-8'>
+              <div className='col-md-8 col-12'>
                 <p className='h6 text-muted text-start' style={{fontFamily:"Open Sans",fontSize:"13px",lineHeight:"25px"}} >Printsmith believes in being Worlds ahead and this passion of ours drove us to install India’s first LED UV Printer in our plant at Faridabad, Haryana. The LED UV technology (XP-9) is a series developed in the month of January, 2016 to attain a speed of 15,000 SPH supplied by AMS, the world’s No.1 LED/Mercury Lamp Makers and the world’s leader in UV & LED curing system</p>
                 <p className='h6 text-muted text-start' style={{fontFamily:"Open Sans",fontSize:"13px",lineHeight:"25px"}}>The LED UV Printer enables us to print on Polycarbonates/ Plastics/ Foam banners & to perform all MET pets jobs efficiently.</p>
               </div>
@@ -107,30 +111,34 @@ export default function Home({handleShow}) {
           <p className='text-start'  style={{fontSize:"20px",fontWeight:"700",color:"#535353"}} >Certifications</p>
           <div className='row' style={{marginTop:"20px"}}>
           {/* <div className='col-1'></div> */}
+
           <div className='col-md-5 col-12 my-3 hov'>
-            <div style={{backgroundColor:"white"}} className='p-2'>
-            <img alt='' className='mx-6 w-100' style={{width:"150px"}} src={india} />
-            <div className=''>
+            <div className='p-2' style={{backgroundColor:"white"}}>
+              <div className='text-start' >
+              
+            <img alt='' className='mx-6 w-75 w-md-100' style={{width:"150px"}} src={india} />
               <p className='text-start pt-4 px-3' style={{fontSize:"19px"}} >Support Appreciation </p>
               <p className='text-start px-3' style={{fontSize:"12px"}}>India Safe</p>
-              <div className='hov2'>
+              </div>
+            </div>
+            <div className='hov2 pb-4'>
                 <p className='text-start px-3' style={{fontSize:"12px"}}>India Safe had appreciated PrintSmith for their print quality, timeliness of work, flexibility and overall support given to them for printing of India SAFE</p>
                 <div className='text-start'>
                 <AiOutlineTwitter  className='mx-3' color='#2ABDE9' size={30} />
                 <AiFillFacebook  className='mx-1' color='#1A6ED8' size={30} />
                 </div>
               </div>
-            </div>
-
-            </div>
           </div>
+
           <div className='col-1'></div>
+
           <div className="col-md-5 col-12 my-3 hov">
-           
-          <div style={{backgroundColor:"white"}} className='p-2'>
-            <img alt='' className='mx-6 w-100' style={{width:"150px"}} src={coke} />
+          <div className='p-2' style={{backgroundColor:"white"}}>
+            <div className='text-start'>
+            <img alt='' className='mx-6 w-75 w-md-100' style={{width:"150px"}} src={coke} />
             <p className='text-start pt-4 px-3' style={{fontSize:"19px"}}>Certificate of Recognition</p>
             <p className='text-start px-3' style={{fontSize:"12px"}}>Hindustan Coca-Cola Beverages Pvt. Ltd.</p>
+            </div>
             <div className='hov2' >
                 <p className='text-start px-3' style={{fontSize:"12px"}}>Hindustan Coca-Cola Beverages Pvt. Ltd. had recognized our valuable contribution towards “Strengthening Safety Systems” in their organization.</p>
                 <div className='text-start'>
@@ -138,7 +146,7 @@ export default function Home({handleShow}) {
                 <AiFillFacebook  className='mx-1' color='#1A6ED8' size={30} />
                 </div>
               </div>
-            </div>
+              </div>
           </div>
         </div>
           
@@ -148,7 +156,7 @@ export default function Home({handleShow}) {
      
 
       {/* STAY IN TOUCH WITH US! */}
-      <div className='mt-4 mdWidth75 mx-auto'>
+      <div className='mdWidth75 mx-auto m-100px' >
         <p className='text-start' style={{color:"#999999"}} ><b>STAY IN TOUCH WITH US!</b></p>
         <div className='row mt-4 pt-4' >
           {/* <div className='col-md-3' ></div> */}
@@ -287,16 +295,16 @@ export default function Home({handleShow}) {
       <div className='w-100' style={{backgroundColor:"#FC01AC",marginTop:"70px",paddingTop:"20px",paddingBottom:"20px"}} >
         <p className='h3 mt-4 text-white' ><strong>Client Testimonials</strong></p>
         <div className='row'>
-          <div className="col-6 col-md-3">
+          <div className="col-6 col-md-3 px-4">
+            <Testmonial/>
+          </div>
+          <div className="col-6 mb-4 col-md-3">
             <img alt='' src={Page1} className='wid90 my-4' />
           </div>
-          <div className="col-6 col-md-3">
-            <img alt='' src={Page1} className='wid90 my-4' />
-          </div>
-          <div className="col-6 col-md-3">
+          <div className="col-6 mb-4 col-md-3">
             <img alt='' src={Page2} className='wid90 my-4' />
           </div>
-          <div className="col-6 col-md-3">
+          <div className="col-6 mb-4 col-md-3">
             <img alt='' src={Page3} className='wid90 my-4' />
           </div>
 

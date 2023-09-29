@@ -55,7 +55,7 @@ export default function Commercial({handleShow,table1,table1_li,table1_head,img1
         
           </div>
          </div>
-         <div className='my-4 bg-pink d-flex flex-row my-4 mx-auto mt-4 p-4' style={{backgroundColor:"#FC01AC",justifyContent:"space-around"}}>
+         <div className='my-4 bg-pink d-flex flex-nd-row flex-column my-4 mx-auto mt-4 p-4' style={{backgroundColor:"#FC01AC",justifyContent:"space-around"}}>
         <p style={{fontWeight:"100"}} className='h3 text-light'>Click on the box to get a quote & we’ll get back to you shortly.</p>
        
         <button onClick={handleShow} type="button" className="btn mx-4 h6" style={{backgroundColor:"#31B0D5",color:"white",borderRadius:"0px"}}>Get a quote now</button>
