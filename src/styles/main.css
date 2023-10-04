@@ -2,15 +2,21 @@
     /* margin: 0;
     padding: 0; */
     /* overflow-x: hidden; */
+    /* max-width: 100%; */
+}
+
+body{
+  margin-bottom: -15px !important;
+}
+
+html{
+  /* width: 100vw; */
 }
 
 .md600{
   height: 600px;
 }
 
-/* p{
-  overflow: hidden;
-} */
 
 
 

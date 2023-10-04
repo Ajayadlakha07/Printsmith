@@ -112,7 +112,7 @@ export default function Home({handleShow}) {
           <div className='row' style={{marginTop:"20px"}}>
           {/* <div className='col-1'></div> */}
 
-          <div className='col-md-5 col-12 my-3 hov'>
+          <div className="col-md-5 col-12 my-3 hov">
             <div className='p-2' style={{backgroundColor:"white"}}>
               <div className='text-start' >
               
@@ -131,15 +131,32 @@ export default function Home({handleShow}) {
           </div>
 
           <div className='col-1'></div>
-
           <div className="col-md-5 col-12 my-3 hov">
+            <div className='p-2' style={{backgroundColor:"white"}}>
+              <div className='text-start' >
+              
+            <img alt='' className='mx-6 w-75 w-md-100' style={{width:"150px"}} src={coke} />
+              <p className='text-start pt-4 px-3' style={{fontSize:"19px"}} >Certificate of Recognition</p>
+              <p className='text-start px-3' style={{fontSize:"12px"}}>Hindustan Coca-Cola Beverages Pvt. Ltd.</p>
+              </div>
+            </div>
+            <div className='hov2 pb-4'>
+                <p className='text-start px-3' style={{fontSize:"12px"}}>Hindustan Coca-Cola Beverages Pvt. Ltd. had recognized our valuable contribution towards “Strengthening Safety Systems” in their organization.</p>
+                <div className='text-start'>
+                <AiOutlineTwitter  className='mx-3' color='#2ABDE9' size={30} />
+                <AiFillFacebook  className='mx-1' color='#1A6ED8' size={30} />
+                </div>
+              </div>
+          </div>
+
+          {/* <div className="col-md-5 col-12 my-3 hov">
           <div className='p-2' style={{backgroundColor:"white"}}>
             <div className='text-start'>
             <img alt='' className='mx-6 w-75 w-md-100' style={{width:"150px"}} src={coke} />
             <p className='text-start pt-4 px-3' style={{fontSize:"19px"}}>Certificate of Recognition</p>
             <p className='text-start px-3' style={{fontSize:"12px"}}>Hindustan Coca-Cola Beverages Pvt. Ltd.</p>
             </div>
-            <div className='hov2' >
+            <div className='hov2 pb-4' >
                 <p className='text-start px-3' style={{fontSize:"12px"}}>Hindustan Coca-Cola Beverages Pvt. Ltd. had recognized our valuable contribution towards “Strengthening Safety Systems” in their organization.</p>
                 <div className='text-start'>
                 <AiOutlineTwitter  className='mx-3' color='#2ABDE9' size={30} />
@@ -147,7 +164,7 @@ export default function Home({handleShow}) {
                 </div>
               </div>
               </div>
-          </div>
+          </div> */}
         </div>
           
         </div>
@@ -295,16 +312,16 @@ export default function Home({handleShow}) {
       <div className='w-100' style={{backgroundColor:"#FC01AC",marginTop:"70px",paddingTop:"20px",paddingBottom:"20px"}} >
         <p className='h3 mt-4 text-white' ><strong>Client Testimonials</strong></p>
         <div className='row'>
-          <div className="col-6 col-md-3 px-4">
+          <div className="col-12 col-md-3 px-4">
             <Testmonial/>
           </div>
-          <div className="col-6 mb-4 col-md-3">
+          <div className="col-12 mb-4 col-md-3">
             <img alt='' src={Page1} className='wid90 my-4' />
           </div>
-          <div className="col-6 mb-4 col-md-3">
+          <div className="col-12 mb-4 col-md-3">
             <img alt='' src={Page2} className='wid90 my-4' />
           </div>
-          <div className="col-6 mb-4 col-md-3">
+          <div className="col-12 mb-4 col-md-3">
             <img alt='' src={Page3} className='wid90 my-4' />
           </div>
 

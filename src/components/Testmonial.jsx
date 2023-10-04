@@ -62,7 +62,7 @@ export default function Testmonial() {
     </Carousel.Item>
     <Carousel.Item>
     <div className='bg-light w-100 my-4'>
-        <div className='testimonials'><br/> Owner <br/> Mammoth World</div>
+        <div className='testimonials'>We are happy to be associated with ‘Infinity’ for our requirement of printed boxes and posters.They are consistent in quality, have fast development, on time delivery and over &amp; above personalized service through their marketing Manager Mr. Ajay Tiwari. We wish all the success for this company. </div>
       </div>
       <div className='text-start' >
             <img alt='' style={{borderRadius:"100px"}} className='bg-light' src={test612} />

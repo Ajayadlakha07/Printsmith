@@ -7,11 +7,11 @@ function Popcontact({handleClose,show}) {
   const formRef = useRef();
   const [form, setForm] = useState({
     name: "",
-    email: "",
-    mobile:"",
-    message:"",
     currentOrgnisation:"",
-    service:""
+    mobile:"",
+    email: "",
+    service:"",
+    message:"",
   });
   const handleFileChange = (e) => {
     const file = e.target.files[0];
@@ -47,9 +47,10 @@ function Popcontact({handleClose,show}) {
           to_name: "pritsmith",
           from_email: form.email,
           to_email: "web.developer@infinityadvt.com",
-          message: `Contact:${form.mobile}
-          Organisation:${form.currentOrgnisation},
-          services:${form.service}`,
+          message: `message:${form.message}
+          Contact:${form.mobile}
+          Needed service:${form.service}
+          Organisation:${form.currentOrgnisation}`,
         },
         "ELoyUYRSJDVO9FEkd"
       )
@@ -110,7 +111,7 @@ function Popcontact({handleClose,show}) {
                                 <input  name='email' value={form.email} onChange={handleChange}  type="text" id="email" /> 
                         </div>
                             <div className="form-group text-start col-sm-4 flex-column d-flex"> 
-                                <label className="form-control-label py-2 text-start">City<span className="text-danger"> *</span></label>
+                                <label className="form-control-label py-2 text-start">Needed services<span className="text-danger"> *</span></label>
                                 <select value={form.service} onChange={handleChange}  name='service' style={{height:"45px"}} className="form-control w-100 mx-auto mx-md-1 w-75" >
                                 <option value="">Please Select</option>
                                 <option value="Marketing Collateral">Marketing Collateral</option>
@@ -182,7 +183,7 @@ function Popcontact({handleClose,show}) {
                         </div>
                         <div className="row justify-content-between text-left">
                             <div className="form-group col-12 flex-column d-flex"> 
-                            <label className="form-control-label py-2 text-start">Upload resume<span className="text-danger"> *</span></label> 
+                            <label className="form-control-label py-2 text-start">Message<span className="text-danger"> *</span></label> 
                             {/* <input  name='resume'  type="" id="ans" />  */}
                             <textarea  name='message' value={form.message} onChange={handleChange} placeholder="message" rows={`${window.innerWidth>768?10:5}`}/>
                         </div>

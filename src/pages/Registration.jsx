@@ -66,9 +66,9 @@ export default function Registration() {
           "template_7s2vfgt",
           {
             from_name: form.Name_Of_The_Organisation,
-            to_name: "Rahul chauhan",
+            to_name: "printsmith",
             from_email: form.Email_ID,
-            to_email: "interns.infinity@gmail.com",
+            to_email: "web.developer@infinityadvt.com",
             message: `  Name_Of_The_Organisation:              ${form.Name_Of_The_Organisation},
                         Material_Deals_In:                     ${form.Material_Deals_In},
                         Services_Deals_In:                     ${form.Services_Deals_In},
@@ -116,7 +116,7 @@ export default function Registration() {
 
   return (
     <div style={{backgroundColor:"#F5F5F5"}}>
-            <div  style={{height:"200px",alignItems:"end",paddingTop:"100px"}} className='gradi text-start px-2' >
+        <div  style={{height:"200px",alignItems:"end",paddingTop:"100px"}} className='gradi text-start px-2' >
         <div className='text-start text-white px-2 py-1' style={{backgroundColor:"rgba(0, 0, 0, .8)",width:"350px"}}>
           <span  >Home</span>
           <AiOutlineCaretRight size={13} className='mx-2' color='#FC01AC'/>
@@ -143,7 +143,7 @@ export default function Registration() {
                         </div>
                             <div className="form-group col-sm-6 flex-column d-flex"> 
                                 <label className="form-control-label mx-auto mx-md-1 py-2 text-start">Material Deals In <span className="text-danger"> *</span></label> 
-                                <select value={form.Material_Deals_In} onChange={handleChange} name='Material_Deals_In'  >
+                                <select value={form.Material_Deals_In} onChange={handleChange} name='Material_Deals_In' className="form-control mx-md-1 mx-auto w-75" >
                                     <option value="">---</option>
                                     <option value="Paper &amp; board">Paper &amp; board</option>
                                     <option value="Ink &amp; chemical">Ink &amp; chemical</option>
@@ -185,7 +185,7 @@ export default function Registration() {
                             </div>
                             <div className="form-group col-sm-6 flex-column d-flex"> 
                                 <label className="form-control-label mx-auto mx-md-1 py-2 text-start">Deals In Digital Marketing <span className="text-danger"> *</span></label>
-                                <select value={form.Deals_In_Digital_Marketing} name='Deals_In_Digital_Marketing' onChange={handleChange} className="w-75 mx-md-1 form-control mx-auto" >
+                                <select value={form.Deals_In_Digital_Marketing} name='Deals_In_Digital_Marketing' onChange={handleChange} className="form-control mx-md-1 mx-auto w-75" >
                                 <option value="">---</option>
                                 <option value="Email">Email</option>
                                 <option value="Cashback">Cashback</option>
