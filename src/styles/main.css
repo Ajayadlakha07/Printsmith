@@ -324,6 +324,23 @@ a{
     position: relative;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.16);
 }
+
+.font15{
+  font-size: 1.2rem;
+  color: #222222;
+  font-family: inter;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.font11{
+  font-size: 1rem;
+  color: #666666;
+}
+.end{
+  justify-content: end;
+  display: flex;
+}
   
 @media (max-width: 768px) and (max-width: 991.98px) {
   .mdWidth25 {

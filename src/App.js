@@ -25,11 +25,19 @@ import Privacy from './pages/Privacy';
 import News from './pages/News';
 import Faq from './pages/Faq';
 import Popcontact from './components/Popcontact';
-
+import Admin from './pages/Admin';
+import { useNavigate } from 'react-router-dom'
+import Login from './pages/Login';
 
 
 function App() {
   const [show, setShow] = useState(false);
+  const [access, setAccess] = useState(false)
+  const navigate = useNavigate();
+
+  const settingAccess = (val) => {
+    setAccess(val)
+  }
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -58,6 +66,8 @@ function App() {
             <Route path='/about' element={<About/>} />
             <Route path='/Our-services' element={<Ourservices/>} />
             <Route path='/Contact-us' element={<Contactus/>} />
+            <Route path='/admin' element={<Admin access={access} />} ></Route>
+            <Route path='/login' element={<Login settingAccess={settingAccess} />} ></Route>
         </Routes>
         <Footer/>
       
