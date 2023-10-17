@@ -36,13 +36,13 @@ export default function Home({handleShow}) {
 
       <div className='mdWidth75 bg-pink my-4 flex-md-row flex-column d-flex justify-content-between align-items-center mx-auto mt-4 p-4' style={{backgroundColor:"#FC01AC",justifyContent:"center"}}>
         <div>
-        <p style={{fontSize:"25px"}} className='text-light my-0 text-start'>Liked what we are doing?</p>
-        <p style={{fontSize:"25px"}} className='text-light my-0 text-start'>To know more and place your orders</p>
-        <p className='text-light my-3'>Call us or click to get a quote & we’ll respond at the earliest possible.</p>
+        <p className='text-25-20 text-light my-0 text-start'>Liked what we are doing?</p>
+        <p className='text-25-20 text-light my-0 text-start'>To know more and place your orders</p>
+        <p className='text-14 text-light my-3'>Call us or click to get a quote & we’ll respond at the earliest possible.</p>
         </div>
         <div>
         <button type="button" className="my-2 but1 btn text-white btn-outline-light">Call us at +91-9899246402</button>
-        <button onClick={handleShow} type="button" className="my-2 btn btn-light mx-4">Click here</button>
+        <button onClick={handleShow} type="button" className="my-2 font-12 btn btn-light mx-4">Click here</button>
         </div>
       </div>
 
@@ -51,11 +51,11 @@ export default function Home({handleShow}) {
         <div className="col-12 col-md-6" >
         <div className="card" style={{border:"none",marginTop:"0px"}}>
           <div className="card-body">
-            <h5 className="text-start" style={{color:"#FC01AC",marginBottom:"40px"}}>INFINITE EXPRESSIONS IN PRINT</h5>
+            <h5 className="text-start text-18" style={{color:"#FC01AC",marginBottom:"40px"}}>INFINITE EXPRESSIONS IN PRINT</h5>
             <hr/>
-            <h5 className="text-start mb-2" style={{color:"#535353"}}><strong>“Awesomeness is what we have in our DNA & we are capable of inheriting that in our designs.”</strong></h5>
-            <p className="text-start h6 text-muted" style={{fontFamily:"Open Sans",fontSize:"13px",lineHeight:"25px"}}>Hey all! We are a bunch of like-minded people striving to create infinite expressions in the printing industry. Just tell us your requirements & our efficient squad would be more than happy to help you.</p>
-            <p className="text-start h6 text-muted" style={{fontFamily:"Open Sans",fontSize:"13px",lineHeight:"25px"}}>We devote ourselves to achieve just one aim-to create impressions that don’t fade away with time and leave a great impact on the minds of the consumers. We are seeking an opportunity to showcase what we can do for you. Let’s meet to create some magic together.</p>
+            <h5 className="text-start text-18 mb-2" style={{color:"#535353"}}><strong>“Awesomeness is what we have in our DNA & we are capable of inheriting that in our designs.”</strong></h5>
+            <p className="text-start text-12 h6 text-muted" style={{fontFamily:"Open Sans",fontSize:"13px",lineHeight:"25px"}}>Hey all! We are a bunch of like-minded people striving to create infinite expressions in the printing industry. Just tell us your requirements & our efficient squad would be more than happy to help you.</p>
+            <p className="text-start text-12 h6 text-muted" style={{fontFamily:"Open Sans",fontSize:"13px",lineHeight:"25px"}}>We devote ourselves to achieve just one aim-to create impressions that don’t fade away with time and leave a great impact on the minds of the consumers. We are seeking an opportunity to showcase what we can do for you. Let’s meet to create some magic together.</p>
           </div>
           </div>
       </div>
@@ -63,7 +63,7 @@ export default function Home({handleShow}) {
           <div>
             <div className='d-flex flex-md-row flex-column justify-content-center align-items-center'>
             <span className='cir mx-4 mx-auto my-4'>LED UV</span>
-            <span className='h5' style={{color:"#FC01AC",marginBottom:"40px"}}>Installed India’s First “LED UV PRINTER” </span>
+            <span className='text-sm-18' style={{color:"#FC01AC",marginBottom:"40px"}}>Installed India’s First “LED UV PRINTER” </span>
 
             </div>
            
@@ -72,8 +72,8 @@ export default function Home({handleShow}) {
               <img src={first} alt='' />
               </div>
               <div className='col-md-8 col-12'>
-                <p className='h6 text-muted text-start' style={{fontFamily:"Open Sans",fontSize:"13px",lineHeight:"25px"}} >Printsmith believes in being Worlds ahead and this passion of ours drove us to install India’s first LED UV Printer in our plant at Faridabad, Haryana. The LED UV technology (XP-9) is a series developed in the month of January, 2016 to attain a speed of 15,000 SPH supplied by AMS, the world’s No.1 LED/Mercury Lamp Makers and the world’s leader in UV & LED curing system</p>
-                <p className='h6 text-muted text-start' style={{fontFamily:"Open Sans",fontSize:"13px",lineHeight:"25px"}}>The LED UV Printer enables us to print on Polycarbonates/ Plastics/ Foam banners & to perform all MET pets jobs efficiently.</p>
+                <p className='h6 text-muted text-start text-12-add'  >Printsmith believes in being Worlds ahead and this passion of ours drove us to install India’s first LED UV Printer in our plant at Faridabad, Haryana. The LED UV technology (XP-9) is a series developed in the month of January, 2016 to attain a speed of 15,000 SPH supplied by AMS, the world’s No.1 LED/Mercury Lamp Makers and the world’s leader in UV & LED curing system</p>
+                <p className='h6 text-muted text-start text-12-add' >The LED UV Printer enables us to print on Polycarbonates/ Plastics/ Foam banners & to perform all MET pets jobs efficiently.</p>
               </div>
               
             </div>
@@ -109,7 +109,7 @@ export default function Home({handleShow}) {
         </div>
           <div className='col-12 col-md-6'>
           <p className='text-start'  style={{fontSize:"20px",fontWeight:"700",color:"#535353"}} >Certifications</p>
-          <div className='row' style={{marginTop:"20px"}}>
+          <div className='row mt-md-4 mt-0' >
           {/* <div className='col-1'></div> */}
 
           <div className="col-md-5 col-12 my-3 hov">
@@ -148,23 +148,6 @@ export default function Home({handleShow}) {
                 </div>
               </div>
           </div>
-
-          {/* <div className="col-md-5 col-12 my-3 hov">
-          <div className='p-2' style={{backgroundColor:"white"}}>
-            <div className='text-start'>
-            <img alt='' className='mx-6 w-75 w-md-100' style={{width:"150px"}} src={coke} />
-            <p className='text-start pt-4 px-3' style={{fontSize:"19px"}}>Certificate of Recognition</p>
-            <p className='text-start px-3' style={{fontSize:"12px"}}>Hindustan Coca-Cola Beverages Pvt. Ltd.</p>
-            </div>
-            <div className='hov2 pb-4' >
-                <p className='text-start px-3' style={{fontSize:"12px"}}>Hindustan Coca-Cola Beverages Pvt. Ltd. had recognized our valuable contribution towards “Strengthening Safety Systems” in their organization.</p>
-                <div className='text-start'>
-                <AiOutlineTwitter  className='mx-3' color='#2ABDE9' size={30} />
-                <AiFillFacebook  className='mx-1' color='#1A6ED8' size={30} />
-                </div>
-              </div>
-              </div>
-          </div> */}
         </div>
           
         </div>
@@ -209,9 +192,9 @@ export default function Home({handleShow}) {
           </div>
         </div>
 
-        <p className='h1' style={{color:"#2ABDE9",marginTop:"200px"}} ><b>Our Expertise</b></p>
+        <p className='h1 mt-200' style={{color:"#2ABDE9"}} ><b>Our Expertise</b></p>
         <BsThreeDots color='#535353' size={35}/>
-        <p style={{color:"#999999",fontSize:"19px"}}>We are not just service providers; we are the trusted partner of our esteemed clients</p>
+        <p className='text-19' style={{color:"#999999"}}>We are not just service providers; we are the trusted partner of our esteemed clients</p>
       </div>
 
       {/* Commercial Printing */}
@@ -240,13 +223,6 @@ export default function Home({handleShow}) {
           
             </div>
           </div>
-          {/* <div className="m-4" style={{backgroundColor:"#F5F5F5"}}>
-            <div className='p-4 d-flex flex-column justify-content-start'>
-            <BsFillDisplayFill color='#FC01AC' size={50} />
-            <p className='text-start my-4' style={{fontSize:"23px",fontWeight:"400"}}><b>POS Display and Fixtures</b></p>
-            <p className='text-start text-muted' style={{fontFamily:"Open Sans",fontSize:"13px",lineHeight:"25px"}}>Printsmith is one of the most innovative display firms in the country. We conceptualize, design, engineer, manufacture <Link className='more' to='/pos' >... More</Link></p>
-            </div>
-          </div> */}
       </div>
      </div>
       <div className='shadow' ></div>

@@ -48,12 +48,6 @@ export default function Openings() {
    
   }
 
-
-
-
-
-
-
   useEffect(()=>{
       const currentDate = new Date();
       const format = new Date(currentDate).toLocaleDateString('en-US', { day: 'numeric', month: 'long', year: 'numeric' });
@@ -97,10 +91,6 @@ useEffect(()=>{
         <div className='px-2 py-1 my-2'  style={{backgroundColor:"hsla(0, 0%, 100%, .5)",width:"150px",fontSize:"11px"}}>{formattedDate}</div>
 
        </div>
-        <div className="svgdiv">
-          <img alt='' className='svgimg' src={line3} />
-          <i className="glyphicon glyphicon-chevron-down"></i>
-          </div>
         <div className='my-4' >
             <BsFillBagDashFill size={50} color='#2F2F2F' />
             <p className='my-4' style={{fontSize:"20px"}}>It’s the most fun you’ll have inside an office. If you’ve got the talent, we’ve got the vacancy.</p>
@@ -119,7 +109,7 @@ useEffect(()=>{
         </div>
        <div className='my-4' style={{backgroundColor:"white",width:"100vw" ,paddingBottom:"100px"}}>
          
-       <div className='w-50 mx-auto'  >
+       <div className='w-md-50 w-100 mx-auto' >
         <div className='h2 my-4 ' style={{color:"#5B5B5B",paddingTop:"50px"}} >Current&nbsp;<span style={{color:"#2ABDE9"}} >Openings</span></div>
         <div className='p-4 ' style={{backgroundColor:"#F5F5F5"}}> 
         <div>

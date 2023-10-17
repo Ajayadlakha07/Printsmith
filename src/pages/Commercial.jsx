@@ -32,10 +32,6 @@ export default function Commercial({handleShow,table1,table1_li,table1_head,img1
         <div className='px-2 py-1 my-2'  style={{backgroundColor:"hsla(0, 0%, 100%, .5)",width:"150px",fontSize:"11px"}}>{formattedDate}</div>
 
        </div>
-        <div className="svgdiv">
-          <img alt='' className='svgimg' src={line3} />
-          <i className="glyphicon glyphicon-chevron-down"></i>
-          </div>
          <div className='mdWidth75 mx-auto'>
          <div className='h1 my-3' style={{color:"#5B5B5B",paddingTop:"50px"}} >{table1_head[0]}<span style={{color:"#2ABDE9"}} >Printing</span></div>
          <div className='mx-auto' style={{width:"50px" ,height:"3px", backgroundColor:"#FA01AC"}} ></div>

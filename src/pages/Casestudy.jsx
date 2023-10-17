@@ -4,7 +4,6 @@ import Page1 from '../assets/client-test-1.png'
 import Page2 from '../assets/client-test-2.png'
 import Page3 from '../assets/client-test.png'
 import { AiOutlineLine } from "react-icons/ai";
-import line3 from '../assets/line3.svg'
 import { Link } from 'react-router-dom'
 import { AiOutlineCaretRight } from "react-icons/ai";
 
@@ -31,12 +30,8 @@ export default function Casestudy() {
           <span>Case studies & Testimonial</span>
         </div>
         <div className='px-2 py-1 my-2'  style={{backgroundColor:"hsla(0, 0%, 100%, .5)",width:"150px",fontSize:"11px"}}>{formattedDate}</div>
-
        </div>
-        <div className="svgdiv">
-          <img  alt='' className='svgimg' src={line3} />
-          <i className="glyphicon glyphicon-chevron-down"></i>
-          </div>
+  
        <div className='mdWidth75 my-4 p-4 mx-auto text-start'  >
         <p className='text-start h1 m-3' style={{fontWeight:"600"}} >Case Studies</p>
         <AiOutlineLine className='mb-4 mx-4' color='#313133' style={{height:"3px", width:"60px",backgroundColor:"#96979A"}} />

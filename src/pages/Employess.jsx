@@ -25,10 +25,6 @@ export default function Employess() {
         <div className='px-2 py-1 my-2'  style={{backgroundColor:"hsla(0, 0%, 100%, .5)",width:"150px",fontSize:"11px"}}>{formattedDate}</div>
 
        </div>
-            <div className="svgdiv">
-                <img alt='' className='svgimg' src={line3} />
-                <i className="glyphicon glyphicon-chevron-down"></i>
-            </div>
             <div className='mdWidth75 my-4 text-start mx-auto'>
                 <p style={{fontSize:"38px",fontWeight:"600",marginBottom:"100px"}}>Employee Engagement Activities</p>
                 <div className='row'>

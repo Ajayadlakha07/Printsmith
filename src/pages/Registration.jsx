@@ -115,10 +115,6 @@ export default function Registration() {
         <div className='px-2 py-1 my-2'  style={{backgroundColor:"hsla(0, 0%, 100%, .5)",width:"150px",fontSize:"11px"}}>{formattedDate}</div>
 
        </div>
-        <div className="svgdiv">
-          <img alt='' className='svgimg' src={line3} />
-          <i className="glyphicon glyphicon-chevron-down"></i>
-          </div>
          <div className='mdWidth75 mx-auto'  >
         <div className="row d-flex justify-content-center my-4">
             <div className="col-xl-7 col-lg-8 col-md-9 col-11 text-center w-100">

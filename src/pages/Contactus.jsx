@@ -104,10 +104,6 @@ export default function Contactus() {
         <div className='px-2 py-1 my-2'  style={{backgroundColor:"hsla(0, 0%, 100%, .5)",width:"150px",fontSize:"11px"}}>{formattedDate}</div>
 
        </div>
-        <div className="svgdiv">
-          <img alt='' className='svgimg' src={line3} />
-          <i className="glyphicon glyphicon-chevron-down"></i>
-          </div>
         <div className='row mdWidth75 mx-auto p-4 text-start' >
             <div className='col-md-2 col-12 h1' style={{paddingLeft:"0px",borderRight:"5px solid pink"}} >
             <p style={{color:"#C2C2C2"}}>Business Enquiry </p><p className='my-4' style={{color:"#F007AF"}} >HR</p> 

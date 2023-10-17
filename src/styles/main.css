@@ -42,7 +42,9 @@ html{
 }
 
 .gradi{
-    background-image: linear-gradient(to right, #FA01AC, #0580DA);
+  background-image: url('../assets/divbar.png');
+  background-size: cover;
+  background-position: bottom;
 }
 
 .listStyle{
@@ -214,7 +216,7 @@ html{
   left: 0;
   pointer-events: none;
   box-sizing: border-box;
-} 
+}
   
   /* Change color of dropdown links on hover */
   
@@ -320,7 +322,7 @@ a{
     margin: 0 1px 10px 0;
     padding: 25px;
     color: #898989;
-    font-size: 14px;
+    font-size: 8px;
     border-left: none;
     line-height: 2;
     font-style: italic;
@@ -344,7 +346,31 @@ a{
   justify-content: end;
   display: flex;
 }
-  
+
+.text-25-20{
+  font-size: 25px;
+}
+.text-sm-18{
+  font-size: 25px;
+}
+.text-12-add{
+  font-size: 13px !important;
+  font-family: "Open Sans" !important;
+  line-height: 25px !important;
+}
+
+.mt-200{
+  margin-top: 200px !important;
+}
+.text-19{
+  font-size: 19px !important;
+}
+.text-23{
+  font-size: 23px;
+}
+
+
+ 
 @media (max-width: 768px) and (max-width: 991.98px) {
   .mdWidth25 {
     width: 90%;
@@ -418,8 +444,42 @@ a{
   max-width: 99%;
   display: inline;
 }
-  
-  
+.text-25-20{
+  font-size: 18px !important;
+}
+.text-14{
+  font-size: 12px;
+}
+.but1{
+  font-size: 12px !important;
+}
+.font-12{
+  font-size: 12px !important;
+}
+.text-18{
+  font-size: 16px;
+}
+.text-12{
+  font-size: 12px !important;
+}
+.card{
+  padding: 15px !important;
+}
+.text-sm-18{
+  font-size: 16px !important;
+}
+.text-12-add{
+  font-size: 12px !important;
+}
+.mt-200{
+  margin-top: 60px !important;
+}
+.text-19{
+  font-size: 14px !important;
+}
+.text-23{
+  font-size: 16px;
+}
 }
 @media (min-width: 768px) {
 .dropdown:hover .dropdown-content {display: block;}

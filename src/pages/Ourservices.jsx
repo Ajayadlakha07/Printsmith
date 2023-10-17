@@ -31,10 +31,6 @@ export default function Ourservices() {
         <div className='px-2 py-1 my-2'  style={{backgroundColor:"hsla(0, 0%, 100%, .5)",width:"150px",fontSize:"11px"}}>{formattedDate}</div>
 
        </div>
-        <div className="svgdiv">
-          <img alt='' className='svgimg' src={line3} />
-          <i className="glyphicon glyphicon-chevron-down"></i>
-          </div>
         <div className='mdWidth75 mx-auto p-4 text-start' >
             <p className='h2 my-4 text-start' style={{fontWeight:"700",color:"#2ABDE9"}} >OUR SERVICES</p>
             <AiOutlineLine className='mb-4 ' color='#96979A' style={{height:"3px", width:"60px",backgroundColor:"#96979A"}} />

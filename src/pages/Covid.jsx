@@ -94,14 +94,10 @@ export default function Covid() {
   return (
     <div style={{backgroundColor:"#F5F5F5"}}>
         <div ref={divRef}  style={{height:"200px"}} className='gradi' ></div>
-        <div className="svgdiv">
-          <img alt='' className='svgimg' src={line3} />
-          </div>
-
 
         <div className='d-flex flex-md-row flex-column mx-auto mdWidth75' style={{marginTop:"70px"}} >
           <div>
-          <div className='p-4 mx-4 bg-light' style={{borderLeft:"5px solid #F304AD"}} >
+          <div className='p-4 mx-md-4 mx-0 bg-light' style={{borderLeft:"5px solid #F304AD"}} >
             <div className='d-flex text-start flex-row align-item-center'>
               <AiOutlineInfoCircle  size={40} color='#FC01AC' />
               <p className='mx-2 h3 w-100' style={{fontWeight:"700",color:"#535353",overflowY:"hidden"}} >COVID-19 <span style={{color:"#2ABDE9"}} >BUSINESS ESSENTIALS</span> </p>
