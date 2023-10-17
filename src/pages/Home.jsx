@@ -89,7 +89,7 @@ export default function Home({handleShow}) {
       <div >
       <img className='glyphicon'  src={line} alt='' />
             <AiOutlineDown className='down'/>
-            {/* <i class="down"></i> */}
+            {/* <i className="down"></i> */}
       </div>
 
       {/* AWARDS */}

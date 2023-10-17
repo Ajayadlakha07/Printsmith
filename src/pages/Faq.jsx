@@ -40,9 +40,9 @@ export default function Faq() {
         <div className='px-2 py-1 my-2'  style={{backgroundColor:"hsla(0, 0%, 100%, .5)",width:"150px",fontSize:"11px"}}>{formattedDate}</div>
 
        </div>
-       <div class="svgdiv">
+       <div className="svgdiv">
            <img alt='' className='svgimg' src={line3} />
-           <i class="glyphicon glyphicon-chevron-down"></i>
+           <i className="glyphicon glyphicon-chevron-down"></i>
        </div>
        <div  className='mdWidth75 my-4 py-4 text-start mx-auto' >
        <div className='my-4' style={{fontSize:"30px",borderBottom:""}}><span ><span style={{color:"#535353"}}>News</span> <span style={{color:"#2ABDE9"}} >Updates</span></span></div>

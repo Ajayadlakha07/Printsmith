@@ -33,9 +33,9 @@ export default function Casestudy() {
         <div className='px-2 py-1 my-2'  style={{backgroundColor:"hsla(0, 0%, 100%, .5)",width:"150px",fontSize:"11px"}}>{formattedDate}</div>
 
        </div>
-        <div class="svgdiv">
+        <div className="svgdiv">
           <img  alt='' className='svgimg' src={line3} />
-          <i class="glyphicon glyphicon-chevron-down"></i>
+          <i className="glyphicon glyphicon-chevron-down"></i>
           </div>
        <div className='mdWidth75 my-4 p-4 mx-auto text-start'  >
         <p className='text-start h1 m-3' style={{fontWeight:"600"}} >Case Studies</p>
@@ -46,7 +46,7 @@ export default function Casestudy() {
             <button className='btn3' >Read more+</button>
           </div>
         </div>
-        <em id='testimonials' class="case my-2 mx-3">September 26, 2017 By admin in <Link style={{textDecoration:"none"}} className='more' to='' >Case Study</Link></em>
+        <em id='testimonials' className="case my-2 mx-3">September 26, 2017 By admin in <Link style={{textDecoration:"none"}} className='more' to='' >Case Study</Link></em>
         <p  className='mx-3 h5'>Colorbar Cosmetics Ptv. Ltd.</p>
         <div className='w-100' style={{marginTop:"70px",paddingTop:"20px",paddingBottom:"20px"}} >
         <div className='row'>

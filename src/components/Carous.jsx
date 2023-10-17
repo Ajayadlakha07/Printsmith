@@ -40,7 +40,7 @@ function Carous() {
         <Carousel.Caption style={{left:"0px"}} >
         <div>
         <div className="text-start my-md-3 my-2">
-          <div className='text-start my-1 p-2 courserone'>Tempting! isn’t it?</div>
+          <div className='text-start my-1 p-2 courserone'>Tempting! isn't it?</div>
         </div>
         <div className="text-start my-md-3 my-2">
           <div className='text-start my-1 p-2 coursertwo' >CMYK along with Abrasive & Emboss UV, and Matt Lamination on 220 Matt Art Card</div>

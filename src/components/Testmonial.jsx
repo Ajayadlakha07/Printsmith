@@ -21,7 +21,7 @@ export default function Testmonial() {
       </div>
       <div className='text-start' >
             <img alt='' style={{borderRadius:"100px"}} className='bg-light' src={test17} />
-            <p class="tst-carousel-title">S.C. Malhotra <br/> Executive Director - Exports <br/> Indication Instruments Ltd</p>
+            <p className="tst-carousel-title">S.C. Malhotra <br/> Executive Director - Exports <br/> Indication Instruments Ltd</p>
     </div>
     </Carousel.Item>
     <Carousel.Item>
@@ -30,7 +30,7 @@ export default function Testmonial() {
       </div>
       <div className='text-start' >
             <img alt='' style={{borderRadius:"100px"}} className='bg-light' src={test28} />
-            <p class="tst-carousel-title">Harkanwal Jeet Singh <br/> Managing Director <br/> Dextrous Packaging Pvt Ltd</p>
+            <p className="tst-carousel-title">Harkanwal Jeet Singh <br/> Managing Director <br/> Dextrous Packaging Pvt Ltd</p>
     </div>
     </Carousel.Item>
     <Carousel.Item>
@@ -39,7 +39,7 @@ export default function Testmonial() {
       </div>
       <div className='text-start' >
             <img alt='' style={{borderRadius:"100px"}} className='bg-light' src={test39} />
-            <p class="tst-carousel-title">Sachin Sethi <br/>Managing Director <br/> Sethi Polymers</p>
+            <p className="tst-carousel-title">Sachin Sethi <br/>Managing Director <br/> Sethi Polymers</p>
     </div>
     </Carousel.Item>
     <Carousel.Item>
@@ -48,7 +48,7 @@ export default function Testmonial() {
       </div>
       <div className='text-start' >
             <img alt='' style={{borderRadius:"100px"}} className='bg-light' src={test40} />
-            <p class="tst-carousel-title">Anand Prakash Singh <br/> Sr. Sales Manager <br/> Diva Publishers Pvt Ltd </p>
+            <p className="tst-carousel-title">Anand Prakash Singh <br/> Sr. Sales Manager <br/> Diva Publishers Pvt Ltd </p>
     </div>
     </Carousel.Item>
     <Carousel.Item>
@@ -57,7 +57,7 @@ export default function Testmonial() {
       </div>
       <div className='text-start' >
             <img alt='' style={{borderRadius:"100px"}} className='bg-light' src={test511} />
-            <p class="tst-carousel-title">Vinay Giri <br/> Sr. Manager <br/> Eternal Ganges Press Pvt Ltd</p>
+            <p className="tst-carousel-title">Vinay Giri <br/> Sr. Manager <br/> Eternal Ganges Press Pvt Ltd</p>
     </div>
     </Carousel.Item>
     <Carousel.Item>
@@ -66,7 +66,7 @@ export default function Testmonial() {
       </div>
       <div className='text-start' >
             <img alt='' style={{borderRadius:"100px"}} className='bg-light' src={test612} />
-            <p class="tst-carousel-title">S.C. Malhotra <br/> Executive Director - Exports <br/> Indication Instruments Ltd</p>
+            <p className="tst-carousel-title">S.C. Malhotra <br/> Executive Director - Exports <br/> Indication Instruments Ltd</p>
     </div>
     </Carousel.Item>
     <Carousel.Item>
@@ -75,7 +75,7 @@ export default function Testmonial() {
       </div>
       <div className='text-start' >
             <img alt='' style={{borderRadius:"100px"}} className='bg-light' src={test17} />
-            <p class="tst-carousel-title">Harkanwal Jeet Singh <br/> Managing Director <br/> Dextrous Packaging Pvt Ltd</p>
+            <p className="tst-carousel-title">Harkanwal Jeet Singh <br/> Managing Director <br/> Dextrous Packaging Pvt Ltd</p>
     </div>
     </Carousel.Item>
     <Carousel.Item>
@@ -84,7 +84,7 @@ export default function Testmonial() {
       </div>
       <div className='text-start' >
             <img alt='' style={{borderRadius:"100px"}} className='bg-light' src={test28} />
-            <p class="tst-carousel-title">Sachin Sethi <br/>Managing Director <br/> Sethi Polymers</p>
+            <p className="tst-carousel-title">Sachin Sethi <br/>Managing Director <br/> Sethi Polymers</p>
     </div>
     </Carousel.Item>
     <Carousel.Item>
@@ -93,7 +93,7 @@ export default function Testmonial() {
       </div>
       <div className='text-start' >
             <img alt='' style={{borderRadius:"100px"}} className='bg-light' src={test39} />
-            <p class="tst-carousel-title">Anand Prakash Singh <br/> Sr. Sales Manager <br/> Diva Publishers Pvt Ltd </p>
+            <p className="tst-carousel-title">Anand Prakash Singh <br/> Sr. Sales Manager <br/> Diva Publishers Pvt Ltd </p>
     </div>
     </Carousel.Item>
     <Carousel.Item>
@@ -102,7 +102,7 @@ export default function Testmonial() {
       </div>
       <div className='text-start' >
             <img alt='' style={{borderRadius:"100px"}} className='bg-light' src={test40} />
-            <p class="tst-carousel-title">Anand Prakash Singh <br/> Sr. Sales Manager <br/> Diva Publishers Pvt Ltd </p>
+            <p className="tst-carousel-title">Anand Prakash Singh <br/> Sr. Sales Manager <br/> Diva Publishers Pvt Ltd </p>
     </div>
     </Carousel.Item>
     <Carousel.Item>
@@ -111,7 +111,7 @@ export default function Testmonial() {
       </div>
       <div className='text-start' >
             <img alt='' style={{borderRadius:"100px"}} className='bg-light' src={test511} />
-            <p class="tst-carousel-title">Gaurav Sehdav <br/> Owner <br/> Mammoth World</p>
+            <p className="tst-carousel-title">Gaurav Sehdav <br/> Owner <br/> Mammoth World</p>
     </div>
     </Carousel.Item>
     <Carousel.Item>
@@ -120,7 +120,7 @@ export default function Testmonial() {
       </div>
       <div className='text-start' >
             <img alt='' style={{borderRadius:"100px"}} className='bg-light' src={test612} />
-            <p class="tst-carousel-title">S.C. Malhotra <br/> Executive Director - Exports <br/> Indication Instruments Ltd</p>
+            <p className="tst-carousel-title">S.C. Malhotra <br/> Executive Director - Exports <br/> Indication Instruments Ltd</p>
     </div>
     </Carousel.Item>
   </Carousel>

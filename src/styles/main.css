@@ -251,6 +251,9 @@ html{
     color:#cccccc;
     font-size: 14px;
   }
+  .linkStyle:hover{
+    background-color: #c7c7c7;
+  }
   .hov:hover .hov2 {
     display: block;
     visibility: visible;

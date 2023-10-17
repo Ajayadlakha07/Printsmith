@@ -32,9 +32,9 @@ export default function Commercial({handleShow,table1,table1_li,table1_head,img1
         <div className='px-2 py-1 my-2'  style={{backgroundColor:"hsla(0, 0%, 100%, .5)",width:"150px",fontSize:"11px"}}>{formattedDate}</div>
 
        </div>
-        <div class="svgdiv">
+        <div className="svgdiv">
           <img alt='' className='svgimg' src={line3} />
-          <i class="glyphicon glyphicon-chevron-down"></i>
+          <i className="glyphicon glyphicon-chevron-down"></i>
           </div>
          <div className='mdWidth75 mx-auto'>
          <div className='h1 my-3' style={{color:"#5B5B5B",paddingTop:"50px"}} >{table1_head[0]}<span style={{color:"#2ABDE9"}} >Printing</span></div>
@@ -55,10 +55,10 @@ export default function Commercial({handleShow,table1,table1_li,table1_head,img1
         
           </div>
          </div>
-         <div className='my-4 bg-pink d-flex flex-nd-row flex-column my-4 mx-auto mt-4 p-4' style={{backgroundColor:"#FC01AC",justifyContent:"space-around"}}>
+         <div className='my-4 bg-pink d-flex flex-md-row flex-column my-4 mx-auto mt-4 p-4' style={{backgroundColor:"#FC01AC",justifyContent:"space-around"}}>
         <p style={{fontWeight:"100"}} className='h3 text-light'>Click on the box to get a quote & we’ll get back to you shortly.</p>
        
-        <button onClick={handleShow} type="button" className="btn mx-4 h6" style={{backgroundColor:"#31B0D5",color:"white",borderRadius:"0px"}}>Get a quote now</button>
+        <button onClick={handleShow} type="button" className="btn mx-4 my-3 my-md-1 h6" style={{backgroundColor:"#31B0D5",color:"white",borderRadius:"0px"}}>Get a quote now</button>
       </div>
       <div className='py-4' >
         <img className='w-75 my-4' alt='' src={img1} />

@@ -33,16 +33,6 @@ export default function Registration() {
       Deals_In:""
     });
   
-    // const handleFileChange = (e) => {
-    //   const file = e.target.files[0];
-    //   console.log(file)
-    //   setForm((prevForm) => ({
-    //     ...prevForm,
-    //     Attach_Credential: file,
-    //   }));
-    //   console.log(form)
-    // };
-    
   
     const handleChange = (e) => {
       const { target } = e;
@@ -125,9 +115,9 @@ export default function Registration() {
         <div className='px-2 py-1 my-2'  style={{backgroundColor:"hsla(0, 0%, 100%, .5)",width:"150px",fontSize:"11px"}}>{formattedDate}</div>
 
        </div>
-        <div class="svgdiv">
+        <div className="svgdiv">
           <img alt='' className='svgimg' src={line3} />
-          <i class="glyphicon glyphicon-chevron-down"></i>
+          <i className="glyphicon glyphicon-chevron-down"></i>
           </div>
          <div className='mdWidth75 mx-auto'  >
         <div className="row d-flex justify-content-center my-4">

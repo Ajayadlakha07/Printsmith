@@ -19,9 +19,9 @@ export default function About() {
   return (
     <div style={{backgroundColor:"#F5F5F5"}}>
          <div style={{height:"200px"}} className='gradi' ></div>
-        <div class="svgdiv" >
+        <div className="svgdiv" >
           <img alt='' className='svgimg' src={line3} />
-          <i class="glyphicon glyphicon-chevron-down"></i>
+          <i className="glyphicon glyphicon-chevron-down"></i>
           </div>
         <div className='justify-content-center d-flex mt70'>
           <div className='px-4 py-4 mx-4 bg-light mdWidth75' style={{borderLeft:"5px solid #F304AD"}} >

@@ -94,7 +94,7 @@ export default function Covid() {
   return (
     <div style={{backgroundColor:"#F5F5F5"}}>
         <div ref={divRef}  style={{height:"200px"}} className='gradi' ></div>
-        <div class="svgdiv">
+        <div className="svgdiv">
           <img alt='' className='svgimg' src={line3} />
           </div>
 
