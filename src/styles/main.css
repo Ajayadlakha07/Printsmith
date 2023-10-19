@@ -14,7 +14,7 @@ html{
 }
 
 .md600{
-  height: 600px;
+  /* height: 600px; */
 }
 
 
@@ -322,7 +322,7 @@ a{
     margin: 0 1px 10px 0;
     padding: 25px;
     color: #898989;
-    font-size: 8px;
+    /* font-size: 8px; */
     border-left: none;
     line-height: 2;
     font-style: italic;
@@ -368,8 +368,37 @@ a{
 .text-23{
   font-size: 23px;
 }
+.formtype:hover{
+  color: #EF07AE;
+}
 
+.formtype{
+  color: #C2C2C2;
+  cursor: pointer;
+}
 
+.pink{
+  color: #EF07AE;
+  border-right: 2px solid #EF07AE;
+}
+
+.bg-f5{
+  background-color: #F5F5F5;
+}
+.btnsumbit{
+  background-color: #EF07AE;
+  color: white;
+}
+
+.btnsumbit:hover{
+  background-color: #9f0072;
+}
+.padtop{
+  padding-top: 120px;
+}
+.w50{
+  width: 50%;
+}
  
 @media (max-width: 768px) and (max-width: 991.98px) {
   .mdWidth25 {
@@ -479,6 +508,13 @@ a{
 }
 .text-23{
   font-size: 16px;
+}
+.w50{
+  width: 95%;
+}
+
+.padtop{
+  padding-top: 50px;
 }
 }
 @media (min-width: 768px) {

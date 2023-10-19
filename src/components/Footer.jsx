@@ -44,8 +44,7 @@ export default function Footer() {
         </div> */}
         </div>
     </div>
-        <p className='text-white p-4' style={{borderTop:"2px solid gray"}} >©Copyright 2023, Printsmith (P) LTD. All rights reserved.</p>
-
+        <p className='text-white p-4 text-12' style={{borderTop:"2px solid gray"}} >©Copyright 2023, Printsmith (P) LTD. All rights reserved.</p>
     </div>
   )
 }

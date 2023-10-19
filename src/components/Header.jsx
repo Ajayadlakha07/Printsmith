@@ -100,10 +100,10 @@ function Header() {
                   <Link to='/about' className={`${location.pathname==='/about'?"btnloc":"dropbtn"}`}>About Us</Link>
                   <div className="dropdown-content">
                     <Link to='/about'  className='linkStyle text-start' >Vision & Mission</Link>
-                    <a href='#team'  className='linkStyle text-start' >The Team</a>
-                    <a href='#infrastructure'  className='linkStyle text-start' >Infrastructure</a>
+                    <a href='http://localhost:3000/about#team'  className='linkStyle text-start' >The Team</a>
+                    <a href='http://localhost:3000/about#infrastructure'  className='linkStyle text-start' >Infrastructure</a>
                     <Link to='/case-studies'  className='linkStyle text-start' >Case study</Link>
-                    <a href='#testimonials'  className='linkStyle text-start' >Client Testimonials</a>
+                    <a href='http://localhost:3000/case-studies#testimonials'  className='linkStyle text-start' >Client Testimonials</a>
                   </div>
                 </div> 
                 <div className="dropdown">
@@ -115,7 +115,7 @@ function Header() {
                   </div>
                 </div> 
                 <div className="dropdown">
-                  <div className={`${location.pathname==='/showcase'?"btnloc":"dropbtn"}`}>Showcase</div>
+                  <Link to='/commercial-printing-exp' className={`${location.pathname==='/showcase'?"btnloc":"dropbtn"}`}>Showcase</Link>
                   <div className="dropdown-content">
                     <Link to='/commercial-printing-exp'  className='linkStyle text-start' >Commercial Expertise</Link>
                     <Link to='/packaging-printing-exp'  className='linkStyle text-start' >Packaging Expertise</Link>
@@ -123,7 +123,7 @@ function Header() {
                   </div>
                 </div> 
                 <div className="dropdown">
-                  <div className={`${location.pathname==='/work-with-us'?"btnloc":"dropbtn"}`}>Work With US</div>
+                  <Link to='/openings' className={`${location.pathname==='/work-with-us'?"btnloc":"dropbtn"}`}>Work With US</Link>
                   <div className="dropdown-content">
                     <Link to='/openings'  className='linkStyle text-start' >Openings</Link>
                     <Link to='/registration'  className='linkStyle text-start' >Online vender registration</Link>

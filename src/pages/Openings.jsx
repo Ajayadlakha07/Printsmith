@@ -97,7 +97,7 @@ useEffect(()=>{
             <p className='my-1' style={{fontSize:"14px"}} >Sheetal Goyal</p>
             <p className='my-1' style={{fontSize:"14px"}} >Email: hr@infinityadvt.com</p>
         </div>
-        <div className='w-50 mx-auto' style={{marginTop:"100px"}}>
+        <div className='w50 mx-auto' style={{marginTop:"100px"}}>
             <p className='text-start my-4' style={{fontSize:"11px",color:"#555555"}} >Employee Sales Incentive Programme (ESIP)</p>
             <p className='text-start my-4' style={{fontSize:"13px",color:"#555555"}} >Job Referral Programme</p>
             <p className='text-start my-4' style={{fontSize:"13px",color:"#555555"}} >HR Activities: -Saturday Activities -Hobby Club -Birthday Bash</p>
@@ -109,7 +109,7 @@ useEffect(()=>{
         </div>
        <div className='my-4' style={{backgroundColor:"white",width:"100vw" ,paddingBottom:"100px"}}>
          
-       <div className='w-md-50 w-100 mx-auto' >
+       <div className='w50 mx-auto' >
         <div className='h2 my-4 ' style={{color:"#5B5B5B",paddingTop:"50px"}} >Current&nbsp;<span style={{color:"#2ABDE9"}} >Openings</span></div>
         <div className='p-4 ' style={{backgroundColor:"#F5F5F5"}}> 
         <div>
@@ -145,7 +145,7 @@ useEffect(()=>{
       </Accordion.Item>
         })}
                 
-        </Accordion>:<p className='bg-light py-2' style={{color:"#FFA54D"}}>Thank you for your interest. There are no Job Openings available at this time. Please check back later.</p> }
+        </Accordion>:<p className='bg-light text-14 py-2' style={{color:"#FFA54D"}}>Thank you for your interest. There are no Job Openings available at this time. Please check back later.</p> }
         </div>
 
         </div>

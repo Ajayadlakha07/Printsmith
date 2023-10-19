@@ -57,7 +57,7 @@ export default function Ourservices() {
                 <p className='text-start my-4 para' >We have state-of-the-art Packaging Infrastructure with world-class printing capabilities some of the aces of our packaging infrastructure always..obst Die Cutter SP-102</p>
                 <Link to='/packaging-printing' className="p-2 btn" style={{fontWeight:"600",borderRadius:"0px",backgroundColor:"#FB02AC",color:"white"}}>Read More</Link>
                 </div>
-                <DiBitbucket className='my-4' style={{width:"100px"}} color='#464646' size={50} />
+                <DiBitbucket className='my-4' style={{width:"100px"}} color='#464646' size={60} />
             </div>
             <div className='text-start mx-4 d-flex flex-row my-4'>
                 <div className='w-75'>
@@ -65,7 +65,7 @@ export default function Ourservices() {
                 <p className='text-start my-4 para'  >Printsmith is one of the most innovative display firms in the country. We conceptualize, design, engineer, manufacture ..</p>
                 <Link to='/pos' className="p-2 btn" style={{fontWeight:"600",borderRadius:"0px",backgroundColor:"#FB02AC",color:"white"}}>Read More</Link>
                 </div>
-                <BsFillDisplayFill className='my-4' style={{width:"100px"}} color='#464646' size={50} />
+                <BsFillDisplayFill className='my-4' style={{width:"100px"}} color='#464646' size={45} />
             </div>
         </div>
     </div>

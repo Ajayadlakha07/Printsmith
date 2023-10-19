@@ -45,7 +45,16 @@ export default function Commercial({handleShow,table1,table1_li,table1_head,img1
          </ul>
          <div style={{marginTop:"60px",marginBottom:"60px"}} className='row px-2'>
          {table1.map((e,i)=>{
-            return<> <div style={{color:"rgb(83,83,83)",fontSize:"18px"}} key={i} className='col-md-3 col-6 text-start'> <AiOutlineCheck size={25} className='mx-2' color='#F901AC' />{e}</div>
+            return<> <div style={{color:"rgb(83,83,83)",fontSize:"18px"}} key={i} className='col-md-3 col-6 text-start'>
+              <div className='row'>
+                <div className='col-2'>
+                <AiOutlineCheck size={25} className='mx-2' color='#F901AC' />
+                </div>
+                <div className='col-10'>
+                  {e}
+                </div>
+              </div> 
+              </div>
             </>
           })}
         

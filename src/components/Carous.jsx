@@ -10,7 +10,7 @@ import banner7 from "../assets/banner1-1.jpg"
 
 function Carous() {
   return (
-    <Carousel data-bs-theme="dark">
+    <Carousel data-bs-theme="dark" indicators={false}>
       <Carousel.Item>
         <img
           className="d-block w-100 md600"

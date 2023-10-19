@@ -65,7 +65,7 @@ export default function About() {
           </div>
           
           </div>
-          <div className='justify-content-center d-flex' style={{paddingTop:"150px"}} >
+          <div className='justify-content-center d-flex pt-4' >
           <div className='px-4 mx-md-4 mx-0 bg-light mdWidth75' style={{borderLeft:"5px solid #F304AD"}} >
             <div className='d-flex flex-row align-item-center my-4'>
               <AiOutlineInfoCircle  size={35} color='#FC01AC' />
@@ -94,8 +94,6 @@ export default function About() {
           
           </div>
         <Team id='team' />
-         
-
         <div id='infrastructure'></div> 
         <Abouttabs />
         

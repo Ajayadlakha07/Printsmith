@@ -165,26 +165,25 @@ export default function Home({handleShow}) {
             <div className='col-3 text-start'>
               <a style={{textDecoration:"none"}} href='https://www.facebook.com/PrintsmithIndia' target='blank' >
               <AiFillFacebook color='#1A6ED8' size={50} />
-              <p className='text-start more' style={{color:"#999999"}}>We love to share new stuff!</p>
+              <p className='text-start more text-12' style={{color:"#999999"}}>We love to share new stuff!</p>
               </a>
-              
             </div>
             <div className='col-3 text-start'>
             <a  style={{textDecoration:"none"}} href='https://www.youtube.com/channel/UCThrndHV8sn5EA25on8Wu_Q' target='blank'>
               <AiFillYoutube color='#FF0000' size={50}/>
-              <p className='text-start' style={{color:"#999999"}}>Watch our videos!</p>
+              <p className='text-start text-12' style={{color:"#999999"}}>Watch our videos!</p>
             </a>
             </div>
             <div className='col-3 text-start'>
               <a style={{textDecoration:"none"}} href='https://twitter.com/Print_Smith' target='blank'>
               <AiOutlineTwitter color='#2ABDE9' size={50} />
-              <p className='text-start' style={{color:"#999999"}}>Follow our tweets!</p>
+              <p className='text-start text-12' style={{color:"#999999"}}>Follow our tweets!</p>
               </a>
             </div>
             <div className='col-3 text-start'>
               <a style={{textDecoration:"none"}} href='https://www.linkedin.com/uas/login?session_redirect=%2Fcompany%2F3804512%2F' target='blank' >
               <AiFillLinkedin color='#004182' size={50}/>
-              <p className='text-start' style={{color:"#999999"}}>We Print only the good stuff!</p>
+              <p className='text-start text-12' style={{color:"#999999"}}>We Print only the good stuff!</p>
               </a>
             </div>
           </div>

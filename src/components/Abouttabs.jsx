@@ -28,7 +28,7 @@ import { AiOutlineLine } from "react-icons/ai";
 export default function Abouttabs() {
   return (
     <>
-    <div  className='my-4' style={{paddingTop:"200px"}}>
+    <div  className='my-4 padtop'>
     <div className='h1' style={{color:"#535353"}} >Know <span style={{fontWeight:500,color:"#2ABDE9"}} >Our Capability</span> </div>
     <AiOutlineLine className='mb-4' color='#F902AC' style={{height:"3px", width:"60px",backgroundColor:"#F902AC"}} />
     <p style={{color:"#535353", fontSize:"14px"}} >Our happy customers are our real rewards and we are committed to deliver the best quality to them. This quality comes with the latest infrastructure and at Printsmith,<br/> we have made it a policy to invest in advanced & latest equipment to ensure high standards of the deliverable. </p>

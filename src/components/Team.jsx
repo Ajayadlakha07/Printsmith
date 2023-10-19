@@ -10,7 +10,7 @@ import { AiOutlineLine } from "react-icons/ai";
 export default function Team() {
   return (
     <div className='mdWidth75 mx-auto'  >
-     <div id='team'  style={{paddingTop:"200px"}}>
+     <div id='team' className='padtop' style={{}}>
             <div className='h1' style={{color:"#535353"}} >Meet <span style={{fontWeight:500,color:"#2ABDE9"}} >the Leadership Team</span> 
             
         </div>
