@@ -7,10 +7,10 @@ function Popcontact({handleClose,show}) {
   const formRef = useRef();
   const [form, setForm] = useState({
     name: "",
-    currentOrgnisation:"",
+    company:"",
     mobile:"",
     email: "",
-    service:"",
+    Needed_services:"",
     message:"",
   });
   const handleFileChange = (e) => {
@@ -35,45 +35,33 @@ function Popcontact({handleClose,show}) {
     console.log(form)
   };
   
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-
-    emailjs
-      .send(
-        "service_cc2612m",
-        "template_7s2vfgt",
-        {
-          from_name: form.name,
-          to_name: "pritsmith",
-          from_email: form.email,
-          to_email: "web.developer@infinityadvt.com",
-          message: `message:${form.message}
-          Contact:${form.mobile}
-          Needed service:${form.service}
-          Organisation:${form.currentOrgnisation}`,
-        },
-        "ELoyUYRSJDVO9FEkd"
-      )
-      .then(
-        () => {
-          alert("Thank you. We will get back to you as soon as possible.");
-
-          setForm({
-            name: "",
-            email: "",
-            message:"",
-            city:"",
-            currentOrgnisation:"",
-            exprerience:"",
-            resume:""
-          });
-        },
-        (error) => {
-          console.error(error);
-
-          alert("Ahh, something went wrong. Please try again.");
-        }
-      );
+    let headersList = {
+      "Accept": "*/*",
+      "Content-Type": "application/json"
+     }
+     
+     let bodyContent = JSON.stringify({
+       "subject":"Greetings! from Printsmith",
+       "body":`name: ${form.name} 
+       company: ${form.company} 
+       mobile: ${form.mobile} 
+       email: ${form.email} 
+       Needed_services:${form.Needed_services} 
+       message:${form.message} `
+     });
+     
+     let response = await fetch("http://localhost:8000/send-mail", { 
+       method: "POST",
+       body: bodyContent,
+       headers: headersList
+     });
+     
+     let data = await response.json();
+     console.log(data);
+     alert("Thank you. We will get back to you as soon as possible.");
+      
   };
 
   return (

@@ -27,47 +27,36 @@ export default function Business() {
       console.log(form)
     };
     
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
       e.preventDefault();
-      emailjs
-      .send(
-        "service_cc2612m",
-        "template_7s2vfgt",
-        {
-          from_name: form.contact_person,
-          to_name: "pritsmith",
-          from_email: form.email,
-          to_email: "web.developer@infinityadvt.com",
-          message: `Contact:${form.mobile}
-          City:${form.city}
-          Organisation:${form.currentOrgnisation},
-          E-mail:${form.email},
-          designation:${form.designation},
-          Query:${form.query}`
-        },
-        "ELoyUYRSJDVO9FEkd"
-      )
-        .then(
-          () => {
-            alert("Thank you. We will get back to you as soon as possible.");
-           
-            setForm({
-              contact_person: "",
-              email: "",
-              message:"",
-              city:"",
-              currentOrgnisation:"",
-              exprerience:"",
-              query:""
-            });
-          },
-          (error) => {
-            console.error(error);
-  
-            alert("Ahh, something went wrong. Please try again.");
-          }
-        );
+      let headersList = {
+        "Accept": "*/*",
+        "Content-Type": "application/json"
+       }
+       
+       let bodyContent = JSON.stringify({
+         "subject":"Business Enquiry",
+         "body":`contact_person: ${form.contact_person} 
+         email: ${form.email} 
+         mobile: ${form.mobile} 
+         city: ${form.city} 
+         currentOrgnisation:${form.currentOrgnisation} 
+         designation:${form.designation} 
+         Query:${form.query}  `
+       });
+       
+       let response = await fetch("http://localhost:8000/send-mail", { 
+         method: "POST",
+         body: bodyContent,
+         headers: headersList
+       });
+       
+       let data = await response.json();
+       console.log(data);
+       alert("Thank you. We will get back to you as soon as possible.");
+        
     };
+
   return (
     <div className="row d-flex justify-content-center">
     <div className="col-xl-7 col-lg-8 col-md-9 col-11 text-center w-100">

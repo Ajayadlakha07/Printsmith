@@ -36,45 +36,34 @@ export default function Hr() {
       console.log(form)
     };
     
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
       e.preventDefault();
-      emailjs
-      .send(
-        "service_cc2612m",
-        "template_7s2vfgt",
-        {
-          from_name: form.name,
-          to_name: "pritsmith",
-          from_email: form.email,
-          to_email: "web.developer@infinityadvt.com",
-          message: `Contact:${form.mobile}
-          City:${form.city}
-          Organisation:${form.currentOrgnisation},
-          E-mail:${form.email},
-          Exprerience:${form.exprerience},`
-        },
-        "ELoyUYRSJDVO9FEkd"
-      )
-        .then(
-          () => {
-            alert("Thank you. We will get back to you as soon as possible.");
-           
-            setForm({
-              name: "",
-              email: "",
-              message:"",
-              city:"",
-              currentOrgnisation:"",
-              exprerience:"",
-              resume:""
-            });
-          },
-          (error) => {
-            console.error(error);
-  
-            alert("Ahh, something went wrong. Please try again.");
-          }
-        );
+      let headersList = {
+        "Accept": "*/*",
+        "Content-Type": "application/json"
+       }
+       
+       let bodyContent = JSON.stringify({
+         "subject":"HR",
+         "body":`name: ${form.name} 
+         mobile: ${form.mobile} 
+         email: ${form.email} 
+         city: ${form.city} 
+         organisation:${form.currentOrgnisation} 
+         exprience:${form.exprerience}
+         resume:${form.resume}`
+       });
+       
+       let response = await fetch("http://localhost:8000/send-mail", { 
+         method: "POST",
+         body: bodyContent,
+         headers: headersList
+       });
+       
+       let data = await response.json();
+       console.log(data);
+       alert("Thank you. We will get back to you as soon as possible.");
+        
     };
   return (
     <div className="row d-flex justify-content-center">

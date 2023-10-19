@@ -28,6 +28,7 @@ import Popcontact from './components/Popcontact';
 import Admin from './pages/Admin';
 import { useNavigate } from 'react-router-dom'
 import Login from './pages/Login';
+import Test from './pages/Test';
 
 
 function App() {
@@ -68,6 +69,7 @@ function App() {
             <Route path='/Contact-us' element={<Contactus/>} />
             <Route path='/admin' element={<Admin access={access} />} ></Route>
             <Route path='/login' element={<Login settingAccess={settingAccess} />} ></Route>
+            <Route path='/test' element={<Test />} ></Route>
         </Routes>
         <Footer/>
       

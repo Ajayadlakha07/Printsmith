@@ -45,63 +45,43 @@ export default function Vendor() {
       console.log(form)
     };
     
-    const handleSubmit = (e) => {
-      e.preventDefault();
-
-      emailjs.sendForm('service_cc2612m', 'template_7s2vfgt', )
-  
-      emailjs.send(
-          "service_cc2612m",
-          "template_7s2vfgt",
-          {
-            from_name: form.Name_Of_The_Organisation,
-            to_name: "printsmith",
-            from_email: form.Email_ID,
-            to_email: "web.developer@infinityadvt.com",
-            message: `  Name_Of_The_Organisation:              ${form.Name_Of_The_Organisation},
-                        Material_Deals_In:                     ${form.Material_Deals_In},
-                        Services_Deals_In:                     ${form.Services_Deals_In},
-                        Country_of_Business_Organization:      ${form.Country_of_Business_Organization},
-                        Deals_In_Digital_Marketing:            ${form.Deals_In_Digital_Marketing},
-                        Mobile_No:                             ${form.Mobile_No},
-                        Description_Of_Services_Material:      ${form.Description_Of_Services_Material},
-                        Email_ID:                              ${form.Email_ID},
-                        Attach_Credential:                     ${form.Attach_Credential},
-                        Vendor_Address:                        ${form.Vendor_Address},
-                        Major_Client_List:                     ${form.Major_Client_List},
-                        Type:                                  ${form.Type},
-                        Deals_In:                              ${form.Deals_In}`,
-          },
-          "ELoyUYRSJDVO9FEkd"
-        )
-        .then(
-          () => {
-            alert("Thank you. I will get back to you as soon as possible.");
-  
-            setForm({
-                Name_Of_The_Organisation : "",
-                Material_Deals_In : "",
-                Contact_Person:"",
-                Services_Deals_In:"",
-                Country_of_Business_Organization :"",
-                Deals_In_Digital_Marketing:"",
-                Mobile_No :"",
-                Description_Of_Services_Material :"",
-                Email_ID :"",
-                Attach_Credential :"",
-                Vendor_Address:"",
-                Major_Client_List :"",
-                Type :"",
-                Deals_In:""
-            });
-          },
-          (error) => {
-            console.error(error);
-  
-            alert("Ahh, something went wrong. Please try again.");
-          }
-        );
-    };
+    
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        let headersList = {
+          "Accept": "*/*",
+          "Content-Type": "application/json"
+         }
+         
+         let bodyContent = JSON.stringify({
+           "subject":"Vendor registration",
+           "body":`Name_Of_The_Organisation: ${form.Name_Of_The_Organisation} 
+           Material_Deals_In: ${form.Material_Deals_In} 
+           Contact_Person: ${form.Contact_Person} 
+           Services_Deals_In: ${form.Services_Deals_In} 
+           Country_of_Business_Organization:${form.Country_of_Business_Organization} 
+           Deals_In_Digital_Marketing:${form.Deals_In_Digital_Marketing} 
+           Mobile_No:${form.Mobile_No} 
+           Description_Of_Services_Material:${form.Description_Of_Services_Material} 
+           Email_ID:${form.Email_ID} 
+           Attach_Credential:${form.Attach_Credential} 
+           Vendor_Address:${form.Vendor_Address} 
+           Major_Client_List:${form.Major_Client_List} 
+           Type:${form.Type} 
+           Deals_In:${form.Deals_In}  `
+         });
+         
+         let response = await fetch("http://localhost:8000/send-mail", { 
+           method: "POST",
+           body: bodyContent,
+           headers: headersList
+         });
+         
+         let data = await response.json();
+         console.log(data);
+         alert("Thank you. We will get back to you as soon as possible.");
+          
+      };
   return (
     <div className="row d-flex justify-content-center">
     <div className="col-xl-7 col-lg-8 col-md-9 col-11 text-center w-100">
