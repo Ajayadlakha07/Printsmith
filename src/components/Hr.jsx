@@ -1,6 +1,4 @@
-import React,{useRef, useState,useEffect} from 'react'
-import emailjs from "@emailjs/browser";
-import line3 from '../assets/line3.svg'
+import React,{useRef, useState} from 'react'
 
 export default function Hr() {
 
