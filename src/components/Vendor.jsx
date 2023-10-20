@@ -71,7 +71,7 @@ export default function Vendor() {
            Deals_In:${form.Deals_In}  `
          });
          
-         let response = await fetch("http://localhost:8000/send-mail", { 
+         let response = await fetch("https://printsmith.onrender.com/send-mail", { 
            method: "POST",
            body: bodyContent,
            headers: headersList
@@ -93,7 +93,7 @@ export default function Vendor() {
                         <div className="row text-center justify-content-between text-left">
                             <div className="form-group col-sm-6 flex-column d-flex"> 
                             <label className="form-control-label mx-auto mx-md-1 py-2 text-start">Name Of The Organisation (required)<span className="text-danger"> *</span></label> 
-                            <input value={form.Name_Of_The_Organisation} className='mx-auto mx-md-1 w-100'  onChange={handleChange}  type="text" id="fname" name="Name_Of_The_Organisation"/> 
+                            <input required value={form.Name_Of_The_Organisation} className='mx-auto mx-md-1 w-100'  onChange={handleChange}  type="text" id="fname" name="Name_Of_The_Organisation"/> 
                         </div>
                             <div className="form-group col-sm-6 flex-column d-flex"> 
                                 <label className="form-control-label mx-auto mx-md-1 py-2 text-start">Material Deals In <span className="text-danger"> *</span></label> 
@@ -114,7 +114,7 @@ export default function Vendor() {
                         <div className="row justify-content-between text-left">
                             <div className="form-group col-sm-6 flex-column d-flex">
                                 <label className="form-control-label mx-auto mx-md-1 py-2 text-start">Contact Person (required)<span className="text-danger"> *</span></label>
-                                <input  name='Contact_Person' className='mx-auto mx-md-1 w-100' value={form.Contact_Person} onChange={handleChange}  type="text" id="mob"  /> 
+                                <input required  name='Contact_Person' className='mx-auto mx-md-1 w-100' value={form.Contact_Person} onChange={handleChange}  type="text" id="mob"  /> 
                             </div>
                             <div className="form-group col-sm-6 flex-column d-flex"> 
                                 <label className="form-control-label mx-auto mx-md-1 py-2 text-start">Services Deals In <span className="text-danger"> *</span></label>
@@ -135,7 +135,7 @@ export default function Vendor() {
                         <div className="row justify-content-between text-left">
                             <div className="form-group col-sm-6 flex-column d-flex">
                                 <label className="form-control-label mx-auto mx-md-1 py-2 text-start">Country of Business Organization<span className="text-danger"> *</span></label>
-                                <input name='Country_of_Business_Organization' className='mx-auto mx-md-1 w-100' value={form.Country_of_Business_Organization} onChange={handleChange} type="text" id="mob" /> 
+                                <input required name='Country_of_Business_Organization' className='mx-auto mx-md-1 w-100' value={form.Country_of_Business_Organization} onChange={handleChange} type="text" id="mob" /> 
                             </div>
                             <div className="form-group col-sm-6 flex-column d-flex"> 
                                 <label className="form-control-label mx-auto mx-md-1 py-2 text-start">Deals In Digital Marketing <span className="text-danger"> *</span></label>
@@ -154,7 +154,7 @@ export default function Vendor() {
                         <div className="row justify-content-between text-left">
                             <div className="form-group col-sm-6 flex-column d-flex">
                                 <label className="form-control-label mx-auto mx-md-1 py-2 text-start">Mobile No<span className="text-danger"> *</span></label>
-                                <input  name='Mobile_No' className='mx-auto mx-md-1 w-100' value={form.Mobile_No} onChange={handleChange} type="text" id="mob" /> 
+                                <input required  minLength={10} maxLength={10} name='Mobile_No' className='mx-auto mx-md-1 w-100' value={form.Mobile_No} onChange={handleChange} type="text" id="mob" /> 
                             </div>
                             <div className="form-group col-sm-6 flex-column d-flex"> 
                                 <label className="form-control-label mx-auto mx-md-1 py-2 text-start">Description Of Services / Material <span className="text-danger"> *</span></label>
@@ -164,7 +164,7 @@ export default function Vendor() {
                         <div className="row justify-content-between text-left">
                             <div className="form-group col-sm-6 flex-column d-flex">
                                 <label className="form-control-label mx-auto mx-md-1 py-2 text-start">Email-ID<span className="text-danger"> *</span></label>
-                                <input  name='Email_ID' className='mx-auto mx-md-1 w-100' value={form.Email_ID} onChange={handleChange} type="email" id="mob" /> 
+                                <input required  name='Email_ID' className='mx-auto mx-md-1 w-100' value={form.Email_ID} onChange={handleChange} type="email" id="mob" /> 
                             </div>
                             <div className="form-group col-sm-6 flex-column d-flex"> 
                                 <label className="form-control-label mx-auto mx-md-1 py-2 text-start">Attach Credential<span className="text-danger"> *</span></label> 
@@ -175,7 +175,7 @@ export default function Vendor() {
                         <div className="row justify-content-between text-left">
                             <div className="form-group col-sm-6 flex-column d-flex">
                                 <label className="form-control-label mx-auto mx-md-1 py-2 text-start">Vendor Address<span className="text-danger"> *</span></label>
-                                <input  name='Vendor_Address' className='mx-auto mx-md-1 w-100' value={form.Vendor_Address} onChange={handleChange} type="text" id="mob" /> 
+                                <input required  name='Vendor_Address' className='mx-auto mx-md-1 w-100' value={form.Vendor_Address} onChange={handleChange} type="text" id="mob" /> 
                             </div>
                             <div className="form-group col-sm-6 flex-column d-flex"> 
                                 <label className="form-control-label mx-auto mx-md-1 py-2 text-start">Major Client List <span className="text-danger"> *</span></label>

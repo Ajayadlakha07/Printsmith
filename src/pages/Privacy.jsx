@@ -1,5 +1,5 @@
 import React,{useEffect,useState} from 'react'
-import line3 from '../assets/line3.svg'
+import { Link } from 'react-router-dom';
 import '../styles/main.css'
 import { AiOutlineCaretRight } from "react-icons/ai";
 
@@ -17,8 +17,8 @@ export default function Privacy() {
   return (
     <div style={{backgroundColor:"#F5F5F5"}}>
          <div  style={{height:"200px",alignItems:"end",paddingTop:"100px"}} className='gradi text-start px-2' >
-        <div className='text-start text-white px-2 py-1' style={{backgroundColor:"rgba(0, 0, 0, .8)",width:"450px",maxWidth:"90%"}}>
-          <span  >Home</span>
+        <div className='text-start text-white text-14 px-2 py-1' style={{backgroundColor:"rgba(0, 0, 0, .8)",width:"450px",maxWidth:"90%"}}>
+          <Link style={{textDecoration:"none",color:"white"}} to='/' >Home</Link>
           <AiOutlineCaretRight size={13} className='mx-2' color='#FC01AC'/>
           <span>PRIVACY POLICY & TERMS AND CONDITIONS</span>
         </div>
@@ -48,7 +48,7 @@ export default function Privacy() {
                     <div className='para'>We do not use Malware Scanning.</div>
                     <div className='para'>We do not use an SSL certificate.</div>
                     <p className='para heading my-4' >Do we use 'cookies'?</p>
-                    <div className='para' >Yes. Cookies are small files that a site or its service provider transfers to your computer's hard drive through your Web browser (if you allow) that enables the site's or service provider's systems to recognize your browser and capture and remember certain information.</div>
+                    <div className='para' >Yes. Cookies are small files that a site or its service provider transfers to your computer's hard drive through your Web browser (if you allow) that enable the site's or service provider's systems to recognize your browser and capture and remember certain information.</div>
                     <div className='para' >They are also used to help us understand your preferences based on previous or current site activity, which enables us to provide you with improved services. We also use cookies to help us compile aggregate data about site traffic and site interaction so that we can offer better site experiences and tools in the future.</div>
                     <div className='para mt-4' >We use cookies to:</div>
                     <div className='para' >• Compile aggregate data about site traffic and site interactions in order to offer better site experiences and tools in the future. We may also use trusted third-party services that track this information on our behalf.</div>
@@ -77,8 +77,8 @@ export default function Privacy() {
                     <div className='para'>• By chatting with us or by sending us a support ticket</div>
                     <p className='para heading mt-4'>How does our site handle Do Not Track signals?</p>
                     <div className='para'>We honor Do Not Track signals and Do Not Track, plant cookies, or use advertising when a Do Not Track (DNT) browser mechanism is in place.</div>
-                    <p className='para heading mt-4'>Does our site allow third-party behavioural tracking?</p>
-                    <div className='para'>It's also important to note that we do not allow third-party behavioural tracking</div>
+                    <p className='para heading mt-4'>Does our site allow third-party behavioral tracking?</p>
+                    <div className='para'>It's also important to note that we do not allow third-party behavioral tracking</div>
                     <div className='para'>In order to be in line with fair information practices we will take the following responsive </div>
                     <div className='para'>action, should a data breach occur:</div>
                     <div className='para'>We will notify you via email</div>

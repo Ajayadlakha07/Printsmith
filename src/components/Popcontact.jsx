@@ -52,7 +52,7 @@ function Popcontact({handleClose,show}) {
        message:${form.message} `
      });
      
-     let response = await fetch("http://localhost:8000/send-mail", { 
+     let response = await fetch("https://printsmith.onrender.com/send-mail", { 
        method: "POST",
        body: bodyContent,
        headers: headersList
@@ -86,7 +86,7 @@ function Popcontact({handleClose,show}) {
                         </div>
                         <div className="form-group col-sm-6 flex-column d-flex">
                                 <label className="form-control-label py-2 text-start">Company<span className="text-danger"> *</span></label>
-                                <input name='currentOrgnisation' value={form.currentOrgnisation} onChange={handleChange}  type="text" id="mob" /> 
+                                <input name='company' value={form.company} onChange={handleChange}  type="text" id="mob" /> 
                             </div>
                         </div>
                         <div className="row justify-content-between text-left">
@@ -100,7 +100,7 @@ function Popcontact({handleClose,show}) {
                         </div>
                             <div className="form-group text-start col-sm-4 flex-column d-flex"> 
                                 <label className="form-control-label py-2 text-start">Needed services<span className="text-danger"> *</span></label>
-                                <select value={form.service} onChange={handleChange}  name='service' style={{height:"45px"}} className="form-control w-100 mx-auto mx-md-1 w-75" >
+                                <select value={form.Needed_services} onChange={handleChange}  name='Needed_services' style={{height:"45px"}} className="form-control w-100 mx-auto mx-md-1 w-75" >
                                 <option value="">Please Select</option>
                                 <option value="Marketing Collateral">Marketing Collateral</option>
                                 <option value="Danglers">Danglers</option>

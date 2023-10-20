@@ -1,5 +1,5 @@
 import React,{useEffect, useRef, useState} from 'react'
-import line3 from '../assets/line3.svg'
+import { Link } from 'react-router-dom';
 import Accordion from 'react-bootstrap/Accordion';
 import '../styles/main.css'
 import { AiFillPlusSquare , AiFillMinusSquare} from "react-icons/ai";
@@ -32,8 +32,8 @@ export default function Faq() {
     <div>
     <div ref={divRef} ></div>
     <div  style={{height:"200px",alignItems:"end",paddingTop:"100px"}} className='gradi text-start px-2' >
-        <div className='text-start text-white px-2 py-1' style={{backgroundColor:"rgba(0, 0, 0, .8)",width:"150px"}}>
-          <span  >Home</span>
+        <div className='text-start text-14 text-white px-2 py-1' style={{backgroundColor:"rgba(0, 0, 0, .8)",width:"150px"}}>
+        <Link style={{textDecoration:"none",color:"white"}} to='/' >Home</Link>
           <AiOutlineCaretRight size={13} className='mx-2' color='#FC01AC'/>
           <span>NEWS</span>
         </div>

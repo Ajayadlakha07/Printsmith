@@ -1,6 +1,6 @@
 import React,{useEffect, useState} from 'react'
 import {table_report} from './content'
-import line3 from '../assets/line3.svg'
+import { Link } from 'react-router-dom';
 import Table from '../components/Table'
 import { AiOutlineCaretRight } from "react-icons/ai";
 
@@ -18,8 +18,8 @@ export default function Commercialexp() {
   return (
     <div>
        <div  style={{height:"200px",alignItems:"end",paddingTop:"100px"}} className='gradi text-start px-2' >
-        <div className='text-start text-white px-2 py-1' style={{backgroundColor:"rgba(0, 0, 0, .8)",width:"300px",maxWidth:"90%"}}>
-          <span  >Home</span>
+        <div className='text-start text-14 text-white px-2 py-1' style={{backgroundColor:"rgba(0, 0, 0, .8)",width:"300px",maxWidth:"90%"}}>
+        <Link style={{textDecoration:"none",color:"white"}} to='/' >Home</Link>
           <AiOutlineCaretRight size={13} className='mx-2' color='#FC01AC'/>
 
           <span>COMMERCIAL EXPERTISE</span>

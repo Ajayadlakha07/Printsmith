@@ -32,7 +32,7 @@ export default function Business() {
       let headersList = {
         "Accept": "*/*",
         "Content-Type": "application/json"
-       }
+       } 
        
        let bodyContent = JSON.stringify({
          "subject":"Business Enquiry",
@@ -45,7 +45,7 @@ export default function Business() {
          Query:${form.query}  `
        });
        
-       let response = await fetch("http://localhost:8000/send-mail", { 
+       let response = await fetch("https://printsmith.onrender.com/send-mail", { 
          method: "POST",
          body: bodyContent,
          headers: headersList
@@ -68,31 +68,31 @@ export default function Business() {
                 <div className="row justify-content-between text-left">
                     <div className="form-group col-sm-6 flex-column d-flex"> 
                     <label className="form-control-label py-2 text-start">Contact Person (required)<span className="text-danger"> *</span></label> 
-                    <input value={form.name}  onChange={handleChange}  type="text" id="fname" name="contact_person"/> 
+                    <input required value={form.name}  onChange={handleChange}  type="text" id="fname" name="contact_person"/> 
                 </div>
                 <div className="form-group col-sm-6 flex-column d-flex">
                         <label className="form-control-label py-2 text-start">Name Of The Organisation (required)<span className="text-danger"> *</span></label>
-                        <input name='currentOrgnisation' value={form.currentOrgnisation} onChange={handleChange}  type="text" id="mob" /> 
+                        <input required name='currentOrgnisation' value={form.currentOrgnisation} onChange={handleChange}  type="text" id="mob" /> 
                     </div>
                 </div>
                 <div className="row justify-content-between text-left">
                     <div className="form-group col-sm-6 flex-column d-flex">
                         <label className="form-control-label py-2 text-start">Mobile<span className="text-danger"> *</span></label>
-                        <input name='mobile' value={form.mobile} onChange={handleChange}  type="text" id="mob"  /> 
+                        <input required name='mobile' minLength={10} maxLength={10} value={form.mobile} onChange={handleChange}  type="text" id="mob"  /> 
                     </div>
                     <div className="form-group col-sm-6 flex-column d-flex"> 
                         <label className="form-control-label py-2 text-start">Email<span className="text-danger"> *</span></label> 
-                        <input  name='email' value={form.email} onChange={handleChange}  type="text" id="email" /> 
+                        <input required  name='email' value={form.email} onChange={handleChange}  type="text" id="email" /> 
                 </div>
                 </div>
                 <div className="row justify-content-between text-left">
                     <div className="form-group col-sm-6 flex-column d-flex"> 
                         <label className="form-control-label py-2 text-start">Designation<span className="text-danger"> *</span></label>
-                        <input name='designation' value={form.designation} onChange={handleChange}  type="text" id="lname"/> 
+                        <input required name='designation' value={form.designation} onChange={handleChange}  type="text" id="lname"/> 
                     </div>
                     <div className="form-group col-sm-6 flex-column d-flex"> 
                         <label className="form-control-label py-2 text-start">City<span className="text-danger"> *</span></label>
-                        <input name='city' value={form.city} onChange={handleChange}  type="text" id="lname" /> 
+                        <input required name='city' value={form.city} onChange={handleChange}  type="text" id="lname" /> 
                     </div>
                 </div>
                 <div className="row justify-content-between text-left">
@@ -103,7 +103,7 @@ export default function Business() {
                 </div>
                 <div className="row justify-content-end">
                     <div className="justify-content-end d-flex form-group col-sm-6"> 
-                    <button type="submit" className="btn-block btn-primary">Send</button> 
+                    <button type="submit" className="btnsumbit">Submit</button> 
                 </div>
                 </div>
             </form>

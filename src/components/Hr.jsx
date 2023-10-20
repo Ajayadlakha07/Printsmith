@@ -52,7 +52,7 @@ export default function Hr() {
          resume:${form.resume}`
        });
        
-       let response = await fetch("http://localhost:8000/send-mail", { 
+       let response = await fetch("https://printsmith.onrender.com/send-mail", { 
          method: "POST",
          body: bodyContent,
          headers: headersList
@@ -63,6 +63,7 @@ export default function Hr() {
        alert("Thank you. We will get back to you as soon as possible.");
         
     };
+    
   return (
     <div className="row d-flex justify-content-center">
     <div className="col-xl-7 col-lg-8 col-md-9 col-11 text-center w-100">
@@ -74,31 +75,31 @@ export default function Hr() {
                 <div className="row justify-content-between text-left">
                     <div className="form-group col-sm-6 flex-column d-flex"> 
                     <label className="form-control-label py-2 text-start">Name<span className="text-danger"> *</span></label> 
-                    <input value={form.name}  onChange={handleChange}  type="text" id="fname" name="name"/> 
+                    <input required value={form.name}  onChange={handleChange}  type="text" id="fname" name="name"/> 
                 </div>
                     <div className="form-group col-sm-6 flex-column d-flex"> 
                         <label className="form-control-label py-2 text-start">Email<span className="text-danger"> *</span></label> 
-                        <input  name='email' value={form.email} onChange={handleChange}  type="text" id="email" /> 
+                        <input required  name='email' value={form.email} onChange={handleChange}  type="text" id="email" /> 
                 </div>
                 </div>
                 <div className="row justify-content-between text-left">
                     <div className="form-group col-sm-6 flex-column d-flex">
                         <label className="form-control-label py-2 text-start">Mobile<span className="text-danger"> *</span></label>
-                        <input name='mobile' value={form.mobile} onChange={handleChange}  type="text" id="mob"  /> 
+                        <input required minLength={10} maxLength={10} name='mobile' value={form.mobile} onChange={handleChange}  type="text" id="mob"  />
                     </div>
                     <div className="form-group col-sm-6 flex-column d-flex"> 
                         <label className="form-control-label py-2 text-start">City<span className="text-danger"> *</span></label>
-                        <input name='city' value={form.city} onChange={handleChange}  type="text" id="lname" /> 
+                        <input required name='city' value={form.city} onChange={handleChange}  type="text" id="lname" /> 
                     </div>
                 </div>
                 <div className="row justify-content-between text-left">
                     <div className="form-group col-sm-6 flex-column d-flex">
                         <label className="form-control-label py-2 text-start">Current Organisation<span className="text-danger"> *</span></label>
-                        <input name='currentOrgnisation' value={form.currentOrgnisation} onChange={handleChange}  type="text" id="mob" /> 
+                        <input required name='currentOrgnisation' value={form.currentOrgnisation} onChange={handleChange}  type="text" id="mob" /> 
                     </div>
                     <div className="form-group col-sm-6 flex-column d-flex"> 
                         <label className="form-control-label py-2 text-start">Experiance (in years)<span className="text-danger"> *</span></label>
-                        <input name='exprerience' value={form.exprerience} onChange={handleChange}  type="number" id="lname"/> 
+                        <input required name='exprerience' value={form.exprerience} onChange={handleChange}  type="number" id="lname"/> 
                     </div>
                 </div>
                 <div className="row justify-content-between text-left">

@@ -25,7 +25,7 @@ export default function Team() {
                     <p className='h6'style={{color:"#535353"}}>Managing Director</p>
                     <div>
                         <p style={{color:"#535353",fontSize:"12px", marginTop:"40px"}}>An M.B.A & B. Tech, Ajay Adlakha is the Managing Director as well as the chief strategist of Printsmith. </p>
-                        <p style={{color:"#535353",fontSize:"12px"}}>He started his career with Johnson & Johnson & worked with several prestigious companies like Thermax Ltd. & Alembic Pharmaceutical. Soon he realised that he has a different goal to achieve and this led to the foundation of Infinity Advertising Services in 1994. Printsmith came into existence in 2003 to shoulder the print requirements of Infinity Advertising Services. </p>
+                        <p style={{color:"#535353",fontSize:"12px"}}>He started his career with Johnson & Johnson & worked with several prestigious companies like Thermax Ltd. & Alembic Pharmaceutical. Soon he realized that he has a different goal to achieve and this led to the foundation of Infinity Advertising Services in 1994. Printsmith came into existence in 2003 to shoulder the print requirements of Infinity Advertising Services. </p>
                         <p style={{color:"#535353",fontSize:"12px"}}>Ajay is also the Vice President of DAC & Haryana Kick Boxing Association and the President of Rotary club of Faridabad-Sanskar, Haryana. He is also associated with an NGO, ‘Eksang’ as a Trustee, which provides free vocational training to underprivileged youth. His quest for excellence & entrepreneurial acumen has been taking the company on a path of constant growth and expansion.</p>
                     </div>
                 </div>

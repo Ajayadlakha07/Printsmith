@@ -1,6 +1,6 @@
 import React,{useRef, useState,useEffect} from 'react'
 import emailjs from "@emailjs/browser";
-import line3 from '../assets/line3.svg'
+import { Link } from 'react-router-dom';
 import { AiOutlineCaretRight } from "react-icons/ai";
 
 export default function Registration() {
@@ -15,100 +15,80 @@ export default function Registration() {
         window.scrollTo(0, 0);  // Scroll to the top of the page
       }, []);
 
-    const formRef = useRef();
-    const [form, setForm] = useState({
-      Name_Of_The_Organisation : "",
-      Material_Deals_In : "",
-      Contact_Person:"",
-      Services_Deals_In:"",
-      Country_of_Business_Organization :"",
-      Deals_In_Digital_Marketing:"",
-      Mobile_No :"",
-      Description_Of_Services_Material :"",
-      Email_ID :"",
-      Attach_Credential :"",
-      Vendor_Address:"",
-      Major_Client_List :"",
-      Type :"",
-      Deals_In:""
-    });
-  
-  
-    const handleChange = (e) => {
-      const { target } = e;
-      console.log(e)
-      const { name, value } = target;
-      setForm({
-        ...form,
-        [name]: value,
+      const formRef = useRef();
+      const [form, setForm] = useState({
+        Name_Of_The_Organisation : "",
+        Material_Deals_In : "",
+        Contact_Person:"",
+        Services_Deals_In:"",
+        Country_of_Business_Organization :"",
+        Deals_In_Digital_Marketing:"",
+        Mobile_No :"",
+        Description_Of_Services_Material :"",
+        Email_ID :"",
+        Attach_Credential :"",
+        Vendor_Address:"",
+        Major_Client_List :"",
+        Type :"",
+        Deals_In:""
       });
-      
-      console.log(form)
-    };
     
-    const handleSubmit = (e) => {
-      e.preventDefault();
-
-      emailjs.sendForm('service_cc2612m', 'template_7s2vfgt', )
-  
-      emailjs.send(
-          "service_cc2612m",
-          "template_7s2vfgt",
-          {
-            from_name: form.Name_Of_The_Organisation,
-            to_name: "printsmith",
-            from_email: form.Email_ID,
-            to_email: "web.developer@infinityadvt.com",
-            message: `  Name_Of_The_Organisation:              ${form.Name_Of_The_Organisation},
-                        Material_Deals_In:                     ${form.Material_Deals_In},
-                        Services_Deals_In:                     ${form.Services_Deals_In},
-                        Country_of_Business_Organization:      ${form.Country_of_Business_Organization},
-                        Deals_In_Digital_Marketing:            ${form.Deals_In_Digital_Marketing},
-                        Mobile_No:                             ${form.Mobile_No},
-                        Description_Of_Services_Material:      ${form.Description_Of_Services_Material},
-                        Email_ID:                              ${form.Email_ID},
-                        Attach_Credential:                     ${form.Attach_Credential},
-                        Vendor_Address:                        ${form.Vendor_Address},
-                        Major_Client_List:                     ${form.Major_Client_List},
-                        Type:                                  ${form.Type},
-                        Deals_In:                              ${form.Deals_In}`,
-          },
-          "ELoyUYRSJDVO9FEkd"
-        )
-        .then(
-          () => {
-            alert("Thank you. I will get back to you as soon as possible.");
-  
-            setForm({
-                Name_Of_The_Organisation : "",
-                Material_Deals_In : "",
-                Contact_Person:"",
-                Services_Deals_In:"",
-                Country_of_Business_Organization :"",
-                Deals_In_Digital_Marketing:"",
-                Mobile_No :"",
-                Description_Of_Services_Material :"",
-                Email_ID :"",
-                Attach_Credential :"",
-                Vendor_Address:"",
-                Major_Client_List :"",
-                Type :"",
-                Deals_In:""
-            });
-          },
-          (error) => {
-            console.error(error);
-  
-            alert("Ahh, something went wrong. Please try again.");
-          }
-        );
-    };
+    
+      const handleChange = (e) => {
+        const { target } = e;
+        console.log(e)
+        const { name, value } = target;
+        setForm({
+          ...form,
+          [name]: value,
+        });
+        
+        console.log(form)
+      };
+      
+      
+      const handleSubmit = async (e) => {
+          e.preventDefault();
+          let headersList = {
+            "Accept": "*/*",
+            "Content-Type": "application/json"
+           }
+           
+           let bodyContent = JSON.stringify({
+             "subject":"Vendor registration",
+             "body":`Name_Of_The_Organisation: ${form.Name_Of_The_Organisation} 
+             Material_Deals_In: ${form.Material_Deals_In} 
+             Contact_Person: ${form.Contact_Person} 
+             Services_Deals_In: ${form.Services_Deals_In} 
+             Country_of_Business_Organization:${form.Country_of_Business_Organization} 
+             Deals_In_Digital_Marketing:${form.Deals_In_Digital_Marketing} 
+             Mobile_No:${form.Mobile_No} 
+             Description_Of_Services_Material:${form.Description_Of_Services_Material} 
+             Email_ID:${form.Email_ID} 
+             Attach_Credential:${form.Attach_Credential} 
+             Vendor_Address:${form.Vendor_Address} 
+             Major_Client_List:${form.Major_Client_List} 
+             Type:${form.Type} 
+             Deals_In:${form.Deals_In}  `
+           });
+           
+           let response = await fetch("https://printsmith.onrender.com/send-mail", { 
+             method: "POST",
+             body: bodyContent,
+             headers: headersList
+           });
+           
+           let data = await response.json();
+           console.log(data);
+           alert("Thank you. We will get back to you as soon as possible.");
+            
+        };
 
   return (
     <div style={{backgroundColor:"#F5F5F5"}}>
         <div  style={{height:"200px",alignItems:"end",paddingTop:"100px"}} className='gradi text-start px-2' >
-        <div className='text-start text-white px-2 py-1' style={{backgroundColor:"rgba(0, 0, 0, .8)",width:"350px"}}>
-          <span  >Home</span>
+        <div className='text-start text-14 text-white px-2 py-1' style={{backgroundColor:"rgba(0, 0, 0, .8)",width:"350px"}}>
+          <Link style={{textDecoration:"none",color:"white"}} to='/' >Home</Link>
           <AiOutlineCaretRight size={13} className='mx-2' color='#FC01AC'/>
           <span>ONLINE VENDOR REGISTRATION</span>
         </div>

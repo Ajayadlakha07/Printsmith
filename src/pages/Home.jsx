@@ -21,6 +21,7 @@ import line from '../assets/line.svg'
 
 import { AiOutlineDown } from "react-icons/ai";
 import Testmonial from '../components/Testmonial';
+import lining from '../assets/lining.png'
 
 
 export default function Home({handleShow}) {
@@ -87,9 +88,8 @@ export default function Home({handleShow}) {
       </div>
 
       <div >
-      <img className='glyphicon'  src={line} alt='' />
-            <AiOutlineDown className='down'/>
-            {/* <i className="down"></i> */}
+      <img className='w-100'  src={lining} alt='' />
+           
       </div>
 
       {/* AWARDS */}
@@ -203,7 +203,7 @@ export default function Home({handleShow}) {
             <div className='p-4 d-flex flex-column justify-content-start'>
             <BsFillBookmarksFill color='#FC01AC' size={50} />
             <Link to='/commercial-printing' className='text-start my-4 more' style={{fontSize:"23px",fontWeight:"400"}}><b>Commercial Printing</b></Link>
-            <p className='text-start text-muted ' style={{fontFamily:"Open Sans",fontSize:"13px",lineHeight:"25px"}}>Our endeavour to provide the best of commercial printing solutions is visible through our printing infrastructure. We have the following machines <Link className='more' to='/commercial-printing' >... More</Link></p>
+            <p className='text-start text-muted ' style={{fontFamily:"Open Sans",fontSize:"13px",lineHeight:"25px"}}>Our endeavor to provide the best of commercial printing solutions is visible through our printing infrastructure. We have the following machines <Link className='more' to='/commercial-printing' >... More</Link></p>
             </div>
           </div>
           <div className="m-4" style={{backgroundColor:"#F5F5F5"}}>

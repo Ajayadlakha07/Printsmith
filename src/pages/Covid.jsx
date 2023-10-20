@@ -35,10 +35,9 @@ export default function Covid() {
   const [form, setForm] = useState({
     name: "",
     email: "",
+    contact:"",
     product: "",
     Quantity:"",
-    contact:"",
-    resumeL:"",
   });
 
   const handleChange = (e) => {
@@ -53,40 +52,32 @@ export default function Covid() {
     console.log(form)
   };
   
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-
-    emailjs
-      .send(
-        "service_cc2612m",
-        "template_7s2vfgt",
-        {
-          from_name: form.name,
-          to_name: "Rahul chauhan",
-          from_email: form.email,
-          to_email: "rahulchauhah50@gmail.com",
-          message: `Contact:${form.contact}
-          Product:${form.product}
-          Quantity:${form.Quantity}`,
-        },
-        "ELoyUYRSJDVO9FEkd"
-      )
-      .then(
-        () => {
-          alert("Thank you. I will get back to you as soon as possible.");
-
-          setForm({
-            name: "",
-            email: "",
-            message: "",
-          });
-        },
-        (error) => {
-          console.error(error);
-
-          alert("Ahh, something went wrong. Please try again.");
-        }
-      );
+    let headersList = {
+      "Accept": "*/*",
+      "Content-Type": "application/json"
+     }
+     
+     let bodyContent = JSON.stringify({
+       "subject":"HR",
+       "body":`name: ${form.name} 
+       email: ${form.email} 
+       contact: ${form.contact} 
+       product: ${form.product} 
+       Quantity:${form.Quantity}`
+     });
+     
+     let response = await fetch("https://printsmith.onrender.com/send-mail", { 
+       method: "POST",
+       body: bodyContent,
+       headers: headersList
+     });
+     
+     let data = await response.json();
+     console.log(data);
+     alert("Thank you. We will get back to you as soon as possible.");
+      
   };
 
 
@@ -146,7 +137,7 @@ export default function Covid() {
               
             </div>
             <div className="form-group my-4">
-              <input name='Quantity' value={form.Quantity}  onChange={handleChange} style={{backgroundColor:"transparent",borderWidth:"0px 0px 1px 0px",borderColor:"black"}} type="number" className="form-control" id="exampleFormControlInput1" placeholder="QYT"/>
+              <input name='Quantity' value={form.Quantity}  onChange={handleChange} style={{backgroundColor:"transparent",borderWidth:"0px 0px 1px 0px",borderColor:"black"}} type="number" className="form-control" id="exampleFormControlInput1" placeholder="QTY"/>
             </div>
             <div className='text-start my-4'>
               <button type="button" onClick={handleSubmit} className="btn text-white" style={{backgroundColor:"#E90AAF"}} >Send Message</button>

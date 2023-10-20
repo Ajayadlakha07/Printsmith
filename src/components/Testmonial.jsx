@@ -6,22 +6,17 @@ import test39 from '../assets/default_img-40x40_c.jpg'
 import test40 from '../assets/Mr.-Aanand-Prakash-Singh-40x40_c.jpg'
 import test511 from '../assets/EG0375-40x40_c.jpg'
 import test612 from '../assets/Mr.-Gaurav-Managing-Director-Mammoth-World-40x40_c.jpg'
-// import test9 from '../assets/'
-// import test0 from '../assets/'
-// import test11 from '../assets/'
-// import test12 from '../assets/'
-// import test13 from '../assets/'
 
 export default function Testmonial() {
   return (
-    <Carousel data-bs-theme="dark" indicators={false}>
+    <Carousel data-bs-theme="dark" indicators={false} controls={false}>
     <Carousel.Item>
       <div al className='bg-light w-100 my-4'>
         <div className='testimonials'>We are happy to be associated with ‘Infinity’ for our requirement of printed boxes and posters.They are consistent in quality, have fast development, on time delivery and over &amp; above personalized service through their marketing Manager Mr. Ajay Tiwari. We wish all the success for this company. </div>
       </div>
       <div className='text-start' >
             <img alt='' style={{borderRadius:"100px"}} className='bg-light' src={test17} />
-            <p className="tst-carousel-title">S.C. Malhotra <br/> Executive Director - Exports <br/> Indication Instruments Ltd</p>
+            <p style={{color:"white"}} className="tst-carousel-title client">S.C. Malhotra <br/> Executive Director - Exports <br/> Indication Instruments Ltd</p>
     </div>
     </Carousel.Item>
     <Carousel.Item>
@@ -30,7 +25,7 @@ export default function Testmonial() {
       </div>
       <div className='text-start' >
             <img alt='' style={{borderRadius:"100px"}} className='bg-light' src={test28} />
-            <p className="tst-carousel-title">Harkanwal Jeet Singh <br/> Managing Director <br/> Dextrous Packaging Pvt Ltd</p>
+            <p style={{color:"white"}} className="tst-carousel-title client">Harkanwal Jeet Singh <br/> Managing Director <br/> Dextrous Packaging Pvt Ltd</p>
     </div>
     </Carousel.Item>
     <Carousel.Item>
@@ -39,7 +34,7 @@ export default function Testmonial() {
       </div>
       <div className='text-start' >
             <img alt='' style={{borderRadius:"100px"}} className='bg-light' src={test39} />
-            <p className="tst-carousel-title">Sachin Sethi <br/>Managing Director <br/> Sethi Polymers</p>
+            <p style={{color:"white"}} className="tst-carousel-title client">Sachin Sethi <br/>Managing Director <br/> Sethi Polymers</p>
     </div>
     </Carousel.Item>
     <Carousel.Item>
@@ -48,7 +43,7 @@ export default function Testmonial() {
       </div>
       <div className='text-start' >
             <img alt='' style={{borderRadius:"100px"}} className='bg-light' src={test40} />
-            <p className="tst-carousel-title">Anand Prakash Singh <br/> Sr. Sales Manager <br/> Diva Publishers Pvt Ltd </p>
+            <p style={{color:"white"}} className="tst-carousel-title client">Anand Prakash Singh <br/> Sr. Sales Manager <br/> Diva Publishers Pvt Ltd </p>
     </div>
     </Carousel.Item>
     <Carousel.Item>
@@ -57,7 +52,7 @@ export default function Testmonial() {
       </div>
       <div className='text-start' >
             <img alt='' style={{borderRadius:"100px"}} className='bg-light' src={test511} />
-            <p className="tst-carousel-title">Vinay Giri <br/> Sr. Manager <br/> Eternal Ganges Press Pvt Ltd</p>
+            <p style={{color:"white"}} className="tst-carousel-title client">Vinay Giri <br/> Sr. Manager <br/> Eternal Ganges Press Pvt Ltd</p>
     </div>
     </Carousel.Item>
     <Carousel.Item>
@@ -66,7 +61,7 @@ export default function Testmonial() {
       </div>
       <div className='text-start' >
             <img alt='' style={{borderRadius:"100px"}} className='bg-light' src={test612} />
-            <p className="tst-carousel-title">S.C. Malhotra <br/> Executive Director - Exports <br/> Indication Instruments Ltd</p>
+            <p style={{color:"white"}} className="tst-carousel-title client">S.C. Malhotra <br/> Executive Director - Exports <br/> Indication Instruments Ltd</p>
     </div>
     </Carousel.Item>
     <Carousel.Item>
@@ -75,7 +70,7 @@ export default function Testmonial() {
       </div>
       <div className='text-start' >
             <img alt='' style={{borderRadius:"100px"}} className='bg-light' src={test17} />
-            <p className="tst-carousel-title">Harkanwal Jeet Singh <br/> Managing Director <br/> Dextrous Packaging Pvt Ltd</p>
+            <p style={{color:"white"}} className="tst-carousel-title client">Harkanwal Jeet Singh <br/> Managing Director <br/> Dextrous Packaging Pvt Ltd</p>
     </div>
     </Carousel.Item>
     <Carousel.Item>
@@ -84,7 +79,7 @@ export default function Testmonial() {
       </div>
       <div className='text-start' >
             <img alt='' style={{borderRadius:"100px"}} className='bg-light' src={test28} />
-            <p className="tst-carousel-title">Sachin Sethi <br/>Managing Director <br/> Sethi Polymers</p>
+            <p style={{color:"white"}} className="tst-carousel-title client">Sachin Sethi <br/>Managing Director <br/> Sethi Polymers</p>
     </div>
     </Carousel.Item>
     <Carousel.Item>
@@ -93,7 +88,7 @@ export default function Testmonial() {
       </div>
       <div className='text-start' >
             <img alt='' style={{borderRadius:"100px"}} className='bg-light' src={test39} />
-            <p className="tst-carousel-title">Anand Prakash Singh <br/> Sr. Sales Manager <br/> Diva Publishers Pvt Ltd </p>
+            <p style={{color:"white"}} className="tst-carousel-title client">Anand Prakash Singh <br/> Sr. Sales Manager <br/> Diva Publishers Pvt Ltd </p>
     </div>
     </Carousel.Item>
     <Carousel.Item>
@@ -102,7 +97,7 @@ export default function Testmonial() {
       </div>
       <div className='text-start' >
             <img alt='' style={{borderRadius:"100px"}} className='bg-light' src={test40} />
-            <p className="tst-carousel-title">Anand Prakash Singh <br/> Sr. Sales Manager <br/> Diva Publishers Pvt Ltd </p>
+            <p style={{color:"white"}} className="tst-carousel-title client">Anand Prakash Singh <br/> Sr. Sales Manager <br/> Diva Publishers Pvt Ltd </p>
     </div>
     </Carousel.Item>
     <Carousel.Item>
@@ -111,7 +106,7 @@ export default function Testmonial() {
       </div>
       <div className='text-start' >
             <img alt='' style={{borderRadius:"100px"}} className='bg-light' src={test511} />
-            <p className="tst-carousel-title">Gaurav Sehdav <br/> Owner <br/> Mammoth World</p>
+            <p style={{color:"white"}} className="tst-carousel-title client">Gaurav Sehdav <br/> Owner <br/> Mammoth World</p>
     </div>
     </Carousel.Item>
     <Carousel.Item>
@@ -120,7 +115,7 @@ export default function Testmonial() {
       </div>
       <div className='text-start' >
             <img alt='' style={{borderRadius:"100px"}} className='bg-light' src={test612} />
-            <p className="tst-carousel-title">S.C. Malhotra <br/> Executive Director - Exports <br/> Indication Instruments Ltd</p>
+            <p style={{color:"white"}} className="tst-carousel-title client">S.C. Malhotra <br/> Executive Director - Exports <br/> Indication Instruments Ltd</p>
     </div>
     </Carousel.Item>
   </Carousel>

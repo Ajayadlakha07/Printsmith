@@ -24,7 +24,7 @@ export default function Casestudy() {
   return (
     <div style={{backgroundColor:"#F5F5F5"}} >
        <div  style={{height:"200px",alignItems:"end",paddingTop:"100px"}} className='gradi text-start px-4' >
-        <div className='text-start text-white p-2' style={{backgroundColor:"rgba(0, 0, 0, .8)",width:"300px"}}>
+        <div className='text-start text-14 text-white p-2' style={{backgroundColor:"rgba(0, 0, 0, .8)",width:"300px"}}>
           <span >Home</span>
           <AiOutlineCaretRight color='#FC01AC'/>
           <span>Case studies & Testimonial</span>
@@ -37,7 +37,7 @@ export default function Casestudy() {
         <AiOutlineLine className='mb-4 mx-4' color='#313133' style={{height:"3px", width:"60px",backgroundColor:"#96979A"}} />
           <p className='h5 mb-3' style={{marginTop:"80px",color:"#FA01AC"}} >Lastest Case study</p>
         <div className='text-start mx-3'>
-          <div className='d-flex' style={{backgroundImage:`url(${imgs}`,width:"420px",height:"240px",alignItems:"end"}} >
+          <div className='d-flex' style={{backgroundImage:`url(${imgs}`,width:"420px",height:"240px",alignItems:"end",maxWidth:"80vw",backgroundRepeat:"no-repeat",backgroundSize:"contain"}} >
             <button className='btn3' >Read more+</button>
           </div>
         </div>

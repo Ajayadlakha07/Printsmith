@@ -23,8 +23,8 @@ export default function Ourservices() {
   return (
     <div style={{backgroundColor:"#F5F5F5"}} >
          <div  style={{height:"200px",alignItems:"end",paddingTop:"100px"}} className='gradi text-start px-2' >
-        <div className='text-start text-white p-2' style={{backgroundColor:"rgba(0, 0, 0, .8)",width:"200px"}}>
-          <span >Home</span>
+        <div className='text-start text-14 text-white p-2' style={{backgroundColor:"rgba(0, 0, 0, .8)",width:"200px"}}>
+          <Link style={{textDecoration:"none",color:"white"}} to='/' >Home</Link>
           <AiOutlineCaretRight size={13} className='mx-2' color='#FC01AC'/>
           <span>OUR SERVICES</span>
         </div>
@@ -46,7 +46,7 @@ export default function Ourservices() {
             <div className='text-start mx-4 d-flex flex-row my-4'>
                 <div className='w-75'>
                 <p className='text-start h3 my-4 d-flex' style={{color:"#2ABDE9"}}  >Commercial Printing</p>
-                <p className='text-start my-4 para'>Our endeavour to provide the best of commercial printing solutions is visible through our printing infrastructure. We have the following machines </p>
+                <p className='text-start my-4 para'>Our endeavor to provide the best of commercial printing solutions is visible through our printing infrastructure. We have the following machines </p>
                 <Link to='/commercial-printing' className="p-2 btn" style={{fontWeight:"600",borderRadius:"0px",backgroundColor:"#FB02AC",color:"white"}}>Read More</Link>
                 </div>
                 <BsFillBookmarksFill className='my-4' style={{width:"100px"}} color='#464646' size={50} />

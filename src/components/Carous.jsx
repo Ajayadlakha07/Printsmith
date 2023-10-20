@@ -23,7 +23,7 @@ function Carous() {
           <div className='text-start my-1 p-2 courserone' >Coffee table book launch function</div>
           </div>
           <div className="text-start my-md-3 my-2">
-          <div className='text-start my-1 p-2 coursertwo' >Nulla vitae elit libero, a pharetra augue mollis interdum.</div>
+          <div className='text-start my-1 p-2 coursertwo' >Jaya Bachchan addressing the audience</div>
           </div>
           <div className="text-start my-md-3 my-2">
           <div className='text-start p-2 courserthree' >New Delhi</div>

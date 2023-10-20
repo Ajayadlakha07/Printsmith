@@ -18,6 +18,7 @@ export default function Footer() {
                         <Link to='/employees-engagement' className="footerlink text-start" ><p >Employee Engagement & Training</p></Link>
                         <Link to='/openings' className="footerlink text-start" ><p >Opening</p></Link>
                         <Link to='/privacy-policy' className="footerlink text-start" ><p >Privacy Policy & Terms and conditions</p></Link>
+                        <Link to='/packaging-printing-exp' className="footerlink text-start" ><p >Packaging Expertise</p></Link>
                 </div>
                 <div className="col-6">
                         <Link to='/commercial-printing' className="footerlink text-start" ><p >Commercial Printing</p></Link>
@@ -26,6 +27,8 @@ export default function Footer() {
                         <Link to='/csr' className="footerlink text-start" ><p >CSR</p></Link>
                         <Link to='/news' className="footerlink text-start" ><p >News</p></Link>
                         <Link to='/faq' className="footerlink text-start" ><p >FAQ</p></Link>
+                        <Link to='/commercial-printing-exp' className="footerlink text-start" ><p >Commercial Printing Expertise</p></Link>
+                        <Link to='/pos-exp' className="footerlink text-start" ><p >POS Display and Fixtures Expertise</p></Link>
                 </div>
             </div>
         </div>

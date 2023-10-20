@@ -127,20 +127,20 @@ const contents = [
 
 const table1 = ["Coffee Table Books","Newsletters","Shape Cut Books","Game Books","Books","Catalogue","Center Pin","Loop Binded","Wiro","Paper Straw","Spiral","Metpet POSN","Posters","Leaflets","Magazines","Calendars","Diaries","Carry Bags","Bunting","Dangler","Envelopes","Stickers","Hard Case Box","Soft Case Box"]
 const table1_li = ["20” x 30” Komori 4 Color Offset Machine with auto plate changer (CPC).","28” x 40” Heidelberg 2 Color Offset Machine with UV Coater.","28” x 40” 6 color Komori with LED UV and Coater.","25” x 37” Komori 4 Color Offset Machine with auto plate changer (CPC)","40” x 60” Screen Printing Machine.",]
-const table1_head = ["Commercial ","Our endeavour to provide the best of commercial printing solutions is visible through our printing infrastructure. We have the following machines- "]
+const table1_head = ["Commercial ","Our endeavor to provide the best of commercial printing solutions is visible through our printing infrastructure. We have the following machines- "]
 
 const table2 = ["Mono-Cartons","5&7 Ply Master Cartons","Tags","Window Patching Boxes","Metpet Cartons","Labels","Rigid Box","Hard Board Boxes","3 Ply Mono - Cartons","Gift Boxes","Canister packaging","Fancy Packs",]
 const table2_li = ["E- Flute 42’’, 55 \" Machine with slitter (G, A, E Flute)","Coater and Screen Printing Machine","BOBST Folder Gluer, 2 Nos. Semi-Automatic Die Cutter with Hot Foil","Meiguang FMZ-1260 High-Speed Automatic Laminator",]
 const table2_head = ["Packaging ","We have state-of-the-art Packaging Infrastructure with world-class printing capabilities. Some of the aces of our packaging infrastructure are-"]
 
-const table3 = ["Roll Up Standees","Sun Board Vending","One Way Vision","Flanges","Airlel Hangers","Injection Molded Display","Shape Cut Standees","LED Sinages","Vinyl","Acrylic Display","Display Racks","Glow Sign Lit Boards","Edge Lid Boards","Flex Boards","Thermofomic","Glass Printing","Variable Printed QR Code","Glow Sign Non - Lit Boards ",]
+const table3 = ["Roll Up Standees","Sun Board Vending","One Way Vision","Flanges","Airlel Hangers","Injection Molded Display","Shape Cut Standees","LED Signages","Vinyl","Acrylic Display","Display Racks","Glow Sign Lit Boards","Edge Lid Boards","Flex Boards","Thermoforming","Glass Printing","Variable Printed QR Code","Glow Sign Non - Lit Boards ",]
 const table3_head = ["POS Display and","Printsmith is one of the most innovative display firms in the country. We conceptualize, design, engineer, manufacture and install point of sale (POS) display stands, showroom fixtures and racks all over India."]
 const table3_li = []
 
 const table_report = {
-    table1:["Books / Coffee Table / Hard Case / Soft Case / Center Pin / Children Books ","CTB","coffee table","CB4","CB5","annual report1","anula report", "CTB 1", "cat5", "cat3" ,"cat", "cat 1", "book 2","spirla_book_mockup_2", "CB","C book","book 2","C book 2" ,"book 1a","MS" ,"annual report1","annual report","siral_book_Mockup_1","CBT 2"],
+    table1:["Books / Coffee Table / Hard Case / Soft Case / Center Pin / Children's Books ","CTB","coffee table","CB4","CB5","annual report1","anula report", "CTB 1", "cat5", "cat3" ,"cat", "cat 1", "book 2","spirla_book_mockup_2", "CB","C book","book 2","C book 2" ,"book 1a","MS" ,"annual report1","annual report","siral_book_Mockup_1","CBT 2"],
     table2:["Calendars / Carry Bags/ Diaries / Magazines ","Tirupati wall Calander",    "Tirupati Diary",    "LIC Diary",    "Syndicatedbank wall Calender",    "Lic desk calander",    "Kazo carry bag",    "JCB wall calander",    "HMD Desk calander",    "Greem carry bag",    "Continental desk calander",    "coke wall calander",    "SKG world carry bag",    "CA Diary",    "M3",    "M2",    "SyndicatedBank Diary",    "M5",    "M4",    "LIC wall calander",    "APL carry bag",    "M1",],
-    table3:["Danglers / Catalogues / Posters / Leaflets / Annual Report","leafletN5",    "PN9",    "leafletN3",    "leafletN4",    "PN8",    "PN7",    "PN5",    "PN4",    "leafletN2",    "PN3",    "dangler 4",    "PN1",    "PN2",    "dangler 3",    "dangler 2",    "PN6",    "dangler 1",    "leafletN1",    "PN10",]
+    table3:["Danglers / Catalogue / Posters / Leaflets / Annual Report","leafletN5",    "PN9",    "leafletN3",    "leafletN4",    "PN8",    "PN7",    "PN5",    "PN4",    "leafletN2",    "PN3",    "dangler 4",    "PN1",    "PN2",    "dangler 3",    "dangler 2",    "PN6",    "dangler 1",    "leafletN1",    "PN10",]
 }
 
 const packaging = ["Packaging Expertise ","21","23","22","24","18","19","14","13","12","10","20","11","9","8","6","7","5","3","2","4","1","16","17","15",]

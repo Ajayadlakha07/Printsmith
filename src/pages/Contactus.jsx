@@ -7,6 +7,7 @@ import map2 from '../assets/Screenshot1.png'
 import Hr from '../components/Hr';
 import Vendor from '../components/Vendor';
 import Business from '../components/Business';
+import { Link } from 'react-router-dom';
 
 export default function Contactus() {
 
@@ -36,8 +37,8 @@ export default function Contactus() {
     <div style={{backgroundColor:"#F5F5F5"}}>
       <div ref={divRef} ></div>
       <div  style={{height:"200px",alignItems:"end",paddingTop:"100px"}} className='gradi text-start px-4' >
-        <div className='text-start text-white px-2 py-1' style={{backgroundColor:"rgba(0, 0, 0, .8)",width:"200px"}}>
-          <span  >Home</span>
+        <div className='text-start text-14 text-white px-2 py-1' style={{backgroundColor:"rgba(0, 0, 0, .8)",width:"200px"}}>
+        <Link style={{textDecoration:"none",color:"white"}} to='/' >Home</Link>
           <AiOutlineCaretRight size={13} className='mx-2' color='#FC01AC'/>
           <span>CONTACT US</span>
         </div>
