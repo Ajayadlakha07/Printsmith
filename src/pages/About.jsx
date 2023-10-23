@@ -14,6 +14,7 @@ import Team from '../components/Team';
 export default function About() {
   useEffect(() => {
     window.scrollTo(0, 0);  // Scroll to the top of the page
+    document.title = "About Us - Printsmith"
   }, []);
 
   return (

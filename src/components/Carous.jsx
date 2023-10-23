@@ -19,14 +19,14 @@ function Carous() {
         />
          <Carousel.Caption style={{left:"0px"}} >
         <div>
-          <div className="text-start my-md-3 my-2">
-          <div className='text-start my-1 p-2 courserone' >Coffee table book launch function</div>
+          <div className="text-start my-md-3 my-0">
+          <div className='text-start my-md-1 p-md-2 p-1 courserone text-mdd-8' >Coffee table book launch function</div>
           </div>
-          <div className="text-start my-md-3 my-2">
-          <div className='text-start my-1 p-2 coursertwo' >Jaya Bachchan addressing the audience</div>
+          <div className="text-start my-md-3 my-0">
+          <div className='text-start my-md-1 p-md-2 p-1 coursertwo text-mdd-8' >Jaya Bachchan addressing the audience</div>
           </div>
-          <div className="text-start my-md-3 my-2">
-          <div className='text-start p-2 courserthree' >New Delhi</div>
+          <div className="text-start my-md-3 my-0">
+          <div className='text-start p-md-2 p-1 courserthree text-mdd-5' >New Delhi</div>
           </div>
         </div>
         </Carousel.Caption>
@@ -39,11 +39,11 @@ function Carous() {
         />
         <Carousel.Caption style={{left:"0px"}} >
         <div>
-        <div className="text-start my-md-3 my-2">
-          <div className='text-start my-1 p-2 courserone'>Tempting! isn't it?</div>
+        <div className="text-start my-md-3 my-0">
+          <div className='text-start my-md-1 p-md-2 p-1 courserone text-mdd-8'>Tempting! isn't it?</div>
         </div>
-        <div className="text-start my-md-3 my-2">
-          <div className='text-start my-1 p-2 coursertwo' >CMYK along with Abrasive & Emboss UV, and Matt Lamination on 220 Matt Art Card</div>
+        <div className="text-start my-md-3 my-0">
+          <div className='text-start my-md-1 p-md-2 p-1 coursertwo text-mdd-8' >CMYK along with Abrasive & Emboss UV, and Matt Lamination on 220 Matt Art Card</div>
         </div>
         </div>
         </Carousel.Caption>
@@ -56,11 +56,11 @@ function Carous() {
         />
         <Carousel.Caption style={{left:"0px"}} >
         <div>
-        <div className="text-start my-md-3 my-2">
-          <div className='text-start my-1 p-2 courserone' >Glossy finishing at its best</div>
+        <div className="text-start my-md-3 my-0">
+          <div className='text-start my-md-1 p-md-2 p-1 courserone text-mdd-8' >Glossy finishing at its best</div>
         </div>
-        <div className="text-start my-md-3 my-2">
-          <div className='text-start my-1 p-2 coursertwo' >Glossy colours appealing to your senses</div>
+        <div className="text-start my-md-3 my-0">
+          <div className='text-start my-md-1 p-md-2 p-1 coursertwo text-mdd-8' >Glossy colours appealing to your senses</div>
         </div>
         </div>
         </Carousel.Caption>
@@ -73,14 +73,14 @@ function Carous() {
         />
        <Carousel.Caption style={{left:"0px"}} >
         <div>
-        <div className="text-start my-md-3 my-2">
-          <div className='text-start my-1 p-2 courserone'>Designs packed with innovation</div>
+        <div className="text-start my-md-3 my-0">
+          <div className='text-start my-md-1 p-md-2 p-1 courserone text-mdd-8'>Designs packed with innovation</div>
         </div>
-        <div className="text-start my-md-3 my-2">
-          <div className='text-start my-1 p-2 coursertwo'>Delivering quality, harnessing latest technology.</div>
+        <div className="text-start my-md-3 my-0">
+          <div className='text-start my-md-1 p-md-2 p-1 coursertwo text-mdd-8'>Delivering quality, harnessing latest technology.</div>
         </div>
-        <div className="text-start my-md-3 my-2">
-          <div className='text-start p-2 courserthree' >Offering printing solutions, not just printed materials.</div>
+        <div className="text-start my-md-3 my-0">
+          <div className='text-start p-2 courserthree text-mdd-5' >Offering printing solutions, not just printed materials.</div>
         </div>
         </div>
         </Carousel.Caption>
@@ -93,14 +93,14 @@ function Carous() {
         />
        <Carousel.Caption style={{left:"0px"}} >
         <div>
-        <div className="text-start my-md-3 my-2">
-          <div className='text-start my-1 p-2 courserone'>Exhibiting our latest work</div>
+        <div className="text-start my-md-3 my-0">
+          <div className='text-start my-md-1 p-md-2 p-1 courserone text-mdd-8'>Exhibiting our latest work</div>
         </div>
-        <div className="text-start my-md-3 my-2">
-          <div className='text-start my-1 p-2 coursertwo'>Pragati Maidan, New Delhi</div>
+        <div className="text-start my-md-3 my-0">
+          <div className='text-start my-md-1 p-md-2 p-1 coursertwo text-mdd-8'>Pragati Maidan, New Delhi</div>
         </div>
-        <div className="text-start my-md-3 my-2">
-          <div className='text-start p-2 courserthree' >3rd- 6th August, 2017</div>
+        <div className="text-start my-md-3 my-0">
+          <div className='text-start p-2 courserthree text-mdd-5' >3rd- 6th August, 2017</div>
         </div>
         </div>
         </Carousel.Caption>
@@ -113,14 +113,14 @@ function Carous() {
         />
        <Carousel.Caption style={{left:"0px"}} >
         <div>
-          <div className="text-start my-md-3 my-2" >
-          <div className='text-start my-1 p-2 courserone'>CMYK</div>
+          <div className="text-start my-md-3 my-0" >
+          <div className='text-start my-md-1 p-md-2 p-1 courserone text-mdd-8'>CMYK</div>
           </div>
-          <div className="text-start my-md-3 my-2" >
-          <div className='text-start my-1 p-2 coursertwo' >Innovation is our passion</div>
+          <div className="text-start my-md-3 my-0" >
+          <div className='text-start my-md-1 p-md-2 p-1 coursertwo text-mdd-8' >Innovation is our passion</div>
           </div>
-          <div className="text-start my-md-3 my-2" >
-          <div className='text-start p-2 courserthree' >White on Matt Silver MetPET, CMYK</div>
+          <div className="text-start my-md-3 my-0" >
+          <div className='text-start p-2 courserthree text-mdd-5' >White on Matt Silver MetPET, CMYK</div>
           </div>
         </div>
         </Carousel.Caption>
@@ -133,11 +133,11 @@ function Carous() {
         />
        <Carousel.Caption style={{left:"0px"}} >
         <div>
-          <div className='text-start my-md-3 my-2'>
-          <div className='text-start my-1 p-2 courserone' >Enhancing experience with alluring designs</div>
+          <div className='text-start my-md-3 my-0'>
+          <div className='text-start my-md-1 p-md-2 p-1 courserone text-mdd-8' >Enhancing experience with alluring designs</div>
           </div>
-          <div className='text-start my-md-3 my-2'>
-          <div className='text-start my-1 p-2 coursertwo' >125 Micron NTR Media,CMYK</div>
+          <div className='text-start my-md-3 my-0'>
+          <div className='text-start my-md-1 p-md-2 p-1 coursertwo text-mdd-8' >125 Micron NTR Media,CMYK</div>
 
           </div>
         </div>

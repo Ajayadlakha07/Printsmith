@@ -27,7 +27,7 @@ export default function Csr() {
        </div>
             <div className='mdWidth75 my-4 py-4 text-start mx-auto' >
             <div className='row '>   
-                <div className='col-8'>
+                <div className='col-md-8 col-12'>
                     <p className='' style={{fontSize:"35px",color:"#666666"}} >CSR Activity</p>
                     <div style={{fontFamily:"Open Sans",fontSize:"13px",lineHeight:"25px"}} >Life becomes better when you share the joy and spread happiness. At Printsmith, we have made this philosophy our policy. To achieve this goal, we have collaborated with like-minded people and contribute individually too.</div>
                     <div style={{fontFamily:"Open Sans",fontSize:"13px",lineHeight:"25px"}} >Printsmith has been working with ABLE Charities, an NGO operating from Haryana to provide better healthcare facilities and education to rural people who are deprived of these basic facilities due to acute poverty and ignorance.</div>
@@ -37,7 +37,7 @@ export default function Csr() {
                     <div style={{fontFamily:"Open Sans",fontSize:"13px",lineHeight:"25px"}} >Printsmith along with ABLE Charities organize health camps in slums and alike areas for a complete preventive and corrective health check-up of children who are under below poverty line. These community healthcare programs are being run on a regular basis to achieve our mission of ensuring good health to everyone.</div>
 
                 </div>
-                <div className='col-4 d-flex align-items-center' >
+                <div className='col-md-4 col-12 my-4 d-flex align-items-center' >
                 <img alt='' src={pic} />
 
                 </div>

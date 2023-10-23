@@ -19,6 +19,7 @@ export default function Casestudy() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
+    document.title = "Case Studies - Printsmith"
   },[]);
 
   return (

@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Table({table}) {
+export default function   Table({table}) {
   return (
     <div>
         <div className='px-4' style={{marginTop:"70px",paddingBottom:"70px"}}>

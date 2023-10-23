@@ -15,8 +15,12 @@ export default function Commercial({handleShow,table1,table1_li,table1_head,img1
   const divRef = useRef(null);
   useEffect(() => {
      window.scrollTo(0, 0);
-    //  divRef?.current?.scrollIntoView({ behavior: 'smooth' });
+     
   },[]);
+
+  useEffect(()=>{
+    document.title = `${table1_head[0]} Printing - Printsmith`
+  },[table1_head[0]])
 
   return (
     <div style={{backgroundColor:"#F5F5F5"}}>
