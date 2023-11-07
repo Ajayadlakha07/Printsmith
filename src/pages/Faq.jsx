@@ -32,16 +32,16 @@ export default function Faq() {
     <div>
     <div ref={divRef} ></div>
     <div  style={{height:"200px",alignItems:"end",paddingTop:"100px"}} className='gradi text-start px-2' >
-        <div className='text-start text-14 text-white px-2 py-1' style={{backgroundColor:"rgba(0, 0, 0, .8)",width:"150px"}}>
+        <div className='text-start text-14 text-white px-2 py-1' style={{backgroundColor:"rgba(0, 0, 0, .8)",display:"inline-block"}}>
         <Link style={{textDecoration:"none",color:"white"}} to='/' >Home</Link>
           <AiOutlineCaretRight size={13} className='mx-2' color='#FC01AC'/>
-          <span>NEWS</span>
+          <span>FAQ</span>
         </div>
-        <div className='px-2 py-1 my-2'  style={{backgroundColor:"hsla(0, 0%, 100%, .5)",width:"150px",fontSize:"11px"}}>{formattedDate}</div>
+        <div className='px-2 py-1 my-2'  style={{backgroundColor:"hsla(0, 0%, 100%, .5)",width:"120px",fontSize:"11px"}}>{formattedDate}</div>
 
        </div>
        <div  className='mdWidth75 my-4 py-4 text-start mx-auto' >
-       <div className='my-4' style={{fontSize:"30px",borderBottom:""}}><span ><span style={{color:"#535353"}}>News</span> <span style={{color:"#2ABDE9"}} >Updates</span></span></div>
+       <div className='my-4' style={{fontSize:"30px",borderBottom:""}}><span ><span style={{color:"#535353"}}>FAQ</span> <span style={{color:"#2ABDE9"}} >Updates</span></span></div>
        <Accordion style={{backgroundColor:"white"}} defaultActiveKey={['0']} alwaysOpen>
            <Accordion.Item eventKey="0">
                <Accordion.Header onClick={()=>setExpand0(!expand0)} className='more' >

@@ -15,6 +15,7 @@ export default function Packaging() {
   const divRef = useRef(null);
   useEffect(() => {
     window.scrollTo(0, 0);  // Scroll to the top of the page
+    document.title = "Packaging Expertise - Printsmith"
   }, []);
   return (
     <div>
@@ -26,7 +27,7 @@ export default function Packaging() {
           <AiOutlineCaretRight size={13} className='mx-2' color='#FC01AC'/>
           <span>COMMERCIAL EXPERTISE</span>
         </div>
-        <div className='px-2 py-1 my-2'  style={{backgroundColor:"hsla(0, 0%, 100%, .5)",width:"150px",fontSize:"11px"}}>{formattedDate}</div>
+        <div className='px-2 py-1 my-2'  style={{backgroundColor:"hsla(0, 0%, 100%, .5)",width:"120px",fontSize:"11px"}}>{formattedDate}</div>
 
        </div>
       

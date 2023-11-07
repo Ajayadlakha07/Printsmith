@@ -6,7 +6,6 @@ import img2 from '../assets/Printsmith-P3-279x300.png'
 import img3 from '../assets/Untitled-Extract-Pages.jpg'
 import img4 from '../assets/Printsmith-Credentials-1-1024x558.jpg'
 import img5 from '../assets/Printsmith-Credentials-1024x558.jpg'
-import line3 from '../assets/line3.svg'
 import Abouttabs from '../components/Abouttabs';
 import Team from '../components/Team';
 
@@ -19,7 +18,7 @@ export default function About() {
 
   return (
     <div style={{backgroundColor:"#F5F5F5"}}>
-         <div style={{height:"200px"}} className='gradi' ></div>
+         <div id='vision' style={{height:"200px"}} className='gradi' ></div>
         <div className='justify-content-center d-flex mt70'>
           <div className='px-4 py-4 mx-md-4 mx-0 bg-light mdWidth75' style={{borderLeft:"5px solid #F304AD"}} >
             <div className='d-flex flex-row align-item-center my-3'>
@@ -28,7 +27,7 @@ export default function About() {
             </div>
            <div className='d-flex flex-column flex-md-row'>
            <div className='text-start'>
-              <div className='h3 text-muted'  style={{fontWeight:"1",overflowY: "hidden"}} >"We transform concepts into innovative designs.".</div>
+              <div className='h3 text-muted' style={{fontWeight:"1",overflowY: "hidden"}} >"We transform concepts into innovative designs.".</div>
               <p className='h6 text-muted' style={{fontWeight:"1",overflowY: "hidden"}} >Printsmith is one of the pioneer companies in printing services & has been delivering quality products & services since its inception. It came to existence in the year 2003 as a sister division of Infinity Advertising Services to shoulder all its print and production work.</p>
               <p className='h6 text-muted my-3' style={{fontWeight:"1",overflowY: "hidden"}} >In a small span of time, we have emerged as a reliable partner for many of the top brands across the nation. This journey of success has been driven by a continuous and relentless passion for building and nurturing brands.</p>
               <p className='h6 text-muted my-3' style={{fontWeight:"1",overflowY: "hidden"}} >Being a part of Infinity Advertising Services, it has been our intrinsic forte to infuse and bring creativity in our designs and deliverables. The state-of-the-art plant covers the whole gamut of printing needs, including direct marketing, brochures, magazines,  catalogs and marketing & publishing related materials with unparalleled quality in a quick turnaround time.</p>
@@ -118,7 +117,3 @@ export default function About() {
 // 
 // 
 // 
-
-
-
-

@@ -99,11 +99,11 @@ function Header() {
                 <div className="dropdown">
                   <Link to='/about' className={`${location.pathname==='/about'?"btnloc":"dropbtn"}`}>About Us</Link>
                   <div className="dropdown-content">
-                    <Link to='/about'  className='linkStyle text-start' >Vision & Mission</Link>
-                    <a href='http://localhost:3000/about#team'  className='linkStyle text-start' >The Team</a>
-                    <a href='http://localhost:3000/about#infrastructure'  className='linkStyle text-start' >Infrastructure</a>
+                    <a href='https://printsmith.co.in/about#vision'  className='linkStyle text-start' >Vision & Mission</a>
+                    <a href='https://printsmith.co.in/about#team'  className='linkStyle text-start' >The Team</a>
+                    <a href='https://printsmith.co.in/about#infrastructure'  className='linkStyle text-start' >Infrastructure</a>
                     <Link to='/case-studies'  className='linkStyle text-start' >Case study</Link>
-                    <a href='http://localhost:3000/case-studies#testimonials'  className='linkStyle text-start' >Client Testimonials</a>
+                    <a href='https://printsmith.co.in/case-studies#testimonials'  className='linkStyle text-start' >Client Testimonials</a>
                   </div>
                 </div> 
                 <div className="dropdown">

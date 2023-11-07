@@ -24,19 +24,19 @@ export default function Casestudy() {
 
   return (
     <div style={{backgroundColor:"#F5F5F5"}} >
-       <div  style={{height:"200px",alignItems:"end",paddingTop:"100px"}} className='gradi text-start px-4' >
-        <div className='text-start text-14 text-white p-2' style={{backgroundColor:"rgba(0, 0, 0, .8)",width:"300px"}}>
+       <div  style={{height:"200px",alignItems:"end",paddingTop:"100px"}} className='gradi text-start px-2' >
+        <div className='text-start text-14 text-white p-2' style={{backgroundColor:"rgba(0, 0, 0, .8)",display:"inline-block"}}>
           <span >Home</span>
           <AiOutlineCaretRight color='#FC01AC'/>
           <span>Case studies & Testimonial</span>
         </div>
-        <div className='px-2 py-1 my-2'  style={{backgroundColor:"hsla(0, 0%, 100%, .5)",width:"150px",fontSize:"11px"}}>{formattedDate}</div>
+        <div className='px-2 py-1 my-2'  style={{backgroundColor:"hsla(0, 0%, 100%, .5)",width:"120px",fontSize:"11px"}}>{formattedDate}</div>
        </div>
   
        <div className='mdWidth75 my-4 p-4 mx-auto text-start'  >
         <p className='text-start h1 m-3' style={{fontWeight:"600"}} >Case Studies</p>
         <AiOutlineLine className='mb-4 mx-4' color='#313133' style={{height:"3px", width:"60px",backgroundColor:"#96979A"}} />
-          <p className='h5 mb-3' style={{marginTop:"80px",color:"#FA01AC"}} >Lastest Case study</p>
+          <p className='h5 mb-3 mt-4' style={{color:"#FA01AC"}} >Lastest Case study</p>
         <div className='text-start mx-3'>
           <div className='d-flex' style={{backgroundImage:`url(${imgs}`,width:"420px",height:"240px",alignItems:"end",maxWidth:"80vw",backgroundRepeat:"no-repeat",backgroundSize:"contain"}} >
             <button className='btn3' >Read more+</button>

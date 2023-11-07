@@ -28,6 +28,7 @@ export default function Home({handleShow}) {
 
   useEffect(() => {
     window.scrollTo(0, 0);  // Scroll to the top of the page
+    document.title = "Printsmith"
   }, []);
   return (
     <div style={{backgroundColor:"#F5F5F5"}} >
@@ -112,11 +113,11 @@ export default function Home({handleShow}) {
           <div className='row mt-md-4 mt-0' >
           {/* <div className='col-1'></div> */}
 
-          <div className="col-md-5 col-12 my-3 hov">
+          <div className="col-md-5 col-10 my-3 hov mx-auto">
             <div className='p-2' style={{backgroundColor:"white"}}>
               <div className='text-start' >
               
-            <img alt='' className='mx-6 w-75 w-md-100' style={{width:"150px"}} src={india} />
+            <img alt='' className='mx-6 w-100 w-md-75' style={{width:"150px"}} src={india} />
               <p className='text-start pt-4 px-3' style={{fontSize:"19px"}} >Support Appreciation </p>
               <p className='text-start px-3' style={{fontSize:"12px"}}>India Safe</p>
               </div>
@@ -130,12 +131,12 @@ export default function Home({handleShow}) {
               </div>
           </div>
 
-          <div className='col-1'></div>
-          <div className="col-md-5 col-12 my-3 hov">
+          <div className='col-1 hide'></div>
+          <div className="col-md-5 col-10 my-3 hov mx-auto">
             <div className='p-2' style={{backgroundColor:"white"}}>
               <div className='text-start' >
               
-            <img alt='' className='mx-6 w-75 w-md-100' style={{width:"150px"}} src={coke} />
+            <img alt='' className='mx-6 w-md-75 w-100' style={{width:"150px"}} src={coke} />
               <p className='text-start pt-4 px-3' style={{fontSize:"19px"}} >Certificate of Recognition</p>
               <p className='text-start px-3' style={{fontSize:"12px"}}>Hindustan Coca-Cola Beverages Pvt. Ltd.</p>
               </div>
@@ -148,6 +149,7 @@ export default function Home({handleShow}) {
                 </div>
               </div>
           </div>
+          
         </div>
           
         </div>

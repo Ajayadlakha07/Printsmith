@@ -17,12 +17,12 @@ export default function Csr() {
   return (
     <div style={{backgroundColor:"#F5F5F5"}} >
        <div  style={{height:"200px",alignItems:"end",paddingTop:"100px"}} className='gradi text-start px-2' >
-        <div className='text-start text-white px-2 py-1 text-14' style={{backgroundColor:"rgba(0, 0, 0, .8)",width:"150px"}}>
+        <div className='text-start text-white px-2 py-1 text-14' style={{backgroundColor:"rgba(0, 0, 0, .8)",display:"inline-block"}}>
         <Link style={{textDecoration:"none",color:"white"}} to='/' >Home</Link>
           <AiOutlineCaretRight size={13} className='mx-2' color='#FC01AC'/>
           <span>CSR</span>
         </div>
-        <div className='px-2 py-1 my-2'  style={{backgroundColor:"hsla(0, 0%, 100%, .5)",width:"150px",fontSize:"11px"}}>{formattedDate}</div>
+        <div className='px-2 py-1 my-2'  style={{backgroundColor:"hsla(0, 0%, 100%, .5)",width:"120px",fontSize:"11px"}}>{formattedDate}</div>
 
        </div>
             <div className='mdWidth75 my-4 py-4 text-start mx-auto' >
